@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+
+/*---------------------------------------------*/
+
+#information {
+	width:200px;
+	height:281px;
+	margin-bottom:14px;
+	background:url(../images/scrollbar02/bg_information.gif) 0 0 no-repeat;
+}
+
+#information .title {
+	padding:11px 11px 8px 11px;
+	line-height:1px;
+}
+#information .title img {
+	vertical-align:top;
+}
+
+#information .inner {
+	margin:0 0 0 11px;
+	height:226px;
+	overflow:auto;
+	font-size:83.33%;
+}
+
+#information .inner dt {
+	margin-right:11px;
+	padding-bottom:2px;
+	color: #999;
+}
+#information .inner dd {
+	margin-right:11px;
+	margin-bottom:7px;
+	padding-bottom:11px;
+	background:url(../images/scrollbar02/bg_information_dotline.gif) bottom left repeat-x;
+}
+#information .inner dd a {
+	color: #333;
+	padding-left:13px;
+	background-position: 0 0.5em;
+	background-repeat:no-repeat;
+	text-decoration: underline;
+	display:block;
+}
+#information .inner dd a:hover {
+	color: #a2a2a2;
+	text-decoration: underline;
+}
+
+#information .inner dd a {
+	background-image:url(../images/scrollbar02/arrow_m_red.gif);
+}
+
+#information .inner dd a.textlinknewwin {
+	background-image:url(../images/scrollbar02/arrow_blank_red.gif);
+}
+
+
+/* ----- for jScrollPane style ----- */
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: url(../images/scrollbar02/bg_scrollbar.gif) 0 0 no-repeat;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: url(../images/scrollbar02/btn_scrollbar.png) left center no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}

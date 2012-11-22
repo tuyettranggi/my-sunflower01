@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+
+/* # imageShow
+---------------------------------------------------------------------------- */
+
+#imageShow {
+	height: 300px;
+ 	position: relative;
+ 	width: 500px;
+}
+
+#imageShow li {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	z-index: 0;
+ 	width: 500px;
+}
+
+#imageShow li.previous {
+ 	z-index: 50;
+}
+
+#imageShow li.current {
+ 	z-index: 100;
+}
+
+#imageShow li img {
+	height: 300px;
+	width: 400px;
+}
+
+

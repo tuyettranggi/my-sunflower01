@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+.productList li {
+	float: left;
+	margin-top: 80px;
+	padding-right: 10px;
+	width: auto;
+}
+
+
+/* # zoomi
+---------------------------------------------------------------------------- */
+
+.zoomi {
+	border: 5px solid #e1e5f1;
+	height: 120px;
+	width: 160px;
+}
+
+.zoom2 {
+	border: 5px solid #e1e5f1;
+ 	width: 400px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+.productList {
+	zoom: 1;
+}
+
+.productList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+

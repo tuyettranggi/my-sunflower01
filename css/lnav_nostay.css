@@ -1,0 +1,98 @@
+@charset "euc-jp";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a    { color: #fff; text-decoration: none;  }
+a:hover   { text-decoration: underline;  }
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-size: 75%;
+	font-family: "£Í£Ó £Ð¥´¥·¥Ã¥¯", Osaka, "¥Ò¥é¥®¥Î³Ñ¥´ Pro W3";
+	line-height: 1.5;
+}
+
+
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+
+dl.category dt {
+	line-height: 1;
+	padding: 11px 0 4px 20px;
+}
+
+ul#lNav li {
+	padding: 5px 10px 0 9px;
+	width: 150px;
+}
+
+ul#lNav li span {
+	cursor: pointer;
+	height: 1%;
+}
+
+ul#lNav li.topNav {
+	background: url(../images/lnav_nostay/bg_dot01.gif) repeat-x 0 0;
+	margin: 15px 0 0 0;
+	padding: 16px 10px 0 9px;
+}
+
+ul#lNav li ul.sNav {
+	padding: 0 0 6px 3px;
+}
+
+ul#lNav li ul li {
+	background: url(../images/lnav_nostay/bg_dot02.gif) repeat-x left bottom;
+	padding: 0;
+	width: 147px;
+}
+
+ul#lNav li ul li a {
+	display: block;
+	height: 1%;
+	padding: 6px 0 8px 6px;
+}
+
+/** html ul#lNav li ul.sNav {
+	padding: 2px 0 3px 3px;
+}
+
+*:first-child + html ul#lNav li ul.sNav {
+	padding: 2px 0 3px 3px;
+}
+
+* html ul#lNav li ul li a {
+	padding: 5px 0 7px 6px;
+}
+
+*:first-child + html ul#lNav li ul li a {
+	padding: 5px 0 7px 6px;
+}
+*/

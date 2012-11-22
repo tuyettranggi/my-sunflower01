@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a    { color: #006699; text-decoration: none; outline: none; }
+a:hover   { text-decoration: underline; }
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+	margin: 20px auto 0 auto;
+    width: 1000px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+}
+
+h2.base {
+	background: #993333;
+	border: 2px solid #990000;
+	clear: both;
+	color: #fff;
+	font-size: 160%;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+	padding: 0 5px;
+}
+
+div#content .baseNote {
+	background: #CCCCCC;
+	border: 1px dashed #000;
+	padding: 5px;
+}
+
+div#content .baseNote span.blue {
+	color: blue;
+	font-size: 120%;
+}
+
+.linkList {
+	color: #ff33cc;
+	list-style: decimal;
+	padding: 0 0 0 10px;
+}
+
+.linkList li {
+	padding: 0 0 8px 10px;
+}
+
+.download {
+	clear: both;
+	padding: 30px;
+}
+
+.download dt {
+	border-top: 1px solid #ccc;
+	font-size: 120%;
+	font-weight: bold;
+	padding-top: 5px;
+	text-decoration: underline;
+}
+
+.download dd ul {
+	list-style-type: circle;
+	padding: 0 0 0 20px;
+}
+
+.download dd ul li {
+	padding-top: 5px;
+}
+
+.download dd ul li a {
+	padding: 0 10px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	zoom: 1;
+}
+
+div#pageBody:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# pageBody
+# gNav
+# clearfix
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+body { color: #fff;}
+
+a    { color: #fff; text-decoration: none; outline: none; }
+a:hover   { text-decoration: underline; }
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {background: #140001;
+}
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+	clear: both;
+	padding-top: 20px;
+}
+
+div#gNav dl {
+	margin: 0 auto;
+}
+
+div#gNav dl dt {
+	padding: 0 0 11px 16px;
+}
+
+div#gNav dl dd ul.menuStyle li {
+	float: left;
+	font-size: 0;
+	margin-right: 10px;
+	text-indent: -9999em;
+	width: auto;
+}
+
+div#gNav dl dd ul.menuStyle li a {
+	display: block;
+	height: 25px;
+	width: 150px;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavTops a {
+	background: url(../images/gnav_stay/gnav_tops.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavTops a:hover,
+div#gNav dl dd ul.menuStyle li#gNavTops a.selected {
+	background: url(../images/gnav_stay/gnav_tops_o.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavBottoms a {
+	background: url(../images/gnav_stay/gnav_bottoms.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavBottoms a:hover,
+div#gNav dl dd ul.menuStyle li#gNavBottoms a.selected {
+	background: url(../images/gnav_stay/gnav_tops_o.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavOuter a {
+	background: url(../images/gnav_stay/gnav_outer.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavOuter a:hover,
+div#gNav dl dd ul.menuStyle li#gNavOuter a.selected {
+	background: url(../images/gnav_stay/gnav_tops_o.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavGoods a {
+	background: url(../images/gnav_stay/gnav_goods.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavGoods a:hover,
+div#gNav dl dd ul.menuStyle li#gNavGoods a.selected {
+	background: url(../images/gnav_stay/gnav_tops_o.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavSale a {
+	background: url(../images/gnav_stay/gnav_sale.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavSale a:hover,
+div#gNav dl dd ul.menuStyle li#gNavSale a.selected {
+	background: url(../images/gnav_stay/gnav_sale_o.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavBrands a {
+	background: url(../images/gnav_stay/gnav_brands.gif) no-repeat 0 0;
+}
+
+div#gNav dl dd ul.menuStyle li#gNavBrands a:hover,
+div#gNav dl dd ul.menuStyle li#gNavBrands a.selected {
+	background: url(../images/gnav_stay/gnav_brands_o.gif) no-repeat 0 0;
+}
+
+ul.dropStyle {
+	background: #2d241f;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: -1px;
+	padding: 0 8px 0 8px;
+	visibility: hidden;
+	width: 134px;
+	z-index: 100;
+}
+
+ul.dropStyle li {
+	background: #2d241f url(../common/images/bg_dot.gif) repeat-x left bottom;
+	padding: 0;
+	width: 134px;
+}
+
+ul.dropStyle li.last {
+	background: none;
+}
+
+ul.dropStyle a {
+	background: none;
+	color: #fff;
+	display: block;
+	padding: 7px 7px 7px 7px;
+	text-decoration: none;
+	width: 120px;
+}
+
+* html ul.dropStyle a {
+	display: inline-block;
+}
+
+ul.dropStyle a:hover {
+	background: #9abeca;
+	color: #fff;
+}
+
+* html ul.dropStyle li { 
+	height: 1%;
+	float: left;
+}
+
+* html ul.dropStyle li a {
+	height: 1%;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody,
+div#gNav dl dd ul.menuStyle {
+	zoom: 1;
+}
+
+div#pageBody:after,
+div#gNav dl dd ul.menuStyle:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

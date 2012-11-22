@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* ######### Drop Down ULs CSS ######### */
+
+
+.ddsubmenustyle,
+.ddsubmenustyle ul { /*topmost and sub ULs, respectively*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: white;
+	border: 1px solid black;
+	border-bottom-width: 0;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.ddsubmenustyle li a {
+	display: block;
+	width: 160px; /*width of menu (not including side paddings)*/
+	color: black;
+	background-color: lightyellow;
+	text-decoration: none;
+	padding: 4px 5px;
+	border-bottom: 1px solid black;
+}
+
+* html .ddsubmenustyle li { /*IE6 CSS hack*/
+	display: inline-block;
+	width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+.ddsubmenustyle li a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* ######### Neutral CSS  ######### */
+
+.downarrowpointer { /*CSS for "down" arrow image added to top menu items*/
+	padding-left: 4px;
+}
+
+.rightarrowpointer { /*CSS for "right" arrow image added to drop down menu items*/
+	position: absolute;
+	padding-top: 3px;
+	left: 100px;
+}
+
+.ddiframeshim {
+	position: absolute;
+	z-index: 500;
+	background: transparent;
+	width: 0;
+	height: 0;
+	display: block;
+}
+
+
+
+/* ######### Matt Black Strip Main Menu Bar CSS ######### */
+
+.mattblackmenu ul {
+	margin: 0;
+	padding: 0;
+	font: bold 12px Verdana;
+	list-style-type: none;
+	border-bottom: 1px solid gray;
+	background: #414141;
+	overflow: hidden;
+	width: 100%;
+}
+
+.mattblackmenu li {
+	display: inline;
+	margin: 0;
+}
+
+.mattblackmenu li a {
+	float: left;
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 6px 8px; /*padding inside each tab*/
+	border-right: 1px solid white; /*right divider between tabs*/
+	color: white;
+	background: #414141;
+}
+
+.mattblackmenu li a:visited {
+	color: white;
+}
+
+.mattblackmenu li a:hover {
+	background: black; /*background of tabs for hover state */
+}
+
+.mattblackmenu a.selected {
+	background: black; /*background of tab with "selected" class assigned to its LI */
+}
+
+
+
+

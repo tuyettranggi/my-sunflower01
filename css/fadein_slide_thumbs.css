@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+/* slideshow */
+.h2Section {
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	height: 413px;
+}
+
+#mainVisual {
+	height: 413px;
+	position: relative;
+	margin-bottom: 13px;
+}
+
+#mainVisual #output li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#mainVisual #tabs {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+#mainVisual #tabs li {
+	float: left;
+	width: auto;
+}
+
+#mainVisual #tabs li a {
+	width: 230px;
+	height: 80px;
+	display: block;
+	text-indent: -9999em;
+}
+
+#mainVisual #tabs li.tab-1 a {
+	background: url(../images/fadein_slide_thumbs/bnr_01_off.png) no-repeat;
+}
+
+#mainVisual #tabs li.tab-1 a:hover,
+#mainVisual #tabs li.tab-1 a.current {
+	background: url(../images/fadein_slide_thumbs/bnr_01_on.png) no-repeat;
+}
+
+#mainVisual #tabs li.tab-2 a {
+	background: url(../images/fadein_slide_thumbs/bnr_02_off.png) no-repeat;
+}
+
+#mainVisual #tabs li.tab-2 a:hover,
+#mainVisual #tabs li.tab-2 a.current {
+	background: url(../images/fadein_slide_thumbs/bnr_02_on.png) no-repeat;
+}
+
+#mainVisual #tabs li.tab-3 a {
+	margin-right: 0;
+	background: url(../images/fadein_slide_thumbs/bnr_03_off.png) no-repeat;
+}
+
+#mainVisual #tabs li.tab-3 a:hover,
+#mainVisual #tabs li.tab-3 a.current {
+	background: url(../images/fadein_slide_thumbs/bnr_03_on.png) no-repeat;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Support HTML coding</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/index.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+<script type="text/javascript" src="common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="common/js/lazyload.js" charset="utf-8"></script>
+<script type="text/javascript" src="common/js/script.js"></script>
+<script type="text/javascript" src="common/js/spage.js"></script>
+
+<!-- lazy load, scroll mouse -->
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload({
+		  						placeholder : "images/top/grey.gif",
+								threshold: 200/*,
+								effect : "fadeIn",
+								event : "click"*/
+							});
+							
+		   /*$("img.class_name").lazyload({
+		  						placeholder : "images/top/grey.gif",
+								threshold: 3000,
+								effect : "fadeIn",
+								event : "click"
+							});*/
+      });
+
+</script>
+</head>
+
+<body>
+<div id="layout">
+<ol class="pages">
+<li>&nbsp;</li>
+</ol>
+<div id="pageBody">
+<div id="content" class="clearfix">
+<ol class="linkList">
+<li>
+<p><a href="imageshow.html" target="_blank">image show</a></p>
+<p><img src="images/top/images_show.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="fix_png.html" target="_blank">fix png</a></p>
+<p>FIX IMG PNG</p>
+</li>
+
+<li>
+<p><a href="crollbar01.html" target="_blank">scrollbar01</a></p>
+<p><img src="images/top/scrollbar01.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="crollbar02.html" target="_blank">crollbar02</a></p>
+<p><img src="images/top/scrollbar02.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="lnav_ddlevelsmenu.html" target="_blank">lnav 4 levels with ddlevelsmenu</a></p>
+<p><img src="images/top/lnav_4levels.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="type_file_jquery.html" target="_blank">background for input: type=file jquery</a></p>
+<p><img src="images/top/button_upload.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="gnav_ddlevelsmenu.html" target="_blank">gnav ddlevelsmenu</a></p>
+<p><img src="images/top/menu4levels.gif" alt="" /><br />
+* khong dung duoc khi co select phia duoi</p>
+</li>
+
+<li>
+<p><a href="gnav_nostay.html" target="_blank">gnav no active </a></p>
+<p><img src="images/top/gnav_no_stay.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="gnav_stay.html" target="_blank">gnav active</a></p>
+<p><img src="images/top/gnav_stay.gif" alt="" /></p>
+</li>
+
+<li>
+<p><a href="lnav_stay.html" target="_blank">lnav stay</a></p>
+<p><img src="images/top/lnav_stay.gif" alt="" /></p>
+</li>
+<!-- / class linkList --></ol>
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ol class="menu">
+<li>-<a href="#">Image show</a></li>
+<li>-<a href="#">Fix png</a></li>
+<li>-<a href="#">Scrollbar01</a></li>
+<li>-<a href="#">Scrollbar02</a></li>
+<li>-<a href="#">Lnav 4 levels with ddlevelsmenu</a></li>
+<li>-<a href="#">Background for input: type=file jquery</a></li>
+<li>-<a href="#">Gnav ddlevelsmenu</a></li>
+<li>-<a href="#">Gnav no active</a></li>
+<li>-<a href="#">Gnav active</a></li>
+<li>-<a href="#">Lnav stay</a></li>
+<li class="top" style="list-style:none"><a href="#layout">&uarr; TOP</a></li>
+<!-- / class menu --></ol>
+<p>&nbsp;</p>
+<p><a href="index1.html"><strong>trang INDEX</strong></a></p>
+<p>&nbsp;</p>
+<p><a href="javascript:history.go(-1)">Go BACK one page</a></p>
+<p>&nbsp;</p>
+<p class="next"><a href="#">&gt;&gt;Next page</a></p>
+
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+<ol class="pages">
+<li>&nbsp;</li>
+</ol>
+<!-- / id layout --></div>
+ </body>
+</html>
