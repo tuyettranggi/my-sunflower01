@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* ****************************************************
+
+
+/* #10 primary
+---------------------------------------------------------------------------- */
+
+#layout {
+	width: 800px;
+	margin: auto;
+}
+
+div#primary div.bathBlock {
+	clear: both;
+	padding: 20px 0 0 0;
+}
+
+div#primary div.bathBlock dl.bath form input {
+	color: #CEA677;
+}
+
+div#primary div.bathBlock dl.bath input#sub {
+	background: url(../common/images/ico_arrow01.gif) no-repeat 0 0;
+	border: none;
+	cursor: pointer;
+	height: 11px;
+	width: 11px;
+}
+
+div#primary div.bathBlock dl.bath input#add {
+	background: url(../common/images/ico_arrow02.gif) no-repeat 0 0;
+	border: none;
+	height: 11px;
+	width: 11px;
+}
+
+div#primary div.bathBlock dl.bath dd p {
+	float: left;
+	padding: 0 0 0 10px;
+}
+
+div#primary div.bathBlock dl.bath ul {
+	float: left;
+	padding: 5px 0 0 10px;
+	padding: 0 0 0 10px\0/;
+}
+
+* html div#primary div.bathBlock dl.bath ul {
+	float: left;
+	padding: 0;
+	margin: -2px 0 0 10px;
+}
+
+*:first-child + html div#primary div.bathBlock dl.bath ul {
+	float: left;
+	padding: 0;
+	margin: -2px 0 0 10px;
+}
+
+
+div#primary div.bathBlock dl.bath ul li {
+	margin: -6px 0 0 0;
+	margin: 0 0 2px  0\0/;
+	list-style: none;
+}
+
+

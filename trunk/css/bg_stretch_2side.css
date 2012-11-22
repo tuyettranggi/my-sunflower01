@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+body {
+	background: url(../common/images/bg_body.gif) repeat-x 0 18px;
+}
+
+
+/* # layout (reset b/c base.css)
+---------------------------------------------------------------------------- */
+
+div#layout {
+	margin: 0;
+	width: auto;
+}
+
+
+/* # visual for background stretch 2 sides : left and right
+---------------------------------------------------------------------------- */
+
+div#visual {
+	clear: both;
+	height: 160px;
+	min-width: 940px;
+	position: relative;
+}
+
+div#leftWrap {
+	background: url(../common/images/bg_body.gif) repeat-x 0 0;
+	height: 160px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	z-index: -1;
+}
+
+div#rightWrap {
+	background: url(../common/images/bg_wrap.gif) repeat-x right 0;
+	height: 160px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	z-index: -1;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#header div.hBlock {
+	zoom: 1;
+}
+
+div#header div.hBlock:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

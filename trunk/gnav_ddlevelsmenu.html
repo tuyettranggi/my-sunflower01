@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>lnav 4 levels with ddlevelsmenu</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/gnav_ddlevelsmenu.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+<script type="text/javascript" src="common/js/ddlevelsmenu.js"></script>
+<script type="text/javascript">
+	ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+</head>
+
+<body>
+<div id="layout">
+<div id="pageBody">
+<div id="content">
+<div id="ddtopmenubar" class="mattblackmenu">
+<ul>
+<li><a href="http://www.dynamicdrive.com">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/new.htm" rel="ddsubmenu1">DHTML</a></li>
+<li><a href="http://www.dynamicdrive.com/style/" rel="ddsubmenu2">CSS</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com/" rel="ddsubmenu3">Web Tools</a></li>
+</ul>
+</div>
+
+<ul id="ddsubmenu1" class="ddsubmenustyle">
+<li><a href="#">Item 1a</a></li>
+<li><a href="#">Item 2a</a></li>
+<li><a href="#">Item Folder 3a</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1a</a></li>
+  <li><a href="#">Sub Item 3.2a</a></li>
+  <li><a href="#">Sub Item 3.3a</a></li>
+  <li><a href="#">Sub Item 3.4a</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4a</a></li>
+<li><a href="#">Item Folder 5a</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1a</a></li>
+  <li><a href="#">Item Folder 5.2a</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1a</a></li>
+    <li><a href="#">Sub Item 5.2.2a</a></li>
+    <li><a href="#">Sub Item 5.2.3a</a></li>
+    <li><a href="#">Sub Item 5.2.4a</a></li>
+    </ul>
+  </li>
+	</ul>
+</li>
+<li><a href="#">Item 6a</a></li>
+</ul>
+
+
+<!--Top Drop Down Menu 2 HTML-->
+
+<ul id="ddsubmenu2" class="ddsubmenustyle">
+<li><a href="#">Item 1b</a></li>
+<li><a href="#">Item 2b</a></li>
+<li><a href="#">Item Folder 3b</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1b</a></li>
+  <li><a href="#">Sub Item 3.2b</a></li>
+  <li><a href="#">Sub Item 3.3b</a></li>
+  <li><a href="#">Sub Item 3.4b</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4b</a></li>
+<li><a href="#">Item Folder 5b</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1b</a></li>
+  <li><a href="#">Item Folder 5.2b</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1b</a></li>
+    <li><a href="#">Sub Item 5.2.2b</a></li>
+    <li><a href="#">Sub Item 5.2.3b</a></li>
+    </ul>
+  </li>
+	</ul>
+</li>
+<li><a href="#">Item 6b</a></li>
+</ul>
+
+<!--Top Drop Down Menu 3 HTML-->
+
+<ul id="ddsubmenu3" class="ddsubmenustyle">
+<li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a></li>
+<li><a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a></li>
+<li><a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a></li>
+<li><a href="http://tools.dynamicdrive.com/password/">htaccess Password</a></li>
+<li><a href="http://tools.dynamicdrive.com/userban/">htaccess Banning</a></li>
+</ul>
+
+
+<form action="#" method="post" style="padding-top:50px; position: relative; z-index: 50;">
+<select>
+<option value="FavIcon Generator FavIcon Generator">FavIcon Generator FavIcon Generator</option>
+</select>
+</form>
+
+
+<dl class="download">
+<dt>Download</dt>
+<dd>
+<ul>
+<li>JS :<a href="common/js/lnav_ddlevelsmenu.js">lnav_ddlevelsmenu.js</a></li>
+<li>CSS :<a href="css/lnav_ddlevelsmenu.css">lnav_ddlevelsmenu.css</a></li>
+<li>HTML :<a href="lnav_ddlevelsmenu.html">lnav_ddlevelsmenu.html</a></li>
+<li>HTML :<a href="common/images/arrow-down.gif">arrow-down.gif</a>and<a href="common/images/arrow-right.gif">arrow-right.gif</a>and<a href="common/images/bulletlist.gif">bulletlist.gif</a></li>
+</ul>
+</dd>
+</dl>
+<!-- / id content --></div>
+<!-- / id pageBody --></div>
+<!-- / id layout --></div>
+</body>
+</html>

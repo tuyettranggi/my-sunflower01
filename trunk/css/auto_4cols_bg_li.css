@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+/* # auto_3cols_bg_li
+---------------------------------------------------------------------------- */
+
+ul.productList {
+	clear: both;
+	padding: 29px 0 0 0;
+	width: 870px;
+}
+
+ul.productList li {
+	background: url(../images/auto_4cols_bg_li/bg_projects.gif) repeat-y 0 0;
+}
+
+ul.productList li div {
+	padding: 0 0 55px 0;
+}
+
+ul.productList li h3 {
+	height: 27px;
+	padding: 0 0 0 0;
+	width: 196px;
+}
+
+ul.productList li p.itemImage {
+	background: url(../images/auto_4cols_bg_li/bg_dotted.jpg) repeat-x left bottom;
+	font-size: 0;
+	padding-left: 1px;
+	padding-bottom: 1px;
+}
+
+ul.productList li dl {
+	padding: 12px 10px 0 10px;
+}
+
+ul.productList li dl dt {
+	font-size: 110%;
+	font-weight: bold;
+	min-height: 34px;
+	line-height: 1.2;
+}
+
+* html ul.productList li dl dt {
+	height: 34px;
+}
+
+ul.productList li dl dd {
+	padding-top: 10px;
+}
+
+ul.productList li ul.subCol {
+	overflow: hidden;
+	position: relative;
+}
+
+ul.productList li ul.subCol li {
+	border-top: 1px solid #bfbfbf;
+	float: left;
+	display: inline;
+	margin: 0 19px 0 0;
+	padding: 0 1px 0 1px;
+	width: 196px;
+}
+
+ul.productList li.bgCol3B {
+	clear: both;
+	margin-bottom: 19px;
+}
+
+* html ul.productList li.bgCol3B {
+	margin-bottom: 17px;
+}
+
+*:first-child + html ul.productList li.bgCol3B {
+	margin-bottom: 17px;
+}
+
+ul.productList li.size1 {
+	width: 198px;
+}
+
+ul.productList li.size2 {
+	width: 434px;
+}
+
+ul.productList li.size3 {
+	width: 651px;
+}
+
+ul.productList li p.detail01 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+ul.productList li p.detail02 {
+	position: absolute;
+	bottom: 0;
+	left: 217px;
+}
+
+ul.productList li p.detail03 {
+	position: absolute;
+	bottom: 0;
+	left: 434px;
+}
+
+ul.productList li p.detail04 {
+	position: absolute;
+	bottom: 0;
+	left: 651px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+ul.productList li ul.subCol {
+	zoom: 1;
+}
+
+ul.productList li ul.subCol:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

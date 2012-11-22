@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+	
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+div#pageBody a:hover {
+	text-decoration: none;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content .linkList {
+	font-size: 150%;
+	list-style: decimal; 
+}
+
+div#content .linkList li {
+	border-bottom: 10px solid #EFEFEF;
+	clear: both;
+	padding: 10px 0;
+	vertical-align: top;
+}
+
+div#content .linkList p {
+	border-left: 1px solid #000;
+	display: inline;
+	margin-bottom: 10px;
+	float: left;
+	min-width: 300px;
+	padding: 0 20px;
+	word-wrap: break-word;
+}
+
+* html div#content .linkList p {
+	width: 300px;
+}
+
+div#content .linkList img {
+	padding: 10px 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content .linkList li {
+	zoom: 1;
+}
+
+div#content .linkList li:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

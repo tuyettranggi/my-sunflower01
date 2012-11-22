@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+	background: #231815 url(../common/images/bg_header.gif) repeat-x 0 0;
+	padding: 5px 0;
+}
+
+div#header #hNav {
+	font-size: 0;
+	padding: 14px 21px 0 0;
+	text-align: right;
+	width: 450px;
+}
+
+div#header #hNav li {
+	display: inline;
+	padding: 0 0 0 4px;
+}
+
+* html div#header #hNav li {
+	padding: 0 0 0 3px;
+}
+
+*:first-child + html div#header #hNav li {
+	padding: 0 0 0 3px;
+}

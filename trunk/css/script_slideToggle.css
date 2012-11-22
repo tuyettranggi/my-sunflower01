@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# index
+# minors
+
+----------------------------------------*/
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+h3 {
+	background: url(../images/script_slideToggle/bg_sh.gif) no-repeat 0 0;
+	color: #004c99;
+	display: inline;
+    float: left;
+	font-size: 110%;
+	font-weight: bold;
+	margin-right: 17px;
+	padding: 1px 0 2px 12px;
+	width: auto;
+}
+
+*:first-child + html h3 {
+	padding: 0 0 3px 12px;
+}
+
+
+/* # index
+---------------------------------------------------------------------------- */
+
+div#content div.boardSection {
+    margin: 0 0 28px 0;
+}
+
+div#content div.boardSection div.clicked,
+div#content div.boardSection div.shSection {
+	background: url(../common/images/bg_line03.gif) repeat-x left bottom;
+	padding-bottom: 6px;
+}
+
+div#content div.boardSection div.shSection .slide span {
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+div#content div.boardSection div.shSection p.slide {
+    display: inline;
+    float: left;
+	position: relative;
+	width: auto;
+}
+
+div#content div.boardSection div.contentSection {
+    clear: both;
+	display: none;
+	padding: 18px 0 0 10px;
+}
+
+div#content div.boardSection div.contentStyle {
+	margin-top: 0;
+}
+
+div#content div.boardSection div.clicked p.slide img {
+	visibility: hidden;
+}
+
+div#content div.boardSection div.clicked p.slide span {
+	background: url(../images/script_slideToggle/btn_open.gif) no-repeat 0 0;
+	cursor: pointer;
+    display: block;
+    float: left;
+	height: 21px;
+	width: 56px;
+}
+
+div#content div.boardSection div.clicked p.slide {
+	background: url(../images/script_slideToggle/btn_close.gif) no-repeat 0 0;
+	cursor: pointer;
+    display: block;
+    float: left;
+	height: 21px;
+	width: 56px;
+}
+
+div#content div.boardSection div.clicked p.slide a {
+	display: block;
+}
+
+
+/* # minors
+---------------------------------------------------------------------------- */
+
+div#content div.section div.sectionInner div.boardSection div.contentSection p.text {
+	padding-top: 10px;
+}
+
+div#content div.contentSection ul.textList {
+	padding: 0 0 0 10px!important;
+}
+
+div#content div.contentSection p.generalImage {
+	float: right;
+    padding: 5px 15px 0 0;
+	width: 142px;
+}
+
+
+/* # check_in
+---------------------------------------------------------------------------- */
+
+div#content div.boardSection div.contentSection ol {
+	padding-left: 10px;
+}
+
+div#content div.boardSection div.contentSection ol.textList {
+	border: 1px solid #c0c0c0;
+	margin-top: 10px;
+	padding: 0 10px 10px 10px;
+}
+
+div#content div.boardSection div.contentSection ol li ol li {
+	padding-left: 15px;
+	text-indent: -15px;
+	width: auto;
+}
+
+div#content div.boardSection div.contentSection ol li dl dt {
+	padding-top: 10px
+}
+
+
+/* # special
+---------------------------------------------------------------------------- */
+
+div#content div.boardSection div.contentSection p.specialImage {
+    clear: both;
+	margin-top: -5px;
+    padding-top: 0;
+}
+
+
+/* # avod
+---------------------------------------------------------------------------- */
+
+div#content div.boardSection div.contentSection dl.infoList {
+	margin-bottom: 10px;
+	padding: 0 0 10px 15px;
+}
+
+div#content div.boardSection div.contentSection ol.listItem li dl.infoList dd {
+	margin: -1.5em 0 0 0;
+	padding: 0 0 0 15em;
+}
+
+div#content div.boardSection div.contentSection ol.listItem li p.padText span {
+	display: block;
+	padding: 0 0 0 1.3em;
+}
+
+div#content div.boardSection div.contentSection dl.infoList dd {
+	margin: -1.5em 0 0 0;
+	padding: 0 0 0 25em;
+}
+
+div#content div.boardSection div.contentSection ol li dl.infoList dt {
+	padding-top: 0;
+}
+
+div#content div.boardSection div.contentSection ol li dl.infoList dd.other {
+	padding: 0 0 0 16em;
+}
+
+div#content div.boardSection div.contentSection ul.listItem li,
+div#content div.boardSection div.contentSection ol.listItem li {
+	padding-bottom: 0;
+}
+
+div#content div.boardSection div.contentSection p.other {
+	padding-bottom: 20px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#content div.boardSection,
+div#content div.boardSection div.clicked,
+div#content div.boardSection div.shSection,
+div#content div.boardSection div.contentSection {
+	zoom: 1;
+}
+
+div#content div.boardSection:after,
+div#content div.boardSection div.clicked:after,
+div#content div.boardSection div.shSection:after,
+div#content div.boardSection div.contentSection:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

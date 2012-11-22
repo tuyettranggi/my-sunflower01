@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+div#content div.fellow {
+	background: url(../images/scrollbar01/bg_fellow.jpg) no-repeat 0 0;
+	margin: 0 0px 0px 0px;
+	padding: 0 0 10px 0;
+	width: 307px;
+}
+div#content div.fellow div {
+	margin: 0px;
+}
+div#content div.fellow h3 {
+	margin: 0 0px 0px 2px;
+	padding: 10px 0 6px 9px;
+	font-size: 1px;
+	line-height: 1px;
+} 
+div#content div.fellow div#customscroll {
+	margin: 10px 0px 0px 8px;
+	padding: 0px;
+	width:  294px;
+	height: 170px;
+	overflow: auto;
+	position: relative;
+}
+div#content div.fellow div ul {
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+	list-style: none;
+	width:  270px;
+}
+div#content div.fellow div ul li {
+	margin: 0px;
+	padding: 3px 0px;
+	background: url(../images/scrollbar01/line.gif) no-repeat left bottom;
+}
+div#content div.fellow div ul li span {
+	font-size:10px;
+	padding-left: 36px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	min-height: 37px;
+	height: auto !important;
+	height: 40px;
+	display: block;
+}
+* html div#content div.fellow div ul li span {
+	height: 36px;
+}	
+
+div#content div.fellow div ul li.ico1 span {
+	background: url(../images/scrollbar01/ico_bean1.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico2 span {
+	background: url(../images/scrollbar01/ico_bean2.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico3 span {
+	background: url(../images/scrollbar01/ico_bean3.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico4 span {
+	background: url(../images/scrollbar01/ico_bean4.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico5 span {
+	background: url(../images/scrollbar01/ico_bean5.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico6 span {
+	background: url(../images/scrollbar01/ico_bean6.gif) no-repeat 0 0;
+}
+div#content div.fellow div ul li.ico7 span {
+	background: url(../images/scrollbar01/ico_bean7.gif) no-repeat 0 0;
+}
+	
+	
+/* -------------------------------------------------- */
+	
+
+.scrollgeneric {
+	line-height: 1px;
+	font-size: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* force fleXcroll to always display the vertical scrollbase */
+.vscrollerbase {
+	visibility: visible !important;
+}
+/* fleXcroll adapts to this CSS setting and sets positions correctly */
+
+
+/* And style your scrollbar like you normally do */
+
+.vscrollerbase {
+	width: 10px;
+	background: url(../images/scrollbar01/scroll02.gif) 0px 0px repeat-y;
+}
+.vscrollerbar {
+	width: 10px;
+	background: url(../images/scrollbar01/scroll02.gif) -10px 0px repeat-y;
+}
+.hscrollerbase {
+	height: 10px;
+	background: url(../images/scrollbar01/scroll01.gif) 0px -10px repeat-x;
+}
+.hscrollerbar {
+	height: 10px;
+	background: url(../images/scrollbar01/scroll01.gif) 0px -20px repeat-x;
+}
+.vscrollerbar, .hscrollerbar {
+	padding: 10px;
+	z-index: 2;
+}
+.vscrollerbarbeg {
+	background: url(../images/scrollbar01/scroll02.gif) -30px -20px no-repeat;
+	width: 10px;
+	height: 10px !important;
+}
+.vscrollerbarend {
+	background: url(../images/scrollbar01/scroll02.gif) -30px 0px no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.hscrollerbarbeg {
+	background: url(../images/scrollbar01/scroll02.gif) -40px -10px no-repeat;
+	height: 10px;
+	width: 10px !important;
+}
+.hscrollerbarend {
+	background: url(../images/scrollbar01/scroll02.gif) -20px -10px no-repeat;
+	height: 10px;
+	width: 10px;
+}
+.scrollerjogbox {
+	width: 10px;
+	height: 10px;
+	top: auto;
+	left: auto;
+	bottom: 0px;
+	right: 0px;
+	background: url(../images/scrollbar01/scroll01.gif) no-repeat 0px 0px;
+}
+.vscrollerbasebeg {
+	background: url(../images/scrollbar01/scroll02.gif) -20px -20px no-repeat;
+	width: 10px;
+	height: 10px !important;
+}
+.vscrollerbaseend {
+	background: url(../images/scrollbar01/scroll02.gif) -40px -20px no-repeat;
+	height: 10px;
+	width: 10px;
+}
+.hscrollerbasebeg {
+	background: url(../images/scrollbar01/scroll02.gif) -40px 0px no-repeat;
+	height: 10px;
+	width: 10px !important;
+}
+.hscrollerbaseend {
+	height: 10px;
+	width: 10px;
+	background: url(../images/scrollbar01/scroll02.gif) -20px 0px no-repeat;
+}

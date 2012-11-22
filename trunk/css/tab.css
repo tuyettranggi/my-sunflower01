@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+/* # tab */
+
+ul#tabList {
+	clear: both;
+	width: 755px;
+}
+
+ul#tabList li {
+	background: #fcfafa;
+	cursor: pointer;
+	float: left;
+	height: 27px;
+	margin: 0 5px 0 0;
+	text-indent: -9999px;
+	width: 185px;
+}
+
+ul#tabList li.tab01 {
+	background: url(../common/images/btn_tab01.gif) no-repeat 0 0;
+}
+
+ul#tabList li.tab01Over,
+ul#tabList li.tab01Stay {
+	background: url(../common/images/btn_tab01_o.gif) no-repeat 0 0;
+}
+
+ul#tabList li.tab02 {
+	background: url(../common/images/btn_tab02.gif) no-repeat 0 0;
+}
+
+ul#tabList li.tab02Over,
+ul#tabList li.tab02Stay {
+	background: url(../common/images/btn_tab02_o.gif) no-repeat 0 0;
+}
+
+ul#tabList li.tab03 {
+	background: url(../common/images/btn_tab01.gif) no-repeat 0 0;
+}
+
+ul#tabList li.tab03Over,
+ul#tabList li.tab03Stay {
+	background: url(../common/images/btn_tab01_o.gif) no-repeat 0 0;
+}
+
+div.tabContent {
+	border: 1px solid #ccc;
+	clear: both;
+	width: 810px;
+}
+
+div.hide {
+	display: none;
+	overflow: hidden;
+	width: 0;
+}
+
+div.show {
+	clear: left;
+	line-height: 18px;
+	padding: 20px;
+	position: relative;
+	width: 770px;
+	z-index: 50;
+}
+
+.firstStay {
+	background: url(../common/images/btn_tab01_o.gif) no-repeat 0 0;
+	cursor: pointer;
+	height: 27px;
+	position: absolute;
+	left: -1px;
+	top: -28px;
+	width: 185px;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+ul#tabList {
+	zoom: 1;
+}
+
+ul#tabList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+.productList li {
+	float: left;
+	padding-right: 10px;
+	width: auto;
+}
+
+.productList li img {
+	border: 5px solid #e1e5f1;
+	height: 120px;
+	width: 160px;
+}
+
+
+/* # tooltip
+---------------------------------------------------------------------------- */
+
+#tooltipWrap {
+	background-color: #e1e5f1;
+	border: 1px solid #ccc;
+    padding: 5px;
+    width: 400px; 
+}
+
+#tooltipWrap img {
+	padding-bottom: 5px;
+    width: 400px; 
+}
+
+.tooltipList span {
+	display: block;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+.productList {
+	zoom: 1;
+}
+
+.productList:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
