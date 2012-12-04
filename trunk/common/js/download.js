@@ -27,31 +27,76 @@ $('#content').append('<dl class="download">\
 						</dl>');
 });
 //--end
-*/
 
-// doan js dung de append
-$(function(){
+
+//--start
+doan js thu 2 bk
 $('#content').append('<dl class="download"><dt>Download</dt><dd><ul>');
-
 $('dl.download ul').append('<li>JS :<a href="common/js/jquery-1.3.2.min.js">jquery-1.3.2.min.js</a>-- \
 						   <a href="common/js/'+sPageN+'.js">'+sPageN+'.js</a></li>',exists('css/'+sPageN+'.css'),
 																																									   '<li>HTML :<a href="'+sPageN+'.html">'+sPageN+'.html</a></li>\
 								</ul>\
 						  </dd>\
 						</dl>');
+//--end
+*/
+
+// doan js dung de append
+$(function(){
+
+
+// xem co bao nhieu tag <script> trong file html
+//	var script = new Array();
+//	var i = $('script').size();
+//	for(j=0; j<=i;j++){
+//		script[j] = $('script').attr('src');
+//	}
+//
+
+
+
+// append vao html
+$('#content').append('<dl class="download"><dt>Download</dt><dd><ul>');
+$('dl.download ul').append('<li>JS :<a href="common/js/jquery-1.3.2.min.js">jquery-1.3.2.min.js</a>'+filejs()+'--\
+							<a href="common/js/'+sPageN+'.js">'+sPageN+'.js</a></li>',exists('css/'+sPageN+'.css'),exists('css/'+sPageN+'.css'),
+																																									   '<li>HTML :<a href="'+sPageN+'.html">'+sPageN+'.html</a></li>\
+								</ul>\
+						  </dd>\
+						</dl>');
+//
 
 });
 
-
+// doan nay in ra cac file js khac ngoai nhung file js cung ten
+function filejs(){
+	var script = new Array();
+	var i = $('script').size();
+  if(i>2){
+	for(j=0; j<=i;j++){
+		script[j] = $('script').eq(j).attr('src');
+	}
+	
+	var con = "";
+	for(t=2; t<i-1; t++){
+		if(script[t]!="common/js/'+sPageN+'.js"){
+			con += '-- <a href="'+script[t]+'">'+script[t].replace('common/js/','')+'</a>';
+		}
+	}
+	return con;
+  }
+  else{
+	return '';  
+  }
+}
 
 function exists(nCss){
-var t = ajaxFun(nCss);
+	var t = ajaxFun(nCss);
 	if(t==null) {
 		return '<li>CSS :<a href="css/'+sPageN+'.css">'+sPageN+'.css</a></li>';
 	}
 	else{
 		return false;
-		}
+	}
 }
 
 
