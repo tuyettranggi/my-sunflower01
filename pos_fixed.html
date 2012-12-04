@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Support HTML coding</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/top.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+<script type="text/javascript" src="common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="common/js/download.js"></script>
+<script type="text/javascript" src="common/js/ui.core.js"></script>
+<script type="text/javascript" src="common/js/scroll_follow.js"></script>
+
+
+    <script type="text/javascript">
+     $( document ).ready( function () {
+       $( '.box_fix' ).scrollFollow( {
+        speed: 800,
+        offset: 100,
+        killSwitch: 'exampleLink',
+        onText: 'Disable Follow',
+        offText: 'Enable Follow'
+       } );
+     } );
+    </script>
+
+
+
+<!--<script type="text/javascript">
+$(document).ready(function () {  
+    var top = $('.box_fix').offset().top - parseFloat($('.box_fix').css('marginTop').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+        // what the y position of the scroll is
+        var y = $(this).scrollTop();
+        // whether that's below the form
+        if (y >= top) {
+           // if so, ad the fixed class
+           $('.box_fix').addClass('fixed');
+        } else {
+            // otherwise remove it
+            $('.box_fix').removeClass('fixed');
+        }
+    });
+}); 
+</script>-->
+
+<style type="text/css">
+#pageBody {
+	width: 850px;
+	margin: 0 auto;
+}
+
+#content .contentInner {
+	background: #ccc;
+	border: 2px solid #ccc;
+	float: right;
+	width: 600px;
+}
+.box_fix {
+    background: blue;
+	color: #fff;
+    width: 225px;
+    margin-top: 8px 0px 0 0;
+    padding:0px;	
+	position: relative;
+	text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<div id="layout">
+<div id="pageBody">
+<div id="content">
+<div class="contentInner">
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	<br />
+	<br />
+	text<br />
+	<br />
+	</div>
+	<div class="box_fix" style="top: 20px; left: 0;">
+	<ul class="js_sideLinks"><li>sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar <br />
+	text text</li></ul> 
+	</div>
+	<!-- / id content --></div>
+
+
+	
+
+<!-- / id pageBody --></div>
+<!-- / id layout --></div>
+</body>
+</html>
