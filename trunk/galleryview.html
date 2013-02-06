@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>light box</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+
+
+<link rel="stylesheet" href="css/galleryview.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="common/js/jquery-1.3.2.min.js"></script>
+
+<link rel="stylesheet" href="css/galleryview.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="common/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="common/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="common/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="common/js/jquery.galleryview-2.0-pack.js"></script>
+<script type="text/javascript" src="common/js/jquery.timers-1.1.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#photos').galleryView({
+			panel_width: 800,
+			panel_height: 300,
+			frame_width: 75,
+			frame_height: 75
+		});
+	});
+</script>
+
+<script type="text/javascript" src="common/js/download.js"></script>
+
+<!--
+http://www.spaceforaname.com/galleryview/
+-->
+</head>
+
+<body>
+<div id="layout">
+<div id="content">
+<ul id="photos">
+<li><img src="images/galleryview/galerryview_img_01.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_02.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_03.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_04.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_05.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_06.jpg" alt="" /></li>
+<li><img src="images/galleryview/galerryview_img_07.jpg" alt="" /></li>
+</ul>
+<!-- / id content --></div>
+<!-- / id layout --></div>
+</body>
+</html>
