@@ -58,7 +58,7 @@ $(function(){
 // append vao html
 $('#content').append('<dl class="download"><dt>Download</dt><dd><ul>');
 $('dl.download ul').append('<li>JS :<a href="common/js/jquery-1.3.2.min.js">jquery-1.3.2.min.js</a>'+filejs()+'--\
-							<a href="common/js/'+sPageN+'.js">'+sPageN+'.js</a></li>',exists('css/'+sPageN+'.css'),exists('css/'+sPageN+'.css'),
+							<a href="common/js/'+sPageN+'.js">'+sPageN+'.js</a></li>',exists('css/'+sPageN+'.css'),
 																																									   '<li>HTML :<a href="'+sPageN+'.html">'+sPageN+'.html</a></li>\
 								</ul>\
 						  </dd>\
@@ -71,9 +71,20 @@ $('dl.download ul').append('<li>JS :<a href="common/js/jquery-1.3.2.min.js">jque
 function filejs(){
 	var script = new Array();
 	var i = $('script').size();
-  if(i>2){
-	for(j=0; j<=i;j++){
-		script[j] = $('script').eq(j).attr('src');
+	var k=0;
+	for(j=0;j<i;j++){
+		if($('script').eq(j).attr('src')!=null) {
+			k++;		
+		}
+	}
+	
+  if(k>2){
+	  var l=0;
+	for(j=0; j<=k;j++){
+		if($('script').eq(j).attr('src')!=null) {
+		script[l] = $('script').eq(j).attr('src');
+		l++;
+		}
 	}
 	
 	var con = "";
