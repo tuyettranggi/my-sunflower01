@@ -1,0 +1,9 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Redirect permanent http://hoc-tieng-nhat.webuda.com http://www.hoc-tieng-nhat.webuda.com
+Redirect permanent http://hoc-tieng-nhat.webuda.com/ http://www.hoc-tieng-nhat.webuda.com/
+order deny,allow
+
+
+
