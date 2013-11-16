@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><header>
+        <nav id="gnav">
+            <ul>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="../hoc-kanji.html">kanji</a></li>
+                <li><a href="../tu-vung-tieng-nhat.html">Từ vựng tiếng Nhật</a></li>
+                <li><a href="../ngu-phap-tieng-nhat.html">Ngữ pháp tiếng Nhật</a></li>
+            </ul>
+        </nav>
+        <section class="headerInner clearfix">
+            <div class="hSection">
+                <h1>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>
+                <!--<p class="logo">Học Kanji</p>-->
+                <canvas id="logo">
+                    <script type="text/javascript" src="../js/logo.js"></script>
+                </canvas>
+            </div>
+            <script type="text/javascript" src="../js/se.js"></script>
+            <gcse:searchbox></gcse:searchbox>
+        </section>
+    </header>
