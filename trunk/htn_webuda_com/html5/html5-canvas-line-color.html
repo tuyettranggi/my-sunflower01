@@ -30,42 +30,18 @@
 <!-- content start -->
 <article id="content">
 <gcse:searchresults></gcse:searchresults>
-<h2>Độ dày đường thẳng Canvas Line</h2>
-<h3>HTML5 Canvas Line Width Tutorial</h3>
+<h2>Màu đường thẳng Canvas Line</h2>
+<h3>HTML5 Canvas Line Color Tutorial</h3>
 <section>
-<p>Để định nghĩa độ dày của đường line, sử dụng thuộc tính <em>lineWidth</em> của canvas context. Thuộc tính <em>lineWidth</em> phải đựợc <strong>set trước</strong> khi gọi <em>stroke()</em>.</p>
+<p>Để thiết lập màu sắc của một đường Line, chúng ta có thể sử dụng thuộc tính <em>strokeStyle</em> của canvas context. với màu sắc được thiết lập bằng <strong>giá trị Hex </strong>vd: #ff0000 hoặc #D3D3D3 . <strong>Hoặc</strong> sử dụng <strong>giá trị RGB</strong> như: rgb(255, 0, 0).</p>
 
 <canvas id="ex1" width="360" height="180"></canvas>
 
 <div class="str_syntax">
 <textarea name="code" id="mixedMode1">
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;style&gt;
-body {
-	margin: 0px;
-	padding: 0px;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- tag Canvas --&gt;
-&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
-&lt;!-- javascript --&gt;
-&lt;script type="text/javascript"&gt;
-	var line1 = document.getElementById('ex1').getContext('2d');
-	line1.beginPath();
-	line1.moveTo(60,130);
-	line1.lineTo(280,40);
-	line1.lineWidth = 10;
-	line1.stroke();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</textarea>
+xxxxxxxxxxxxxxxxxxxxxxxxxxx</textarea>
 </div>
 <!-- str_syntaxt / -->
-
 </section>
 </article>
 <!-- content end -->
@@ -82,15 +58,16 @@ body {
 Copyright         &copy;  All Rights Reserved.
     </address>
 </footer>
-<!-- #EndLibraryItem -->
-</section>
+<!-- #EndLibraryItem --></section>
 <script type="text/javascript">
-	var line1 = document.getElementById('ex1').getContext('2d');
-	line1.beginPath();
-	line1.moveTo(60,130);
-	line1.lineTo(280,40);
-	line1.lineWidth = 10;
-	line1.stroke();
+	var line = document.getElementById('ex1').getContext('2d');
+	line.beginPath();
+	line.moveTo(60,130);
+	line.lineTo(280,40);
+	line.lineWidth = 10;
+	// set line color
+	line.strokeStyle = '#ff0000';
+	line.stroke();
 </script>
 <!-- / codemirror -->
 <script type="text/javascript" src="../codemirror/code_fn.js"></script>

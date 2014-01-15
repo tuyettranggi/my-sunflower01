@@ -32,7 +32,7 @@
             <gcse:searchresults></gcse:searchresults>
             <h2>Hướng dẫn HTML5 Canvas Line</h2>
             <h3>HTML5 Canvas Line Tutorial</h3>
-            <h4>vẽ đường line sử dụng <strong class="text_red">lineTo(x,y)</strong></h4>
+            <h4>vẽ đường line sử dụng <span class="text_red">lineTo(x,y)</span></h4>
             <section>
                 <p>Để vẽ một đường sử dụng HTML5 Canvas, chúng ta có thể sử dụng methods <em>beginPath()</em>, <em>moveTo()</em>, <em>lineTo()</em>, <em>stroke()</em></p>
                 <p><strong>Đầu tiên</strong>, Sử dụng <em>beginPath()</em> Khai báo bắt đầu vẽ 1 đường line mới. Kế tiếp sử dụng method <em>moveTo()</em> Định tọa độ cho vị trí đầu của điểm context, sau đó sử dụng method <em>lineTo()</em> để vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới. Cuối cùng để làm hiển thị đường line ta dùng method <em>stroke()</em>, nếu không quy định màu sắc, thì mặc định màu đường line là màu đen.</p>
@@ -44,30 +44,29 @@
                 <p class="title01">Cấu trúc trang Web:</p>
 <div class="str_syntax">
 <textarea name="code" id="mixedMode1">
-<!DOCTYPE HTML>
-<html>
-<head>
-<style>
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
 body {
 	margin: 0px;
 	padding: 0px;
 }
-</style>
-</head>
-<body>
-<canvas id="myCanvas" width="578" height="200"></canvas>
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
 
-<script type="text/javascript">
+&lt;script type="text/javascript"&gt;
 	var line1 = document.getElementById('ex1').getContext('2d');
 	line1.beginPath();
 	line1.moveTo(0,0);
 	line1.lineTo(360,180);
 	line1.stroke();
-</script>
+&lt;/script&gt;
 
-</body>
-</html>
-</textarea>
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
 </div>
 <!-- str_syntaxt / -->
                 <!--<p class="detail"><a href="popup/canvas-lines1.html" onClick="return popup(this.href)">DEMO</a></p>-->

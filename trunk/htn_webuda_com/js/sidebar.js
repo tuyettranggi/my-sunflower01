@@ -35,6 +35,7 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dt>Lines</dt>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-lines.html">Line</a></dd>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-line-width.html">Line Width</a></dd>\
+				<dd>-<a href= "'+i+'html5/html5-canvas-line-color.html">Line Color</a></dd>\
 			</dl>\
 		</li>\
 		<li>+<a href= "'+i+'html5/syntax-code.html">syntaxHighlighter<br />( định dạng code )</a></li>\
