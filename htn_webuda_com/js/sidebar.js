@@ -37,18 +37,27 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-line-width.html">Line Width</a></dd>\
 			</dl>\
 		</li>\
-		<li>+<a href= "'+i+'html5/syntax-code.html">syntaxHighlighter - định dạng code</a></li>\
+		<li>+<a href= "'+i+'html5/syntax-code.html">syntaxHighlighter<br />( định dạng code )</a></li>\
 	</ul>');
 });
 
 $(function(){
 var path = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+var srcf = window.location.href.replace('/'+path,'');
+var path2 = window.location.href.substr(srcf.lastIndexOf("/")+1);
 var t = setTimeout(function(){
 							
 							$('aside a').each(function(){
 								var th = $(this).attr('href');
-								th = th.substr(th.lastIndexOf("/")+1);
-								if(th==path){
+								var nTh = th.substr(th.lastIndexOf("/")+1);	
+								var th2 = th.replace('/'+nTh,'');
+								th2 = th.substr(th2.lastIndexOf("/")+1);
+								
+								/*th = th.substr(th.lastIndexOf("/")+1);*/
+								if(th2==path2){
+									$(this).addClass('atv');
+								}
+								else if(th==path){
 									$(this).addClass('atv');
 								}
 							});
