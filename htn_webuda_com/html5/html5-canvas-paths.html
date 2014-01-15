@@ -9,10 +9,11 @@
 <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
 </head>
 <body class="rank2">
-<section id="wrapper" class="html5">
+<section id="wrapper">
   <header>
     <script type="text/javascript" src="../js/header.js"></script>
   </header>
@@ -21,9 +22,32 @@
     <!-- content start -->
     <article id="content">
       <gcse:searchresults></gcse:searchresults>
-      <h3>Bố cục HTML5</h3>
+      <h2>Hướng dẫn HTML5 Canvas Line</h2>
+      <h3>HTML5 Canvas Line Tutorial</h3>
+      <h4>vẽ đường line sử dụng <strong class="text_red">lineTo(x,y)</strong></h4>
       <section>
-        <h4>CANVAS</h4>
+        <p>Để tạo đường path với HTML CANVAS, chúng ta có thể kết nối nhiều đưòng path phụ với nhau. Điểm kết thúc của mổi đường path phụ, sẽ cho điểm bắt đầu mới. Sử dụng kết họp các phương thức <em>lineTo()</em>, <em>arcTo()</em>, <em>quadraticCurveTo()</em>, and <em>bezierCurveTo()</em> để tạo các đường path phụ với nhau.<br>
+          Mỗi lần bắt đầu vẽ đường path mới cần sử dụng phương thức <em>beginPath().</em></p>
+        <p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-paths/">more</a></p>
+      </section>
+      <h4>Sơ đồ đường path canvas</h4>
+      <section>
+        <p class="center"><img src="../images/canvas-lines_01.gif" alt="" /></p>
+        <p>Ví dụ 1: (vẽ đường line từ vị trí 0,0 đến )</p>
+        <!--<div class="structure">
+					<p>var line1 = document.getElementById('ex1');<span class="note_s">// khai báo biến line1 gọi thẻ canvas#ex1</span><br>
+line1.getContext('2d'); <span class="note_s">// vẽ canvas kiểu 2d</span><br>
+<span class="note_s">=&gt; có thể gôm lại thành</span> <em>var line1 = document.getElementById('ex1').getContext('2d');</em>
+					
+line1.<span class="bold">beginPath();</span><br>
+line1.moveTo(0,0);<br>
+line1.lineTo(360,180);<br>
+line1.lineWidth = 5;<br>
+line1.strokeStyle = 'blue';<br>
+line1.stroke();</p>
+				</div>-->
+        <canvas id="ex1" class="ex1"></canvas>
+        <p class="detail"><a href="popup/canvas-lines1.html" onClick="return popup(this.href)">DEMO</a></p>
         <div class="structure">
           <p>var c  = document.getElementById(&ldquo;myCanvas&rdquo;);<br>
             var context = c.getContext(&ldquo;2d&rdquo;);<br>
@@ -91,5 +115,14 @@
     </address>
   </footer>
   <!-- #EndLibraryItem --> </section>
+<script type="text/javascript">
+	var line1 = document.getElementById('ex1').getContext('2d');
+	line1.beginPath();
+	line1.moveTo(0,0);
+	line1.lineTo(360,180);
+	line1.lineWidth = 5;
+	line1.strokeStyle = 'blue';
+    line1.stroke();
+</script>
 </body>
 </html>
