@@ -223,6 +223,16 @@ aside a:hover {
 	color: #333;
 	text-decoration: none;
 }
+aside a.atv {
+	background: #005F8B;
+	color: #fff;
+	display: block;
+	padding: 0 10px 0 3px;
+	float: right;
+	text-decoration: none;
+	text-indent: 10px;
+	width: 97%;
+}
 aside h3:first-child { padding-top: 0;}
 aside h3  {
 	color: #333;
@@ -751,6 +761,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+aside ul li,
 .list_prev_next,
 .list_kanjiPic,
 header,
@@ -759,6 +770,7 @@ nav#gnav ul {
 	display: block;
 }
 
+aside ul li:after,
 .list_prev_next:after,
 .list_kanjiPic:after,
 header:after,

@@ -63,7 +63,21 @@ body {
 </script>
 </body>
 </html>
-</textarea>
+</head>
+<body>
+<!-- tag Canvas -->
+<canvas id="ex1" width="360" height="180"></canvas>
+<!-- javascript -->
+<script type="text/javascript">
+	var line1 = document.getElementById('ex1').getContext('2d');
+	line1.beginPath();
+	line1.moveTo(60,130);
+	line1.lineTo(280,40);
+	line1.lineWidth = 10;
+	line1.stroke();
+</script>
+</body>
+</html></textarea>
 </div>
 <!-- str_syntaxt / -->
 
