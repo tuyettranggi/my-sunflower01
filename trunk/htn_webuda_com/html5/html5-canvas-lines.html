@@ -9,120 +9,99 @@
 <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/popup.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
+<!-- / codemirror -->
+<link rel="stylesheet" href="../codemirror/lib/codemirror.css">
+<script src="../codemirror/lib/codemirror.js"></script>
+<script src="../codemirror/xml.js"></script>
+<script src="../codemirror/javascript.js"></script>
+<script src="../codemirror/css.js"></script>
+<script src="../codemirror/vbscript.js"></script>
+<script src="../codemirror/htmlmixed.js"></script>
+<!-- codemirror / -->
 </head>
 <body class="rank2">
 <section id="wrapper">
-  <header>
-    <script type="text/javascript" src="../js/header.js"></script>
-  </header>
-  <!-- main start -->
-  <section id="main" class="clearfix">
-    <!-- content start -->
-    <article id="content">
-      <gcse:searchresults></gcse:searchresults>
-      <h2>Hướng dẫn HTML5 Canvas Line</h2>
-      <h3>HTML5 Canvas Line Tutorial</h3>
-      <h4>vẽ đường line sử dụng <strong class="text_red">lineTo(x,y)</strong></h4>
-      <section>
-        <p>Để tạo đường path với HTML CANVAS, chúng ta có thể kết nối nhiều đưòng path phụ với nhau. Điểm kết thúc của mổi đường path phụ, sẽ cho điểm bắt đầu mới. Sử dụng kết họp các phương thức <em>lineTo()</em>, <em>arcTo()</em>, <em>quadraticCurveTo()</em>, and <em>bezierCurveTo()</em> để tạo các đường path phụ với nhau.<br>
-          Mỗi lần bắt đầu vẽ đường path mới cần sử dụng phương thức <em>beginPath().</em></p>
-        <p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-paths/">more</a></p>
-      </section>
-      <h4>Sơ đồ đường path canvas</h4>
-      <section>
-        <p class="center"><img src="../images/canvas-lines_01.gif" alt="" /></p>
-        <p>Ví dụ 1: (vẽ đường line từ vị trí 0,0 đến )</p>
-        <!--<div class="structure">
-					<p>var line1 = document.getElementById('ex1');<span class="note_s">// khai báo biến line1 gọi thẻ canvas#ex1</span><br />
-line1.getContext('2d'); <span class="note_s">// vẽ canvas kiểu 2d</span><br />
-<span class="note_s">=&gt; có thể gôm lại thành</span> <em>var line1 = document.getElementById('ex1').getContext('2d');</em>
-					
-line1.<span class="bold">beginPath();</span><br />
-line1.moveTo(0,0);<br />
-line1.lineTo(360,180);<br />
-line1.lineWidth = 5;<br />
-line1.strokeStyle = 'blue';<br />
-line1.stroke();</p>
-				</div>-->
-        <canvas id="ex1" class="ex1"></canvas>
-        <p class="detail"><a href="popup/canvas-lines1.html" onClick="return popup(this.href)">DEMO</a></p>
-        <div class="structure">
-          <p>var c  = document.getElementById(&ldquo;myCanvas&rdquo;);<br />
-            var context = c.getContext(&ldquo;2d&rdquo;);<br>
-            <span class="bold">context.beginPath();</span> <span class="note_s"><br>
-            //... path drawing operations</span><br>
-            <span class="bold">context.closePath();</span></p>
-        </div>
-        <table summary="Bố cục HTML5">
-          <tr>
-            <th colspan="3">VẼ CANVAS</th>
-          </tr>
-          <tr>
-            <td class="w33">fillRect(x,y,width,height)</td>
-            <td class="w33">Vẽ một hình chữ nhật được tô
-              <div class="section"> </div></td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>strokeRect(x,y,width,height)</td>
-            <td>vẽ một khung chữ nhật</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>clearRect(x,y,width,height)</td>
-            <td>xóa một vùng và làm vùng đó transparent</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>arc(x, y, radius, startAngle, endAngle, anticlockwise)</td>
-            <td>vẽ một cung tròn</td>
-            <td>radius: bán kính<br>
-              startAngle: góc bắt đầu<br>
-              endAngle: góc kết thúc<br>
-              anticlockwise: ngược hay cùng chiều kim đồng hồ. sử dụng giá trị <span class="bold">false , true</span></td>
-          </tr>
-          <tr>
-            <td><pre>moveTo(x,y);</pre></td>
-            <td>Điểm bắt đầu ở vị trí tọa độ x,y của canvas</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td colspan="3">x: tọa độ bắt đầu - trục x --- 
-              y: toạ độ bắt đầu - trục y</td>
-          </tr>
-        </table>
-      </section>
-    </article>
-    <!-- content end -->
-    <!-- navi start -->
-    <aside>
-      <script type="text/javascript" src="../js/sidebar.js"></script>
-    </aside>
-    <!-- navi end -->
-  </section>
-  <!-- main end -->
-  <!-- #BeginLibraryItem "/Library/footer.lbi" -->
-  <footer>
-    <address>
-    Copyright &copy;  All Rights Reserved.
-    </address>
-  </footer>
-  <!-- #EndLibraryItem --> </section>
+    <header>
+        <script type="text/javascript" src="../js/header.js"></script>
+    </header>
+    <!-- main start -->
+    <section id="main" class="clearfix">
+        <!-- content start -->
+        <article id="content">
+            <gcse:searchresults></gcse:searchresults>
+            <h2>Hướng dẫn HTML5 Canvas Line</h2>
+            <h3>HTML5 Canvas Line Tutorial</h3>
+            <h4>vẽ đường line sử dụng <strong class="text_red">lineTo(x,y)</strong></h4>
+            <section>
+                <p>Để vẽ một đường sử dụng HTML5 Canvas, chúng ta có thể sử dụng methods <em>beginPath()</em>, <em>moveTo()</em>, <em>lineTo()</em>, <em>stroke()</em></p>
+                <p><strong>Đầu tiên</strong>, Sử dụng <em>beginPath()</em> Khai báo bắt đầu vẽ 1 đường line mới. Kế tiếp sử dụng method <em>moveTo()</em> Định tọa độ cho vị trí đầu của điểm context, sau đó sử dụng method <em>lineTo()</em> để vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới. Cuối cùng để làm hiển thị đường line ta dùng method <em>stroke()</em>, nếu không quy định màu sắc, thì mặc định màu đường line là màu đen.</p>
+                <p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-paths/">more</a></p>
+            </section>
+            <section>
+                <p>Ví dụ 1: <span class="note_s">(vẽ đường line từ vị trí 0,0 đến vị trí cuối của gốc dưới bên phải )</span></p>
+                <canvas id="ex1" class="ex1 coor"></canvas>
+                <p class="title01">Cấu trúc trang Web:</p>
+<div class="str_syntax">
+<textarea name="code" id="mixedMode1">
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+
 <script type="text/javascript">
 	var line1 = document.getElementById('ex1').getContext('2d');
 	line1.beginPath();
 	line1.moveTo(0,0);
 	line1.lineTo(360,180);
-	line1.lineWidth = 5;
-	line1.strokeStyle = 'blue';
-    line1.stroke();
+	line1.stroke();
 </script>
+
+</body>
+</html>
+</textarea>
+</div>
+<!-- str_syntaxt / -->
+                <!--<p class="detail"><a href="popup/canvas-lines1.html" onClick="return popup(this.href)">DEMO</a></p>-->
+                <form>
+                </form>
+            </section>
+        </article>
+        <!-- content end -->
+        <!-- navi start -->
+        <aside>
+            <script type="text/javascript" src="../js/sidebar.js"></script>
+        </aside>
+        <!-- navi end -->
+    </section>
+    <!-- main end -->
+    <!-- #BeginLibraryItem "/Library/footer.lbi" -->
+    <footer>
+        <address>
+        Copyright     &copy;  All Rights Reserved.
+        </address>
+    </footer>
+    <!-- #EndLibraryItem --> </section>
+<script type="text/javascript">
+	var line1 = document.getElementById('ex1').getContext('2d');
+	line1.beginPath();
+	line1.moveTo(0,0);
+	line1.lineTo(360,180);
+	line1.stroke();
+</script>
+
+<!-- / codemirror -->
+<script type="text/javascript" src="../codemirror/code_fn.js"></script>
+
+<!-- codemirror / -->
+
 </body>
 </html>

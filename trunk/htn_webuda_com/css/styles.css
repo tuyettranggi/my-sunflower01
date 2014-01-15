@@ -214,10 +214,15 @@ nav#gnav ul li a:hover { color: #fff;}
 
 aside {
 	float: left;
-	width: 230px;
+	width: 250px;
 	text-align: center;
 }
-
+aside a.atv,
+aside a:hover {
+	background: #e3e3e3;
+	color: #333;
+	text-decoration: none;
+}
 aside h3:first-child { padding-top: 0;}
 aside h3  {
 	color: #333;
@@ -231,13 +236,29 @@ aside h3  {
 aside ul  {	padding: 0 0 10px;}
 aside ul li  {
 	border-bottom: 1px dashed #ccc;
-	padding: 0 7px 5px;
+	padding: 0 7px 5px 25px;
 	text-align: left;
 	margin-bottom: 7px;
+	text-indent: -18px;
 }
-aside ul li a { padding-left: 7px;}
+aside ul li ul { padding-top: 5px; padding-bottom: 0;}
+aside ul li ul li {
+	border-bottom: none;
+	margin-bottom: 0;
+	color: #666;
+	font-size: 90%;
+}
+aside ul li a { padding-left: 7px; padding-right: 7px; }
 
 aside p {padding: 0;}
+
+aside ul li dl { padding: 7px 0 0 10px; font-size: 90%; }
+aside ul li dl dt {
+	font-weight: bold;
+	background: #EFEDED;
+	padding: 3px 10px 3px 20px;
+}
+aside ul li dd { padding: 5px 0 0 15px; }
 
 
 /*==========================================================================*/
@@ -360,8 +381,15 @@ table.gsc-search-box td.gsc-input {
 	font-size: 180%;
 	font-weight: bold;
 	clear: both;
-    padding: 0 0 25px 0;
+  padding: 0 0 25px 0;
 }
+#content h3.first {
+  padding: 0 0 15px 0;
+	border-bottom: 1px dotted #333;
+	margin-bottom: 25px;
+}
+
+
 
 #content h3 img {
 	border: 1px dashed #ccc;
@@ -503,8 +531,17 @@ sup.s03 {margin-right: -23px; left: -16px; }
 	box-shadow: 1px -1px 4px #ccc;
 	padding: 10px;
 	margin-bottom: 20px;
+	font-size: 90%;
 }
 .structure *:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.str_syntax {
+	padding-bottom: 20px;
+	font-size: 90%;
+}
+.str_syntax *:last-child {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
@@ -517,12 +554,9 @@ sup.s03 {margin-right: -23px; left: -16px; }
 }
 
 canvas#ex1 {
-	border: 2px dashed #ccc;
-	width: 350px;
+	border: 1px dashed #ccc;
+	width: 360px;
 	height: 180px;
-}
-
-canvas.ex1 {
 	margin: 0 auto 30px;
 	display: block;
 }
@@ -533,6 +567,7 @@ canvas.ex1 {
 	padding-bottom: 0!important;
 	height: 200px;
 }
+
 
 /*-----------------------------------------------------------------xxx */
 
@@ -694,6 +729,10 @@ section:last-child { padding-bottom: 0;}
 .mt0 { margin-top : 0; }
 .pb0 { padding-bottom: 0!important; }
 .pb10 { padding-bottom: 10px!important; }
+.pb15 { padding-bottom: 15px!important; }
+.pb20 { padding-bottom: 20px!important; }
+.pb25 { padding-bottom: 25px!important; }
+.pb30 { padding-bottom: 30px!important; }
 .pt0 { padding-top: 0!important; }
 
 .w10 { width: 10%; }
