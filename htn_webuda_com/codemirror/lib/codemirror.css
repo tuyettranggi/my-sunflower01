@@ -7,7 +7,7 @@
 	/* Set height, width, borders, and global font properties here */
 	height: auto;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden;												/*/*/
 	/*background: white;*/
 	color: black;
 	font-size: 90%;
@@ -16,9 +16,9 @@
 
 .CodeMirror-scroll {
   /* Set scrolling behaviour here */
-  overflow: auto;
   overflow-y: hidden;
   overflow-x: auto;
+  /*top:30px;	*/															 /*/*/
 }
 
 /* PADDING */
