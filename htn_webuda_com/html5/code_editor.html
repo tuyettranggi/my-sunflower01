@@ -31,41 +31,32 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Màu đường thẳng Canvas Line</h2>
-            <h3>HTML5 Canvas Line Color Tutorial</h3>
+            <h2>Code Editor</h2>
+            
             <section>
-                <p>Để thiết lập màu sắc của một đường Line, chúng ta có thể sử dụng thuộc tính <em>strokeStyle</em> của canvas context. với màu sắc được thiết lập bằng <strong>giá trị Hex </strong>vd: #ff0000 hoặc #D3D3D3 . <strong>Hoặc</strong> sử dụng <strong>giá trị RGB</strong> như: rgb(255, 0, 0).</p>
+				<!-- codeEditor -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                     <button type="button" class="btnChange">Apply</button>
                 </div>
-				<p class="title01">Cấu trúc trang Web:</p>
+				
                 <div class="str_syntax">
                     <textarea name="code" id="mixedMode1" class="in">
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
-body {
+body, * {
 	margin: 0px;
 	padding: 0px;
 }
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
-
-&lt;script type="text/javascript"&gt;
-	var line = document.getElementById('ex1').getContext('2d');
-	line.beginPath();
-	line.moveTo(60,130);
-	line.lineTo(280,40);
-	line.lineWidth = 10;
-	line.strokeStyle = '#ff0000';
-	line.stroke();
-&lt;/script&gt;
+&lt;p&gt;text hien thi&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
+
                 </div>
                 <!-- str_syntaxt / -->
             </section>
