@@ -21,3 +21,5 @@ var editor = CodeMirror.fromTextArea(document.getElementById("mixedMode3"), {
 	mode: mixedMode,
 	lineNumbers: true,
 	tabMode: "indent"});
+
+

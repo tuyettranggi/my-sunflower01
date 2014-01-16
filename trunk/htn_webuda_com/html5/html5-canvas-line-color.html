@@ -19,6 +19,8 @@
 <script src="../codemirror/vbscript.js"></script>
 <script src="../codemirror/htmlmixed.js"></script>
 <!-- codemirror / -->
+
+<script type="text/javascript" src="../js/codeeditor.js"></script>
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -35,11 +37,37 @@
 <section>
 <p>Để thiết lập màu sắc của một đường Line, chúng ta có thể sử dụng thuộc tính <em>strokeStyle</em> của canvas context. với màu sắc được thiết lập bằng <strong>giá trị Hex </strong>vd: #ff0000 hoặc #D3D3D3 . <strong>Hoặc</strong> sử dụng <strong>giá trị RGB</strong> như: rgb(255, 0, 0).</p>
 
-<canvas id="ex1" width="360" height="180"></canvas>
+<div class="frame_code">
+	<iframe class="out" id="preview" scrolling="no"></iframe>
+	<button type="button" class="btnChange">Apply</button>
+</div>
 
 <div class="str_syntax">
-<textarea name="code" id="mixedMode1">
-xxxxxxxxxxxxxxxxxxxxxxxxxxx</textarea>
+<textarea name="code" id="mixedMode1" class="in">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+	margin: 0px;
+	padding: 0px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/javascript"&gt;
+	var line = document.getElementById('ex1').getContext('2d');
+	line.beginPath();
+	line.moveTo(60,130);
+	line.lineTo(280,40);
+	line.lineWidth = 10;
+	line.strokeStyle = '#ff0000';
+	line.stroke();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
 </div>
 <!-- str_syntaxt / -->
 </section>
@@ -59,16 +87,7 @@ Copyright         &copy;  All Rights Reserved.
     </address>
 </footer>
 <!-- #EndLibraryItem --></section>
-<script type="text/javascript">
-	var line = document.getElementById('ex1').getContext('2d');
-	line.beginPath();
-	line.moveTo(60,130);
-	line.lineTo(280,40);
-	line.lineWidth = 10;
-	// set line color
-	line.strokeStyle = '#ff0000';
-	line.stroke();
-</script>
+
 <!-- / codemirror -->
 <script type="text/javascript" src="../codemirror/code_fn.js"></script>
 <!-- codemirror / -->
