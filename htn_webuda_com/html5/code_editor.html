@@ -20,6 +20,8 @@
 <script src="../codemirror/htmlmixed.js"></script>
 <!-- codemirror / -->
 <script type="text/javascript" src="../js/codeeditor.js"></script>
+<!--[if lte IE 7]><link rel="stylesheet" href="../codemirror/lib/codemirror_bk.css"><![endif]-->
+<!--[if lte IE 8]><script type="text/javascript" src="../js/ie_codeeditor.js"></script><![endif]-->
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -32,14 +34,12 @@
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
             <h2>Code Editor</h2>
-            
             <section>
-				<!-- codeEditor -->
+                <!-- codeEditor -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                     <button type="button" class="btnChange">Apply</button>
                 </div>
-				
                 <div class="str_syntax">
                     <textarea name="code" id="mixedMode1" class="in">
 &lt;!DOCTYPE HTML&gt;
@@ -56,7 +56,6 @@ body, * {
 &lt;p&gt;text hien thi&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
-
                 </div>
                 <!-- str_syntaxt / -->
             </section>
