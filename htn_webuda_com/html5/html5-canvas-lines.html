@@ -13,13 +13,11 @@
 <!-- / codemirror -->
 <link rel="stylesheet" href="../codemirror/lib/codemirror.css">
 <script src="../codemirror/lib/codemirror.js"></script>
-<script src="../codemirror/xml.js"></script>
-<script src="../codemirror/javascript.js"></script>
-<script src="../codemirror/css.js"></script>
-<script src="../codemirror/vbscript.js"></script>
-<script src="../codemirror/htmlmixed.js"></script>
+<script src="../codemirror/codemirror_cm.js"></script>
 <!-- codemirror / -->
 <script type="text/javascript" src="../js/codeeditor.js"></script>
+<!--[if lte IE 7]><link rel="stylesheet" href="../codemirror/lib/codemirror_bk.css"><![endif]-->
+<!--[if lte IE 8]><script type="text/javascript" src="../js/ie_codeeditor.js"></script><![endif]-->
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -41,10 +39,16 @@
             </section>
             <section>
                 <p>Ví dụ 1: <span class="note_s">(vẽ đường line từ vị trí 0,0 đến vị trí cuối của gốc dưới bên phải )</span></p>
-                <canvas id="ex1" class="ex1 coor"></canvas>
-                <p class="title01">Cấu trúc trang Web:</p>
-<div class="str_syntax">
-<textarea name="code" id="mixedMode1">
+                
+				<!-- codeEditor -->
+                <div class="frame_code">
+                    <iframe class="out" id="preview" scrolling="no"></iframe>
+                    <div class="temp2"></div>
+                    <button type="button" class="btnChange">Apply</button>
+                </div>
+				<p class="title01">Source Code:</p>
+                <div class="str_syntax">
+                    <textarea name="code" id="mixedMode1" class="in">
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -56,7 +60,7 @@ body {
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id="ex1" width="578" height="200"&gt;&lt;/canvas&gt;
+&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/javascript"&gt;
 	var line1 = document.getElementById('ex1').getContext('2d');
@@ -68,11 +72,9 @@ body {
 
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
-</div>
-<!-- str_syntaxt / -->
-                <!--<p class="detail"><a href="popup/canvas-lines1.html" onClick="return popup(this.href)">DEMO</a></p>-->
-                <form>
-                </form>
+                </div>
+                <!-- str_syntaxt / -->
+				
             </section>
         </article>
         <!-- content end -->
@@ -90,18 +92,6 @@ body {
         </address>
     </footer>
     <!-- #EndLibraryItem --> </section>
-<script type="text/javascript">
-	var line1 = document.getElementById('ex1').getContext('2d');
-	line1.beginPath();
-	line1.moveTo(0,0);
-	line1.lineTo(360,180);
-	line1.stroke();
-</script>
-
-<!-- / codemirror -->
 <script type="text/javascript" src="../codemirror/code_fn.js"></script>
-
-<!-- codemirror / -->
-
 </body>
 </html>
