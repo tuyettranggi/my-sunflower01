@@ -9,12 +9,10 @@ $(function(){
 	
 	
 $('.btnChange').click(function(){
-	/*$('.str_syntax').after('<div class="temp" style="display:none"></div>');*/
 	h = $('.temp').height();
 	$('.temp').html($('.CodeMirror-code').html());
 	$('.temp > div > div').remove();
 	var codeHtml = $('.temp').text();
-	//var divContent = $t.next('.CodeMirror-code').text();
 	$('.out').attr('srcdoc',codeHtml);
 	/*calcHeight();*/
 	ResizeIframe('preview');
@@ -24,9 +22,7 @@ $('.btnChange').click(function(){
 
 
 
-
-
-
+// change height
 
 $(window).load(function(){
 	
