@@ -11,14 +11,11 @@
 <script type="text/javascript" src="../js/jquery.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
 
-<!-- / syntaxHighlighter -->
-<script type="text/javascript" src="../s_js/shCore.js"></script>
-<script type="text/javascript" src="../s_js/shBrushAppleScript.js"></script>
-<script type="text/javascript" src="../s_js/shBrushXml.js"></script>
-<link type="text/css" rel="stylesheet" href="../s_css/shCore.css"/>
-<link type="text/css" rel="stylesheet" href="../s_css/myTheme.css"/>
-<script type="text/javascript">SyntaxHighlighter.all();</script>
-<!-- syntaxHighlighter / -->
+<!-- / codemirror -->
+<link rel="stylesheet" href="../codemirror/lib/codemirror.css">
+<script src="../codemirror/lib/codemirror.js"></script>
+<script src="../codemirror/codemirror_cm.js"></script>
+<!-- codemirror / -->
 </head>
 <body class="rank2">
 <section id="wrapper" class="html5">
@@ -40,7 +37,9 @@
             
             <section>
 						<h4>Cấu trúc thẻ canvas</h4>
-                <pre class="brush: xml">&lt;body&gt;
+                <div class="str_syntax">
+<textarea name="code" id="mixedMode1">
+&lt;body&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;Trình duỵêt của bạn không
 hiển thị được tag canvas&lt;/canvas&gt;
 &lt;script&gt;
@@ -48,7 +47,9 @@ var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 <!-- do stuff here -->
 &lt;/script&gt;
-&lt;/body&gt;</pre>
+&lt;/body&gt;</textarea>
+</div>
+<!-- str_syntaxt / -->
 
 
             </section>

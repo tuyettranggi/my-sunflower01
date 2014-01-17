@@ -8,7 +8,7 @@ $(function(){
 	$('.out').attr('srcdoc',codeHtml);
 	
 	
-$('.btnChange').click(function(){ alert('a');
+$('.btnChange').click(function(){
 	h = $('.temp').height();
 	$('.temp').html($('.CodeMirror-code').html());
 	$('.temp > div > div').remove();
@@ -29,8 +29,8 @@ $(window).load(function(){
 	var t = setTimeout(function(){
 			$('#preview').css('display','block');
 			var frame = document.getElementById('preview');
-			$('#preview').css('height',frame.contentWindow.document.body.scrollHeight-20 + "px");
-			$('#preview').css('width',frame.contentWindow.document.body.scrollWidth-20 + "px");	
+			$('#preview').css('height',frame.contentWindow.document.body.scrollHeight + "px");
+			$('#preview').css('width',frame.contentWindow.document.body.scrollWidth + "px");	
 	
 	},200);
 });
@@ -43,8 +43,8 @@ function ResizeIframe(id){
 	$('#'+id).css({'width':'auto','height':'auto'});
 	
 	var frame = document.getElementById(id);
-	$('#'+id).css('height',frame.contentWindow.document.body.scrollHeight-20 + "px");
-	$('#'+id).css('width',frame.contentWindow.document.body.scrollWidth-20 + "px");
+	$('#'+id).css('height',frame.contentWindow.document.body.scrollHeight + "px");
+	$('#'+id).css('width',frame.contentWindow.document.body.scrollWidth + "px");
 	},200);
 }
 
