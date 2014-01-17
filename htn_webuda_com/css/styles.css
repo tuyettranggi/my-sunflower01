@@ -226,12 +226,13 @@ aside a:hover {
 aside a.atv {
 	background: #005F8B;
 	color: #fff;
-	display: block;
 	padding: 0 10px 0 3px;
-	float: right;
+	margin-left: 3px;
+	display: inline-block;
 	text-decoration: none;
 	text-indent: 10px;
-	width: 97%;
+	width: 95%;
+	vertical-align: bottom;
 }
 aside h3:first-child { padding-top: 0;}
 aside h3  {
@@ -480,7 +481,12 @@ iframe.out {
 	min-height: 50px;
 }
 
-.btnChange { text-align: right; margin-bottom: 20px;}
+.btnChange {
+	padding: 0 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100px;
+}
 
 
 /* contents
@@ -586,7 +592,15 @@ canvas#ex1 {
 	padding-bottom: 0!important;
 	height: 200px;
 }
-
+.ie_out {
+	margin: 0 auto 20px;
+	display: block;
+	min-width: 500px;
+	min-height: 200px;
+	border: 1px dashed #ccc;
+	overflow: auto;
+	
+}
 
 /*-----------------------------------------------------------------xxx */
 
@@ -725,7 +739,6 @@ img.center,
 .list_prev_next li.next {
 	float: right;
 }
-
 .list_prev_next input {
 	cursor: pointer;
 }
