@@ -6,6 +6,7 @@ $('#preview').ready(function() {
 
 $('.btnChange').click(function(){
 	changeCode();
+	alert($('#test').height());
 });
 
 });
