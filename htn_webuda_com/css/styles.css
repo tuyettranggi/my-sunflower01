@@ -419,8 +419,8 @@ table.gsc-search-box td.gsc-input {
 
 #content h2 {
 	color: #0066CC;
-	font-size: 35px;
-	padding: 0 0 25px 0;
+	font-size: 30px;
+	padding: 0 0 15px 0;
 }
 
 .html5 h2 {
@@ -471,7 +471,7 @@ h5 {
 	padding: 0 0 5px 20px;
 }
 
-.frame_code { text-align: right;}
+.frame_code { text-align: center;}
 iframe.out {
 	border: 1px dashed #aaa;
 	margin: 0 auto;
@@ -481,10 +481,11 @@ iframe.out {
 }
 
 .btnChange {
+	cursor: pointer;
 	padding: 0 20px;
 	text-align: center;
 	margin: 20px 0 5px;
-	width: 100px;
+	width: 150px;
 }
 
 
@@ -544,9 +545,13 @@ sup.s03 {margin-right: -23px; left: -16px; }
 
 .bold { font-weight: bold;}
 .text_blue { color: #0000FF;}
+.text_blue00 { color: #0000FF; font-weight: bold; }
 ._text { color: #666; font-style: italic;}
 .text_red00 {color: #ff0000;}
 .text_red01 {color: #C8514C;}
+.text_red { font-weight: bold; color: #ff0000; }
+.important00 { font-size: 120%; font-weight: bold; color: #ff0000; }
+.important01 { font-size: 140%; font-weight: bold; color: #ff0000; }
 .structure {
 	/* --- text shadow --- */
 	border: 1px dashed #555;
@@ -584,7 +589,6 @@ canvas#ex1 {
 	margin: 0 auto 30px;
 	display: block;
 }
-.text_red { font-weight: bold; color: #ff0000; }
 
 .draw {
 	width: 200px;
