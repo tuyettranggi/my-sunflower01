@@ -252,12 +252,13 @@ aside ul li  {
 	margin-bottom: 7px;
 	text-indent: -18px;
 }
-aside ul li ul { padding-top: 5px; padding-bottom: 0;}
+aside ul li ul { padding-top: 2px; padding-bottom: 0;}
 aside ul li ul li {
 	border-bottom: none;
 	margin-bottom: 0;
 	color: #666;
 	font-size: 90%;
+	padding: 3px 7px 2px 25px;
 }
 aside ul li a { padding-left: 7px; padding-right: 7px; }
 
@@ -268,8 +269,9 @@ aside ul li dl dt {
 	font-weight: bold;
 	background: #EFEDED;
 	padding: 3px 10px 3px 20px;
+	margin-bottom: 3px;
 }
-aside ul li dd { padding: 5px 0 0 15px; }
+aside ul li dd { padding: 0 0 5px 15px; }
 
 
 /*==========================================================================*/
