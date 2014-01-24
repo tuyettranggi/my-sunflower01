@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>xxxxxxxx | xxxxxxxxxxxxxxxxxxxx</title>
+<title>html5 canvas arcs | xxxxxxxxxxxxxxxxxxxx</title>
 <meta name="keywords" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
@@ -22,12 +22,10 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Độ dày đường thẳng Canvas Line</h2>
-            <h3>HTML5 Canvas Line Width Tutorial</h3>
+            <h2>Vẽ đường Cung tròn Curves Arc</h2>
+            <h3>HTML5 Canvas Arc Tutorial</h3>
             <section>
-                <p>Để định nghĩa độ dày của đường line:<br>
-                    Sử dụng thuộc tính: <strong>X</strong><span class="important00">.lineWidth = </span><strong>[value]</strong><br>
-                    của canvas context. Thuộc tính <em>lineWidth</em> phải đựợc <strong>set trước</strong> khi gọi <em>stroke()</em>.</p>
+                <p>Để tạo ra một vòng cung với HTML5 Canvas, chúng ta có thể sử dụng method <em>arc()</em></p>
                 <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
@@ -35,30 +33,7 @@
                 <p class="title01">Test code HTML:</p>
                 <div class="str_syntax">
                     <textarea style="display: none;" id="code" name="code">
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;style&gt;
-body {
-	margin: 0px;
-	padding: 0px;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- tag Canvas --&gt;
-&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
-&lt;!-- javascript --&gt;
-&lt;script type="text/javascript"&gt;
-	var line1 = document.getElementById('ex1').getContext('2d');
-	line1.beginPath();
-	line1.moveTo(60,130);
-	line1.lineTo(280,40);
-	line1.lineWidth = 10;
-	line1.stroke();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</textarea>
+</textarea>
                 </div>
                 <!-- codeEditor END -->
             </section>
