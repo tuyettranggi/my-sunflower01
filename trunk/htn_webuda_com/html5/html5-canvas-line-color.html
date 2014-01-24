@@ -10,14 +10,7 @@
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
-<!-- / codemirror -->
-<link rel="stylesheet" href="../codemirror/lib/codemirror.css">
-<script src="../codemirror/lib/codemirror.js"></script>
-<script src="../codemirror/codemirror_cm.js"></script>
-<!-- codemirror / -->
-<script type="text/javascript" src="../js/codeeditor.js"></script>
-<!--[if lte IE 7]><link rel="stylesheet" href="../codemirror/lib/codemirror_bk.css"><![endif]-->
-<!--[if lte IE 8]><script type="text/javascript" src="../js/ie_codeeditor.js"></script><![endif]-->
+<link rel="stylesheet" href="../css/codemirror.css">
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -35,13 +28,13 @@
                 <p>Để thiết lập màu sắc của một đường Line<br>
 Sử dụng thuộc tính <strong>X</strong><span class="important00">.strokeStyle = </span><strong>[Giá trị mã màu]</strong><br>
 Với màu sắc được thiết lập bằng <strong>giá trị Hex </strong>vd: #ff0000 hoặc #D3D3D3 . <strong>Hoặc</strong> sử dụng <strong>giá trị RGB</strong> như: rgb(255, 0, 0).</p>
+                <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
-                    <button type="button" class="btnChange">Submit code</button>
                 </div>
-				<p class="title01">Source Code:</p>
+                <p class="title01">Test code HTML:</p>
                 <div class="str_syntax">
-                    <textarea name="code" id="mixedMode1" class="in">
+                    <textarea style="display: none;" id="code" name="code">
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -67,7 +60,7 @@ body {
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
                 </div>
-                <!-- str_syntaxt / -->
+                <!-- codeEditor END -->
             </section>
         </article>
         <!-- content end -->
@@ -81,8 +74,7 @@ body {
     <!-- #BeginLibraryItem "/Library/footer.lbi" -->
     <script type="text/javascript" src="../js/sidebar.js"></script>
     <!-- #EndLibraryItem --></section>
-<!-- / codemirror -->
-<script type="text/javascript" src="../codemirror/code_fn.js"></script>
-<!-- codemirror / -->
+<script src="../js/codeMirror.js"></script>
+<script type="text/javascript" src="../js/code_fn.js"></script>
 </body>
 </html>

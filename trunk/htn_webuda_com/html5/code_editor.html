@@ -4,20 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>xxxxxxxx | xxxxxxxxxxxxxxxxxxxx</title>
+<title>Code Editor | xxxxxxxxxxxxxxxxxxxx</title>
 <meta name="keywords" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
-<!-- / codemirror -->
-<link rel="stylesheet" href="../codemirror/lib/codemirror.css">
-<script src="../codemirror/lib/codemirror.js"></script>
-<script src="../codemirror/codemirror_cm.js"></script>
-<!-- codemirror / -->
-<script type="text/javascript" src="../js/codeeditor.js"></script>
-<!--[if lte IE 7]><link rel="stylesheet" href="../codemirror/lib/codemirror_bk.css"><![endif]-->
-<!--[if lte IE 8]><script type="text/javascript" src="../js/ie_codeeditor.js"></script><![endif]-->
+<link rel="stylesheet" href="../css/codemirror.css">
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -31,34 +24,85 @@
             <gcse:searchresults></gcse:searchresults>
             <h2>Code Editor</h2>
             <section>
-			<!-- __________________________________________________________________________________ -->
-			
-                <!-- codeEditor -->
-                <div class="frame_code">
-                    <iframe class="out" id="preview" scrolling="no"></iframe>
-                    <button type="button" class="btnChange">Submit code</button>
-                </div>
-				<p class="title01">Source Code:</p>
+                <!-- ______________________________________codeEditor____________________________________________ -->
+				
+				<!-- codeEditor START -->
+                <p class="title01">Test code HTML:</p>
+				<p class="detail"><a href="../download/code_editor/demo.html">Demo</a><br>
+<a href="download/code_editor.zip">Download</a></p>
                 <div class="str_syntax">
-                    <textarea name="code" id="mixedMode1" class="in">
+                    <textarea style="display: none;" id="code" name="code">
+<!-- Nhap code HTML o day -->
 &lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
-body, * {
-	margin: 0px;
-	padding: 0px;
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#layout {
+	width: 740px;
+	margin: 10px auto 30px;
+}
+.out {
+	background: orange;
+	border: 1px dashed blue;
+	margin: 0 auto;
+	display: block;
 }
 &lt;/style&gt;
-&lt;/head&gt;
+&lt;link rel="stylesheet" href="css/codemirror.css"&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;text hien thi&lt;/p&gt;
+&lt;div id="layout"&gt;
+&lt;!-- codeEditor START --&gt;
+&lt;div class="frame_code"&gt;
+	&lt;iframe class="out" id="preview" scrolling="no"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p class="title01"&gt;Test code HTML:&lt;/p&gt;
+&lt;div class="str_syntax"&gt;
+&lt;textarea style="display: none;" id="code" name="code"&gt;
+&lt;!-- code HTML --&gt;
+source code html ...
+&lt;!-- code HTML --&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;!-- codeEditor END --&gt;
+
+&lt;script type="text/javascript" src="js/codeMirror.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/code_fn.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</textarea>
+&lt;/html&gt;<!-- Nhap code HTML o day --></textarea>
+</div>
+                <!-- codeEditor END -->
+
+<script type="text/javascript" src="js/codeMirror.js"></script>
+<script type="text/javascript" src="js/code_fn.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Nhap code HTML o day --></textarea>
                 </div>
-                <!-- str_syntaxt / -->
-				
-				<!-- __________________________________________________________________________________ -->
+                <!-- codeEditor END -->
+                <!-- __________________________________________________________________________________ -->
             </section>
         </article>
         <!-- content end -->
@@ -76,10 +120,10 @@ body, * {
         </address>
     </footer>
     <!-- #EndLibraryItem --></section>
-	
-<!-- __________________________________________________________________________________ -->
+<!-- _________________________________codeEditor_______________________________________ -->
 
-<script type="text/javascript" src="../codemirror/code_fn.js"></script>
+<script src="../js/codeMirror.js"></script>
+<script type="text/javascript" src="../js/code_fn.js"></script>
 <!-- __________________________________________________________________________________ -->
 </body>
 </html>

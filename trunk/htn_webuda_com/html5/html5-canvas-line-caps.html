@@ -36,7 +36,7 @@
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                 </div>
-                <p class="title01">Source Code:</p>
+                <p class="title01">Test code HTML:</p>
                 <div class="str_syntax">
                     <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -54,15 +54,35 @@
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
+      // butt line cap (top line)
       context.beginPath();
-      context.moveTo(100, 150);
-      context.lineTo(450, 50);
-      context.lineWidth = 15;
+      context.moveTo(200, canvas.height / 2 - 50);
+      context.lineTo(canvas.width - 200, canvas.height / 2 - 50);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'butt';
+      context.stroke();
+
+      // round line cap (middle line)
+      context.beginPath();
+      context.moveTo(200, canvas.height / 2);
+      context.lineTo(canvas.width - 200, canvas.height / 2);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'round';
+      context.stroke();
+
+      // square line cap (bottom line)
+      context.beginPath();
+      context.moveTo(200, canvas.height / 2 + 50);
+      context.lineTo(canvas.width - 200, canvas.height / 2 + 50);
+      context.lineWidth = 20;
+      context.strokeStyle = '#0000ff';
+      context.lineCap = 'square';
       context.stroke();
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</textarea>
+&lt;/html&gt;</textarea>
                 </div>
                 <!-- str_syntaxt / -->
 				
@@ -87,6 +107,6 @@
     <!-- #EndLibraryItem --> </section>
 
 <script src="../js/codeMirror.js"></script>
-<script type="text/javascript" src="../codemirror/code_fn.js"></script>
+<script type="text/javascript" src="../js/code_fn.js"></script>
 </body>
 </html>
