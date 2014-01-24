@@ -471,7 +471,7 @@ h5 {
 	padding: 0 0 5px 20px;
 }
 
-.frame_code { text-align: center;}
+.frame_code { text-align: center; padding-bottom: 20px; }
 iframe.out {
 	border: 1px dashed #aaa;
 	margin: 0 auto;
