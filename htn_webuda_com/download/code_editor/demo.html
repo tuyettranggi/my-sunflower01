@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#layout {
+	width: 740px;
+	margin: 50px auto;
+}
+.out {
+	border: 1px dashed #ccc;
+}
+</style>
+<link rel="stylesheet" href="css/codemirror.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+
+<div id="layout">
+<!-- codeEditor START -->
+                <div class="frame_code">
+                    <iframe class="out" id="preview" scrolling="no"></iframe>
+                </div>
+                <p class="title01">Test code HTML:</p>
+                <div class="str_syntax">
+                    <textarea style="display: none;" id="code" name="code">
+<!-- Nhap code HTML o day -->
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body, * {
+	margin: 0px;
+	padding: 0px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Text hiển thị&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<!-- Nhap code HTML o day --></textarea>
+                </div>
+                <!-- codeEditor END -->
+
+<script type="text/javascript" src="js/codeMirror.js"></script>
+<script type="text/javascript" src="js/code_fn.js"></script>
+</div>
+</body>
+</html>

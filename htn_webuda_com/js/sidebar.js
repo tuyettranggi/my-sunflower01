@@ -36,11 +36,11 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-lines.html" title="vẽ đường thẳng">Line</a></dd>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-line-width.html" title="độ dày đường line">Line Width</a></dd>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-line-color.html" title="định màu đường line">Line Color</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-line-caps.html" title="định màu đường line">Line Cap</a></dd>\
+				<dd>-<a href= "'+i+'html5/html5-canvas-line-caps.html" title="định loại đường line">Line Cap</a></dd>\
 			</dl>\
 		</li>\
-		<li>+<a href= "'+i+'html5/syntax-code.html">syntaxHighlighter<br />( định dạng code )</a></li>\
-		<li>+<a href= "'+i+'html5/code_editor.html">Code Editor</a></li>\
+		<li>+<a href= "'+i+'html5/syntax-code.html" title="định dạng code">syntaxHighlighter<br />( định dạng code )</a></li>\
+		<li>+<a href= "'+i+'html5/code_editor.html" title="soan thảo code html">Code Editor</a></li>\
 	</ul>');
 });
 
