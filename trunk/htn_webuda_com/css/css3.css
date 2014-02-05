@@ -7,6 +7,7 @@
 
 
 ul.list_btn { text-align: center; padding-bottom: 10px;}
+.nextBtn a,
 ul.list_btn li {
 	cursor: pointer;
 	font-family: Arial;
@@ -32,6 +33,7 @@ ul.list_btn li {
 	width: 50%;
 	margin-bottom: 5px;
 }
+.nextBtn a:hover,
 ul.list_btn li:hover{
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
 	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
@@ -41,6 +43,13 @@ ul.list_btn li:hover{
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
 	background-color:#0061a7;
+}
+
+
+.nextBtn a {
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
 }
 
 

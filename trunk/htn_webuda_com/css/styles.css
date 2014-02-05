@@ -490,6 +490,19 @@ iframe.out {
 	width: 150px;
 }
 
+.prev_next .nextBtn a {
+	background-image: url(../images/icon_next.png);	background-repeat: no-repeat; background-position: center center;
+	border: 1px solid #ccc;
+	float: right;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	text-indent: -9999px;
+}
+.prev_next .nextBtn a:hover {
+	background-image: url(../images/icon_next_o.png);	background-repeat: no-repeat; background-position: center center;
+}
+
 
 /* contents
 ------------------------------------------------------------------------*/
