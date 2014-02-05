@@ -748,6 +748,26 @@ img.center,
 	cursor: pointer;
 }
 
+ol.list_step li {
+	background: url(../images/icon_step/icon_1.gif) no-repeat 0 11px;
+	padding: 5px 0 5px 15px;
+}
+
+ol.list_step li.s2 {background-image: url(../images/icon_step/icon_2.gif);}
+ol.list_step li.s3 {background-image: url(../images/icon_step/icon_3.gif);}
+ol.list_step li.s4 {background-image: url(../images/icon_step/icon_4.gif);}
+ol.list_step li.s5 {background-image: url(../images/icon_step/icon_5.gif);}
+ol.list_step li.s6 {background-image: url(../images/icon_step/icon_6.gif);}
+ol.list_step li.s7 {background-image: url(../images/icon_step/icon_7.gif);}
+ol.list_step li.s8 {background-image: url(../images/icon_step/icon_8.gif);}
+ol.list_step li.s9 {background-image: url(../images/icon_step/icon_9.gif);}
+ol.list_step li.s10 {background-image: url(../images/icon_step/icon_10.gif);}
+ol.list_step li.s11 {background-image: url(../images/icon_step/icon_11.gif);}
+ol.list_step li.s12 {background-image: url(../images/icon_step/icon_12.gif);}
+ol.list_step li.s13 {background-image: url(../images/icon_step/icon_13.gif);}
+ol.list_step li.s14 {background-image: url(../images/icon_step/icon_14.gif);}
+ol.list_step li.s15 {background-image: url(../images/icon_step/icon_15.gif);}
+
 /* add
 ------------------------------------------------------------------------*/
 section { padding-bottom: 25px; }
