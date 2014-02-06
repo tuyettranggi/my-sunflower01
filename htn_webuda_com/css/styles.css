@@ -740,11 +740,17 @@ img.center,
 }
 .list_text { padding-bottom: 16px;}
 .list_text li {
-	padding: 0 0 0 15px;
-	background: url(../images/icon_01.gif) no-repeat 3px 12px;
+	padding: 1px 0 3px 23px;
+	background: url(../images/icon_01.gif) no-repeat 5px 8px;
 }
 .list_text li strong { color: #0000FF;}
 .list_text li span {font-size: 160%; padding-right: 7px;}
+
+.list_text01 { padding-bottom: 16px;}
+.list_text01 li {
+	padding: 1px 0 3px 23px;
+	background: url(../images/icon_01.gif) no-repeat 5px 8px;
+}
 
 .list_bo { padding-bottom: 10px;}
 .list_bo li { padding: 2px 0 2px 15px;}
