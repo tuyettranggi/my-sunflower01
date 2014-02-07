@@ -490,17 +490,28 @@ iframe.out {
 	width: 150px;
 }
 
-.prev_next .nextBtn a {
-	background-image: url(../images/icon_next.png);	background-repeat: no-repeat; background-position: center center;
-	border: 1px solid #ccc;
+.prev_next p {
+	float: left;
+}
+.prev_next p.nextBtn {
 	float: right;
-	width: 30px;
-	height: 30px;
-	padding: 5px;
-	text-indent: -9999px;
+}
+.prev_next .nextBtn a {
+	background: url(../images/icon_next.png) no-repeat 95% 50%;
+	float: right;
+	padding: 0 35px 0 0;
 }
 .prev_next .nextBtn a:hover {
-	background-image: url(../images/icon_next_o.png);	background-repeat: no-repeat; background-position: center center;
+	background: url(../images/icon_next.png) no-repeat 100% 50%;
+}
+
+.prev_next .prevBtn a {
+	background: url(../images/icon_prev.png) no-repeat 5% 50%;
+	float: left;
+	padding: 0 0 0 35px;
+}
+.prev_next .prevBtn a:hover {
+	background: url(../images/icon_prev.png) no-repeat 0 50%;
 }
 
 
@@ -828,6 +839,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+.prev_next,
 aside ul li,
 .list_prev_next,
 .list_kanjiPic,
@@ -837,6 +849,7 @@ nav#gnav ul {
 	display: block;
 }
 
+.prev_next:after,
 aside ul li:after,
 .list_prev_next:after,
 .list_kanjiPic:after,
