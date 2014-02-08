@@ -9,6 +9,7 @@ else if($('body').is('.rank3')){
 	var i = "../../";
 }
 
+
 $('header').html('<nav id="gnav">\
         <ul>\
           <li><a href="'+i+'index.html">Trang chủ</a></li>\
@@ -28,5 +29,4 @@ $('header').html('<nav id="gnav">\
         <script type="text/javascript" src="'+i+'js/se.js"></script>\
         <gcse:searchbox></gcse:searchbox>\
       </section>');
-
 });
