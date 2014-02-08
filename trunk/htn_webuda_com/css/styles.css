@@ -726,6 +726,11 @@ img.center,
 .tbl_Kanji td a {
 	display: block;
 }
+.tbl_Kanji td a.atv {
+	color: #C8514C;
+	text-decoration: none;
+	font-weight: bold;
+}
 /*-----------------------------------------------------------------list */
 
 .list_read { padding-bottom: 10px;}
