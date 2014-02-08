@@ -490,30 +490,6 @@ iframe.out {
 	width: 150px;
 }
 
-.prev_next p {
-	float: left;
-}
-.prev_next p.nextBtn {
-	float: right;
-}
-.prev_next .nextBtn a {
-	background: url(../images/icon_next.png) no-repeat 95% 50%;
-	float: right;
-	padding: 0 35px 0 0;
-}
-.prev_next .nextBtn a:hover {
-	background: url(../images/icon_next.png) no-repeat 100% 50%;
-}
-
-.prev_next .prevBtn a {
-	background: url(../images/icon_prev.png) no-repeat 5% 50%;
-	float: left;
-	padding: 0 0 0 35px;
-}
-.prev_next .prevBtn a:hover {
-	background: url(../images/icon_prev.png) no-repeat 0 50%;
-}
-
 
 /* contents
 ------------------------------------------------------------------------*/
@@ -628,7 +604,31 @@ canvas#ex1 {
 	min-height: 200px;
 	border: 1px dashed #ccc;
 	overflow: auto;
-	
+}
+.breadcrumb { 
+	margin-top: -20px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	width: 740px;
+}
+.breadcrumb ul { float: right; }
+.breadcrumb li {
+	float: left;
+	font-size: 100%;
+	padding-left: 5px;
+}
+.breadcrumb li a {
+	background: url(../images/arrow_02.gif) no-repeat 100% 3px;
+	padding: 0 10px 0 0
+}
+.breadcrumb .prevBtn {float: left;}
+.prevBtn a {
+	background: url(../images/icon_prev.png) no-repeat 5% 50%;
+	float: left;
+	padding: 0 0 0 35px;
+}
+.prevBtn a:hover {
+	background: url(../images/icon_prev.png) no-repeat 0 50%;
 }
 
 /*-----------------------------------------------------------------xxx */
@@ -689,9 +689,7 @@ img.center,
 	vertical-align: middle;
 }
 
-#content table.tdCenter td {
-	text-align: center;
-}
+#content table.tdCenter td {text-align: center;}
 
 /* table 01 */
 #content table.table01 th,td {
@@ -710,11 +708,23 @@ img.center,
 .vMiddle { vertical-align: middle; }
 
 /* table 02 */
-
 .table02  {
 	border-collapse: separate;
 	border-spacing: 1px;
 	border: 1px solid #ccc;
+}
+
+/* table kanji */
+.tbl_Kanji {
+	border: 2px solid #999;
+}
+.tbl_Kanji td {
+	text-align: center;
+	cursor: pointer;
+	background: #FFFFCC;
+}
+.tbl_Kanji td a {
+	display: block;
 }
 /*-----------------------------------------------------------------list */
 
@@ -839,6 +849,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+.breadcrumb,
 .prev_next,
 aside ul li,
 .list_prev_next,
@@ -849,6 +860,7 @@ nav#gnav ul {
 	display: block;
 }
 
+.breadcrumb:after,
 .prev_next:after,
 aside ul li:after,
 .list_prev_next:after,

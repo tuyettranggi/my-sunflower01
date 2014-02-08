@@ -12,7 +12,8 @@
 <link rel="contents" href="/" title="ホーム" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/vietkanji.js"></script>
-<!--[if lte IE 8]><script src="../../js/ie.js" type="text/javascript"></script><![endif]-->
+<script type="text/javascript" src="../js/jsScript.js"></script>
+<!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -22,9 +23,18 @@
   <!-- main start -->
   <section id="main" class="clearfix">
     <!-- content start -->
+	
     <article id="content">
       <gcse:searchresults></gcse:searchresults>
-      <h3 class="h3_kanji"><img src="../minna/n4/img/1._HINH_txt.gif" alt="_KANJI_ _HanViet_" width="121" height="114" />_HanViet_ - _nghia1_, _nghia2_</h3>
+	  <div class="breadcrumb">
+	<p class="prevBtn"><a href="javascript:;" onclick="history.go(-1)">Quay lại</a></p>
+	  <ul>
+	  	<li><a href="../hoc-kanji.html">HỌC KANJI</a></li>
+	  	<li><a href="../kanji_n4.html">Kanji N4</a></li>
+	  	<li>_KANJI_ _HanViet_</li>
+	  </ul>
+	</div>
+      <h3 class="h3_kanji"><img src="img/1._HINH_txt.gif" alt="_KANJI_ _HanViet_" />_HanViet_ - _nghia1_, tion>_nghia2_</h3>
       <section>
         <dl class="list_des">
           <dt>kanji : </dt>
@@ -36,6 +46,44 @@
           <dt>Kun:</dt>
           <dd>_KUN_</dd>
         </dl>
+		<table summary="_KANJI_" class="table01">
+          <tr class="empty">
+            <td class="w20">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="w20">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="td_pic"><img src="img/1._HINH_img.gif" alt="_HanViet_（_KANJI_）" />
+              <p class="pb10">&nbsp;</p></td>
+            <td colspan="2" class="td_des th03"><p>xxx_Cau_TiengViet_xxx</p>
+              <p>xxx_Cau_TiengAnh_xxx</p>
+              <p class="pb0">xxx_Cau_TiengNhat_xxx</p></td>
+            <td class="td_write"><p class="draw"><img src="img/1._HINH_cv1.gif" alt="_KANJI_" /></p>
+              <ul class="list_btn">
+                <li>Viết từng nét</li>
+                <li class="none">Tự động</li>
+              </ul>
+              <ul class="list_prev_next none">
+                <li class="prev">
+                  <input type="button" value="&lt;&lt;" />
+                </li>
+                <li class="next">
+                  <input type="button" value="&gt;&gt;" />
+                </li>
+              </ul></td>
+          </tr>
+          <tr>
+            <td colspan="2"><ul class="list_text pb0">
+                <li><span>_KANJI_</span>(<strong>_ON_</strong>) 　：　xxx_vd_xxx</li>
+                <li><span>_KANJI_</span>(<strong>_ON_</strong>)　：　 xxx_vd_xxxx</li>
+              </ul></td>
+            <td colspan="2"><ul class="list_text pb0">
+                <li><span>_KANJI_</span>(<strong>_KUN_</strong>) 　：　xxx_vd_xxx</li>
+                <li><span>_KANJI_</span>(<strong>_KUN_</strong>) 　：　xxx_vd_xxx</li>
+              </ul></td>
+          </tr>
+        </table>
         <table summary="_KANJI_" class="table01">
           <tr class="empty">
             <td class="w20">&nbsp;</td>
@@ -44,11 +92,11 @@
             <td class="w20">&nbsp;</td>
           </tr>
           <tr>
-            <td class="td_pic"><img src="../minna/n4/img/1._hinh_img.gif" alt="_HanViet_（_KANJI_）" /></td>
+            <td class="td_pic"><img src="img/1._hinh_img.gif" alt="_HanViet_（_KANJI_）" /></td>
             <td colspan="2" class="td_des th03"><p>xxx_Cau_TiengViet_xxx</p>
               <p>xxx_Cau_TiengAnh_xxx</p>
               <p class="pb0">xxx_Cau_TiengNhat_xxx</p></td>
-            <td rowspan="2" class="td_write"><p class="draw"><img src="../minna/n4/img/1._HINH_cv1.gif" alt="_KANJI_" /></p>
+            <td rowspan="2" class="td_write"><p class="draw"><img src="img/1._HINH_cv1.gif" alt="_KANJI_" /></p>
               <ul class="list_btn">
                 <li>Viết từng nét</li>
                 <li class="none">Tự động</li>
@@ -84,6 +132,13 @@
           </tr>
         </table>
       </section>
+	  <ul class="list_kanji">
+	  	<li><a href=""></a></li>
+	  </ul>
+	  <div class="prev_next">
+		<p class="prevBtn"><a href="javascript:;" onclick="history.go(-1)">Quay lại</a></p>
+		<p class="nextBtn"><a href="xxxxxxxxxxxxx">Kế tiếp</a></p>
+	</div>
     </article>
     <!-- content end -->
     <!-- navi start -->
