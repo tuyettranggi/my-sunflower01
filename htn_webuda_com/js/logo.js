@@ -1,4 +1,3 @@
-
 var ctx = document.getElementById('logo').getContext('2d');
 //arc(x, y, radius, startAngle, endAngle, anticlockwise)
 

@@ -1,3 +1,8 @@
+
+
+
+
+
 $(function(){
 if($('body').is('.rank1')){
 	var i = "";
@@ -8,7 +13,6 @@ else if($('body').is('.rank2')){
 else if($('body').is('.rank3')){
 	var i = "../../";
 }
-
 
 $('header').html('<nav id="gnav">\
         <ul>\
@@ -21,12 +25,42 @@ $('header').html('<nav id="gnav">\
       <section class="headerInner clearfix">\
         <div class="hSection">\
           <h1>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>\
-          <!--<p class="logo">Học Kanji</p>-->\
           <canvas id="logo">\
-            <script type="text/javascript" src="'+i+'js/logo.js"></script>\
+            <!--<script type="text/javascript" src="'+i+'"js/logo.js"></script>-->\
           </canvas>\
         </div>\
-        <script type="text/javascript" src="'+i+'js/se.js"></script>\
+        <!--<script type="text/javascript" src="'+i+'js/se.js"></script>-->\
         <gcse:searchbox></gcse:searchbox>\
       </section>');
+
+includeBottomJs(i+"js/logo.js");
+includeTopJs(i+"js/se.js");
 });
+
+function includeBottomJs(jsFilePath) {
+    var js = document.createElement("script");
+
+    js.type = "text/javascript";
+    js.src = jsFilePath;
+
+    document.body.appendChild(js);
+}
+
+
+function includeTopJs(jsFilePath) {
+    var head = document.getElementsByTagName('head')[0];
+
+    var script = document.createElement('script');
+    script.src = jsFilePath;
+    script.type = 'text/javascript';
+
+    head.appendChild(script);
+}
+
+
+
+
+
+
+
+
