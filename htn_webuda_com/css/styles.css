@@ -214,7 +214,7 @@ nav#gnav ul li a:hover { color: #fff;}
 
 aside {
 	float: left;
-	width: 250px;
+	width: 230px;
 	text-align: center;
 }
 aside a.atv,
@@ -495,7 +495,7 @@ iframe.out {
 ------------------------------------------------------------------------*/
 
 #content {
-	width: 740px;
+	width: 750px;
 	float: right;
 }
 #index #content {
@@ -766,16 +766,16 @@ img.center,
 	font-size: 600%;
 	margin: -0.8em 0 0.5em 1.8em;
 }
-.list_text { padding-bottom: 16px;}
+.list_text { padding-bottom: 10px;}
 .list_text li {
 	color: #666;
-	font-size: 90%;
-	padding: 1px 0 3px 15px;
+	font-size: 110%;
+	padding: 1px 0 3px 13px;
 	background: url(../images/icon_01.gif) no-repeat 3px 8px;
 }
-.list_text li span {font-size: 120%; padding-right: 7px;}
+.list_text li span {font-size: 110%; padding-right: 7px;}
 .list_text li .text_black {font-size: 110%; padding-left: 2px;}
-.list_text li.indent1 {padding-left: 65px; text-indent: -50px;}
+.list_text li.indent1 {padding-left: 25px; text-indent: -10px;}
 /*.list_text li.indent2 {padding-left: 65px; text-indent: -50px;}*/
 
 .list_text01 { padding-bottom: 16px;}
@@ -826,7 +826,10 @@ section:last-child { padding-bottom: 0;}
 
 .indent1 { padding-left: 30px; display: block;}
 
-.font80 { font-size: 80%; }
+.font50 { font-size: 50%!important; }
+.font60 { font-size: 60%!important; }
+.font70 { font-size: 70%!important; }
+.font80 { font-size: 80%!important; }
 .font90 { font-size: 90%!important; }
 .font120 { font-size: 120%; }
 .font130 { font-size: 130%; }
