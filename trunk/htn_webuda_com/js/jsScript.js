@@ -16,13 +16,13 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
           <td><a href="'+i+'kanji/nhat.html" title="Nhật">日</a></td>\
 		  <td><a href="'+i+'kanji/nguyet.html" title="Nguyệt">月</a></td>\
 		  <td><a href="'+i+'kanji/hoa.html" title="Hỏa">火</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/thuy.html" title="Thủy">水</a></td>\
+		  <td><a href="'+i+'kanji/moc.html" title="Mộc">木</a></td>\
+		  <td><a href="'+i+'kanji/kim.html" title="Kim">金</a></td>\
+		  <td><a href="'+i+'kanji/tho.html" title="Thổ">土</a></td>\
+		  <td><a href="'+i+'kanji/son.html" title="Sơn">山</a></td>\
+		  <td><a href="'+i+'kanji/xuyen.html" title="Xuyên">川</a></td>\
+		  <td><a href="'+i+'kanji/dien.html" title="Điền">田</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
