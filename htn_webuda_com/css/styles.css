@@ -594,9 +594,11 @@ canvas#ex1 {
 }
 
 .draw {
-	width: 200px;
 	padding-bottom: 0!important;
 	height: 200px;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
 }
 .ie_out {
 	margin: 0 auto 20px;
@@ -668,7 +670,7 @@ img.center,
 	vertical-align: top;
 }
 #content table td.td_pic {
-	width: 5%;
+	padding: 30px 8px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -676,7 +678,6 @@ img.center,
 	vertical-align: middle;
 }
 #content table td.td_write {
-	width: 20%;
 	text-align: center;
 }
 #content table td.th03 {background: #eee;}
@@ -854,6 +855,7 @@ section:last-child { padding-bottom: 0;}
 .w30 { width: 30%; }
 .w35 { width: 35%; }
 .w40 { width: 40%; }
+.w45 { width: 45%; }
 .w50 { width: 50%; }
 
 .none {display: none!important;}
