@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import "base.css";
+@import "fonts.css";
+/*@import "style2.less";*/
+
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////  Copyright (C) 2009 株式会社フリーセル All Rights Reserved.  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+
+h1,h2,h3,h4,h5,h6,input,button,textarea,select,p,blockquote,th,td,pre,address,li,dt,dd {
+	font-size: 140%;
+}
+
+
+a { color: #1681CE; }
+a:hover,
+a:active { color: #333; text-decoration: none; }
+a:visited {
+}
+
+p { 
+	line-height: 23px;
+	padding: 0 0 16px;
+}
+/*p { padding: 0 0 16px; }*/
+
+.image_l { float: left; padding: 0 15px 16px 0; }
+.image_r { float: right; padding: 0 0 16px 15px; }
+.image_r img,
+.image_l img {
+	padding: 3px 0 5px;
+}
+
+table .image_l { padding: 5px 8px 8px 0; }
+table .image_r { padding: 5px 0 8px 8px; }
+
+
+/* common_reset
+------------------------------------------------------------------------*/
+
+img { 
+	border: 0; 
+	vertical-align: bottom;
+}
+
+.center {
+	text-align: center;
+}
+
+.fLeft {
+	float: left!important;
+}
+
+.fRight {
+	float: right!important;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+em {
+	background: #d5d2d2;
+	font-weight: bold;
+	padding: 0 4px;
+}
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+
+
+#wrapper {
+	background: url(../images/contents_bg.jpg) no-repeat center top;
+	text-align: left;
+}
+
+#main {
+	margin: 0 auto;
+	width: 700px;
+}
+
+section { display: block;}
+
+
+/* add
+------------------------------------------------------------------------*/
+section { padding-bottom: 25px; }
+section:last-child { padding-bottom: 0;}
+
+.indent1 { padding-left: 30px; display: block;}
+
+.font50 { font-size: 50%!important; }
+.font60 { font-size: 60%!important; }
+.font70 { font-size: 70%!important; }
+.font80 { font-size: 80%!important; }
+.font90 { font-size: 90%!important; }
+.font120 { font-size: 120%; }
+.font130 { font-size: 130%; }
+.font140 { font-size: 140%; }
+.font150 { font-size: 150%; }
+.font160 { font-size: 160%; }
+.font220 { font-size: 220%; }
+.font240 { font-size: 240%; }
+
+.mb0 { margin-bottom : 0; }
+.mt0 { margin-top : 0; }
+.pb0 { padding-bottom: 0!important; }
+.pb05 { padding-bottom: 5px!important; }
+.pb10 { padding-bottom: 10px!important; }
+.pb15 { padding-bottom: 15px!important; }
+.pb20 { padding-bottom: 20px!important; }
+.pb25 { padding-bottom: 25px!important; }
+.pb30 { padding-bottom: 30px!important; }
+.pt0 { padding-top: 0!important; }
+
+.w10 { width: 10%; }
+.w16 { width: 16%; }
+.w20 { width: 20%; }
+.w25 { width: 25%; }
+.w28 { width: 28%; }
+.w30 { width: 30%; }
+.w35 { width: 35%; }
+.w40 { width: 40%; }
+.w45 { width: 45%; }
+.w50 { width: 50%; }
+
+.none {display: none!important;}
+
+
+.frame_code {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+iframe.out {
+    border: 1px dashed #AAAAAA;
+    display: block;
+    margin: 0 auto;
+    min-height: 50px;
+    text-align: center;
+}
+
+.CodeMirror { width: 710px; }
+.CodeMirror-scroll {
+	width: 700px!important;	
+}
+#main {
+	width: 700px;
+	margin: 20px auto;
+}
+
+/* clearfix
+------------------------------------------------------------------------*/
+
+.breadcrumb,
+.prev_next,
+aside ul li,
+.list_prev_next,
+.list_kanjiPic,
+header,
+nav#gnav ul {
+	zoom: 1;
+	display: block;
+}
+
+.breadcrumb:after,
+.prev_next:after,
+aside ul li:after,
+.list_prev_next:after,
+.list_kanjiPic:after,
+header:after,
+nav#gnav ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+/* resize Browser
+
+min-width: 980px;
+max-width: 100%;
+
+*/
+
+
+
