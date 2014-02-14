@@ -11,6 +11,10 @@
 <script type="text/javascript" src="../js/jquery.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
 <link rel="stylesheet" href="../css/codemirror.css">
+
+
+
+
 </head>
 <body class="rank2">
 <section id="wrapper">
@@ -25,7 +29,7 @@
             <h2>Vẽ đường Cung tròn Curves Arc</h2>
             <h3>HTML5 Canvas Arc Tutorial</h3>
             <section>
-                <p>Để tạo ra một vòng cung với HTML5 Canvas, chúng ta có thể sử dụng method <em>arc()</em>. Đường cung được xác định bởi một điểm trung tâm, bán kính, một góc bắt đầu, góc kết thúc, và hướng vẽ. (hoặc chiều kim đồng hồ hoặc ngược chiều kim đồng hồ). Vòng cung có thẻ được định kiểu như thế nào nhở vào các thuộc tính <em>linewidth</em>, <em>strokeStyle</em>, <em>lineCap</em>.</p>
+                <p>Để tạo ra một vòng cung với HTML5 Canvas, chúng ta có thể sử dụng method <em>arc()</em>. Đường cung được xác định bởi một điểm trung tâm, bán kính, một góc bắt đầu, góc kết thúc, và hướng vẽ. (hoặc chiều kim đồng hồ hoặc ngược chiều kim đồng hồ). Vòng cung có thể được định kiểu như thế nào nhờ vào các thuộc tính <em>linewidth</em>, <em>strokeStyle</em>, <em>lineCap</em>.</p>
 				<p><img src="../images/html5-canvas-arcs_img01.jpg" alt="" width="570" height="250" /></p>
 				<p>Arc bao gồm 5 thông số:<br>
                     <span class="text_blue">arc(</span><span class="text_red01">x, y, radius, startAngle, endAngle, anticlockwise</span><span class="text_blue">)</span></p>
@@ -36,123 +40,10 @@
 					<li><strong>endAngle</strong> : góc kết thúc tính bằng radian.</li>
 					<li><strong>anticlockwise</strong> : set hướng vẽ là ngược hay cùng chiều kim đồng hồ.</li>
 				</ul>
-                <!-- codeEditor START -->
-                <div class="frame_code">
-                    <iframe class="out" id="preview" scrolling="no"></iframe>
-                </div>
-                <p class="title01">Test code HTML:</p>
-                <div class="str_syntax">
-                    <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-	  #myCanvas { background: #EFEDED; }
-	  #myCanvas0 { background: #fff; }
-	  #myCanvas1 { background: #fff; }
-	  #myCanvas2 { background: #EFEDED; }
-	  canvas { float: left;}
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
- &lt;div id="wrap" style="width: 600px; zoom: 1; overflow: hidden; display: block;"&gt;
- 
- <!-- Đoạn code canvas thu 1 -->
-  	  &lt;canvas id="myCanvas" width="300" height="100"&gt;&lt;/canvas&gt;
-  	  &lt;script&gt;
-  	    var canvas = document.getElementById('myCanvas');
-  	    var context = canvas.getContext('2d');
-  	    var x = canvas.width / 2;
-  	    var y = canvas.height / 2;
-  	    var radius = 30;
-  	    var startAngle = 0 * Math.PI;
-  	    var endAngle = 0.1 * Math.PI;
-  	    var counterClockwise = false;
-  	
-  	    context.beginPath();
-  	    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-  	    context.lineWidth = 15;
-  	
-  	    // line color
-  	    context.strokeStyle = 'black';
-  	    context.stroke();
-  	  &lt;/script&gt;
-  		
-  		
-  		<!-- Đoạn code canvas thu 2 -->
-  		&lt;canvas id="myCanvas0" width="300" height="100"&gt;&lt;/canvas&gt;
-  	  &lt;script&gt;
-  	    var canvas0 = document.getElementById('myCanvas0');
-  	    var context0 = canvas0.getContext('2d');
-  	    var x = canvas0.width / 2;
-  	    var y = canvas0.height / 2;
-  	    var radius = 30;
-  	    var startAngle = 0 * Math.PI;
-  	    var endAngle = 0.2 * Math.PI;
-  	    var counterClockwise = false;
-  	
-  	    context0.beginPath();
-  	    context0.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-  	    context0.lineWidth = 15;
-  	
-  	    // line color
-  	    context0.strokeStyle = 'black';
-  	    context0.stroke();
-  	  &lt;/script&gt;
-  		
-  		
-  		<!-- Đoạn code canvas thu 3 -->
-  		&lt;canvas id="myCanvas1" width="300" height="100"&gt;&lt;/canvas&gt;
-  	  &lt;script&gt;
-  	    var canvas1 = document.getElementById('myCanvas1');
-  	    var context1 = canvas1.getContext('2d');
-  	    var x = canvas1.width / 2;
-  	    var y = canvas1.height / 2;
-  	    var radius = 30;
-  	    var startAngle = 0 * Math.PI;
-  	    var endAngle = 0.5 * Math.PI;
-  	    var counterClockwise = false;
-  	
-  	    context1.beginPath();
-  	    context1.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-  	    context1.lineWidth = 15;
-  	
-  	    // line color
-  	    context1.strokeStyle = 'black';
-  	    context1.stroke();
-  	  &lt;/script&gt;
-
-
-
-<!-- Đoạn code canvas thu 4 -->
-&lt;canvas id="myCanvas2" width="300" height="100"&gt;&lt;/canvas&gt;
-    &lt;script&gt;
-      var canvas2 = document.getElementById('myCanvas2');
-      var context2 = canvas2.getContext('2d');
-      var x = canvas2.width / 2;
-      var y = canvas2.height / 2;
-      var radius = 30;
-      var startAngle = 0 * Math.PI;
-      var endAngle = 1 * Math.PI;
-      var counterClockwise = false;
-
-      context2.beginPath();
-      context2.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-      context2.lineWidth = 15;
-
-      // line color
-      context2.strokeStyle = 'black';
-      context2.stroke();
-    &lt;/script&gt;
-	
-	&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</textarea>
-                </div>
-                <!-- codeEditor END -->
+				
+				<iframe src="popup/html5-canvas-arcs1.htm" frameborder="0" width="740" height="500" id="arcs1"></iframe>
+				<iframe src="popup/html5-canvas-arcs2.htm" frameborder="0" width="740" height="500" id="arcs2"></iframe>
+                <button class="reload">reload</button>
             </section>
         </article>
         <!-- content end -->
@@ -170,9 +61,11 @@
         </address>
     </footer>
     <!-- #EndLibraryItem --> </section>
-<!-- _________________________________codeEditor_______________________________________ -->
-<script src="../js/codeMirror.js"></script>
-<script type="text/javascript" src="../js/code_fn.js"></script>
-<!-- __________________________________________________________________________________ -->
+<script type="text/javascript" src="../js/iframe_fn.js?v=<?=filemtime('../js/iframe_fn.js');?>"></script>
+<script type="text/javascript">
+$('.reload').click(function(){
+	location.reload(true);							
+});
+</script>
 </body>
 </html>
