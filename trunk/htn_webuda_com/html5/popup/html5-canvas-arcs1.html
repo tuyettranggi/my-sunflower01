@@ -11,7 +11,6 @@
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <!--[if lte IE 8]><script src="../../js/ie.js" type="text/javascript"></script><![endif]-->
 <link rel="stylesheet" href="../../css/codemirror.css">
-
 </head>
 <body class="rank3">
 <div id="wrapper">
@@ -22,34 +21,36 @@
         </div>
         <p class="title01">Khung edit HTML (có thể sửa và test trực tiếp):</p>
         <div class="str_syntax">
-<textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
+            <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
- body {margin: 0px; padding: 0px;}
-#wrap {width: 600px; zoom:1; overflow: hidden; display: block;}
+body {margin: 0px;padding: 0px;}
+#wrap {width: 600px;zoom:1;overflow: hidden;display: block;}
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
 &lt;div id="wrap"&gt;
-&lt;canvas id="myCanvas0" width="300" height="100"&gt;&lt;/canvas&gt;
+
+<!-- Đoạn code canvas thu 1 -->
+&lt;canvas id="myCanvas" width="600" height="155"&gt;&lt;/canvas&gt;
 &lt;script&gt;
-var canvas0 = document.getElementById('myCanvas0');
-var context0 = canvas0.getContext('2d');
-var x = canvas0.width / 2;
-var y = canvas0.height / 2;
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+var x = canvas.width / 2;
+var y = canvas.height / 2;
 var radius = 30;
 var startAngle = 0 * Math.PI;
-var endAngle = 0.2 * Math.PI;
+var endAngle = 0.1 * Math.PI;
 var counterClockwise = false;
 
-context0.beginPath();
-context0.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-context0.lineWidth = 15;
+context.beginPath();
+context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+context.lineWidth = 15;
 
 // line color
-context0.strokeStyle = 'black';
-context0.stroke();
+context.strokeStyle = 'black';
+context.stroke();
 &lt;/script&gt;
 &lt;/div&gt;
 &lt;/body&gt;
@@ -59,8 +60,8 @@ context0.stroke();
     </article>
 </div>
 <!-- _________________________________codeEditor_______________________________________ -->
-<script src="../../js/codeMirror.js?a=2"></script>
-<script type="text/javascript" src="../../js/code_fn.js?n=2"></script>
+<script src="../../js/codeMirror.js"></script>
+<script type="text/javascript" src="../../js/code_fn.js"></script>
 <!-- __________________________________________________________________________________ -->
 </body>
 </html>
