@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>html5 canvas quadratic curves | xxxxxxxxxxxxxxxxxxxx</title>
+<title>html5 canvas bezier curves | xxxxxxxxxxxxxxxxxxxx</title>
 <meta name="keywords" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <meta name="description" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
@@ -23,23 +23,20 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Vẽ đường cong Quadratic Curve - Đường cong bậc hai với 1 điểm điều khiển <span class="font50">(điểm kiểm soát)</span></h2>
-            <h3>HTML5 Canvas Quadratic Curve Tutorial</h3>
+            <h2>Vẽ đường cong Bizier</h2>
+            <h3>HTML5 Canvas Bezier Curve Tutorial</h3>
             <section>
-                <p>Để tạo ra một đường cong bậc hai với HTML5 Canvas, chúng ta có thể sử dụng method <em>quadraticCurveTo()</em>. Đường cong Quadratic Curve được xác định bởi 1 điểm bắt đầu, 1 điểm kiểm soát(điều khiển độ cong), và 1 điểm kết thúc.</p>
-				<p class="center"><img src="../images/html5-canvas-quadratic-curves_img01.gif" alt="Đường cong bậc hai với 1 điểm điều khiển" /></p>
-				<p>Một điểm kiểm soát xác định độ cong của đường cong bậc hai bằng cách tạo ra 2 đường tiếp tuyến ảo được kết nối với điểm bắt đầu và điểm kết thúc.</p>
-				<p>Cấu trúc: <span class="text_blue">quadraticCurveTo(</span> <span class="text_purple">controlX, controlY</span><span class="text_red01">,</span><span class="text_blue01"> endX, endY</span> <span class="text_blue">)</span>.</p>
-				<ul class="list_text01">
-					<li><strong>.moveTo</strong>(x,y<span class="text_blue">)</span> : x,y : <strong>tọa độ điểm bắt đầu</strong>. </li>
-					<li><strong>.quadraticCurveTo(</strong><span class="text_purple">x1, y1</span>, <span class="text_pink">x2, y2</span><span class="text_blue">)</span>.<br>
-<span class="text_purple">x1, y1</span>: tọa độ điểm kiểm soát.<br>
-<span class="text_pink">x2, y2</span>: tọa độ điểm kết thúc.</li>
+                <p>Để tạo ra một đường cong Bezier với HTML5 Canvas, chúng ta có thể sử dụng method <em>bezierCurveTo()</em>. Đường cong Bezier được xác định bởi <strong>1 điểm bắt đầu</strong>, <strong>2 điểm kiểm soát</strong> và <strong>1 điểm kết thúc</strong>. Không giống như đường cong bậc hai <strong>Quadratic</strong>, đường cong Bezier được định nghĩa với <span class="text_red">2 điểm kiểm soát</span> thay vì một, cho phép chúng ta tạo ra độ cong phức tạp hơn.<br>
+Thuộc tính của đường cong Bezier bao gồm: <em>linewidth</em> : độ dày, <em>strokeStyle</em> : màu , <em>lineCap</em> : kiểu bo gốc.</p>
+<p class="center"><img src="../images/html5-canvas-bezier-curves_img01.gif" alt="Vẽ đường cong Bizier"></p>
+<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">bezierCurveTo</span>(</span> <span class="text_purple">controlX1, controlY1</span><span class="text_red01">,</span><span class="text_blue01"> controlX2, controlY2</span><span class="text_red01">, </span><span class="text_pink">endX, endY</span> <span class="text_blue">)</span>.</p>
+<ul class="list_text01">
+					<li><strong>.moveTo</strong>(x,y) : x,y : tọa độ <strong>điểm bắt đầu</strong>. </li>
+					<li><strong>.bezierCurveTo(</strong><span class="text_purple">x1, y1</span>, <span class="text_blue01">x2, y2</span>,<span class="text_pink"> x3, y3</span><strong>);</strong><br>
+<span class="text_purple">x1, y1</span>: Tọa độ điểm kiểm soát 1.<br>
+<span class="text_blue01">x2, y2</span>: Tọa độ điểm kiểm soát 2.<br>
+<span class="text_pink"> x3, y3</span>: Tọa độ điểm kết thúc.</li>
 				</ul>
-				<p>Di chuyển điểm kiểm soát <strong>xa</strong> khỏi và di chuyển các điểm kiểm soát gần gũi hơn với các điểm bối cảnh và điểm kết thúc sẽ tạo ra đường cong rộng lớn hơn sẽ tạo ra những đường cong sắc nét hơn.<br>
-Di chuyển các điểm kiểm soát <strong>gần</strong> hơn với các điểm bắt đầu và điểm kết thúc sẽ tạo ra đường cong rộng lớn hơn</p>
-				
-				
                 <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
