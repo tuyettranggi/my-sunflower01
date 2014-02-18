@@ -20,7 +20,7 @@
         <div class="frame_code">
             <iframe class="out" id="preview" scrolling="no"></iframe>
         </div>
-        <p class="title01">Khung edit HTML (có thể sửa và test trực tiếp):</p>
+        <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
         <div class="str_syntax">
 <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -34,22 +34,26 @@
 &lt;div id="wrap"&gt;
 &lt;canvas id="myCanvas0" width="600" height="155"&gt;&lt;/canvas&gt;
 &lt;script&gt;
-var canvas0 = document.getElementById('myCanvas0');
-var context0 = canvas0.getContext('2d');
-var x = canvas0.width / 2;
-var y = canvas0.height / 2;
-var radius = 30;
-var startAngle = 0 * Math.PI;
-var endAngle = 0.2 * Math.PI;
-var counterClockwise = false;
-
-context0.beginPath();
-context0.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-context0.lineWidth = 15;
-
-// line color
-context0.strokeStyle = 'black';
-context0.stroke();
+	var canvas0 = document.getElementById('myCanvas0');
+	var context0 = canvas0.getContext('2d');
+	/* Đặt vòng cung nằm ở gốc bên trái: 
+	bằng cách lấy bán kính(30px) + lineWidth(10px)/2 */
+	var x = 35;
+	var y = 35;
+	var radius = 30;	// ở đây bán kính vòng tròn là 30px 
+	
+	var startAngle = 0.5 * Math.PI;	 // gốc bắt đầu từ vị trí 0.5 PI
+	var endAngle = 1.5 * Math.PI;	// gốc kết thúc ở vị trí 1.5 PI
+									// => tạo nên 1/2 vòng tròn
+	var counterClockwise = false;	// cùng chiều kim đồng hồ
+	
+	context0.beginPath();
+	context0.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+	context0.lineWidth = 10;
+	
+	// line color
+	context0.strokeStyle = 'black';
+	context0.stroke();
 &lt;/script&gt;
 &lt;/div&gt;
 &lt;/body&gt;
@@ -59,8 +63,8 @@ context0.stroke();
     </article>
 </div>
 <!-- _________________________________codeEditor_______________________________________ -->
-<script src="../../js/codeMirror.js?a=2"></script>
-<script type="text/javascript" src="../../js/code_fn.js?n=2"></script>
+<script src="../../js/codeMirror.js?"></script>
+<script type="text/javascript" src="../../js/code_fn.js?"></script>
 <!-- __________________________________________________________________________________ -->
 </body>
 </html>

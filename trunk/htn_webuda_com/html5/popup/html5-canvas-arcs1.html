@@ -19,7 +19,7 @@
         <div class="frame_code">
             <iframe class="out" id="preview" scrolling="no"></iframe>
         </div>
-        <p class="title01">Khung edit HTML (có thể sửa và test trực tiếp):</p>
+        <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
         <div class="str_syntax">
             <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -35,22 +35,27 @@ body {margin: 0px;padding: 0px;}
 <!-- Đoạn code canvas thu 1 -->
 &lt;canvas id="myCanvas" width="600" height="155"&gt;&lt;/canvas&gt;
 &lt;script&gt;
-var canvas = document.getElementById('myCanvas');
-var context = canvas.getContext('2d');
-var x = canvas.width / 2;
-var y = canvas.height / 2;
-var radius = 30;
-var startAngle = 0 * Math.PI;
-var endAngle = 0.1 * Math.PI;
-var counterClockwise = false;
-
-context.beginPath();
-context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-context.lineWidth = 15;
-
-// line color
-context.strokeStyle = 'black';
-context.stroke();
+	var canvas = document.getElementById('myCanvas');
+	var context = canvas.getContext('2d');
+	/* Lấy tọa độ x,y : 
+	(width, height của canvas)/2 để tâm của vòng tròn nằm chính giữa canvas */
+	var x = canvas.width / 2;
+	var y = canvas.height / 2;
+	var radius = 60;	// ở đây bán kính vòng tròn là 60px
+	
+	var startAngle = 0 * Math.PI;	// gốc bắt đầu từ vị trí 0 PI
+	var endAngle = 0.5 * Math.PI;	// gốc bắt kết thúc ở vị trí 0.5 PI
+									// => tạo nên 1/4 vòng tròn
+	
+	var counterClockwise = false;	// cùng chiều kim đồng hồ
+	
+	context.beginPath();
+	context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+	context.lineWidth = 15;
+	
+	// line color
+	context.strokeStyle = 'black';
+	context.stroke();
 &lt;/script&gt;
 &lt;/div&gt;
 &lt;/body&gt;
