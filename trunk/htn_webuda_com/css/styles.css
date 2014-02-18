@@ -721,13 +721,9 @@ img.center,
 }
 
 /* table kanji */
-.tbl_Kanji {
-	border: 2px solid #999;
-}
 .tbl_Kanji td {
 	text-align: center;
 	cursor: pointer;
-	background: #FFFFCC;
 }
 .tbl_Kanji td a {
 	display: block;
