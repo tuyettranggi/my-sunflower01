@@ -14,7 +14,7 @@
 					tag.css({'display':'block','width':'auto','height':'auto'});
 					tag.css('height',tag.contents().height() + 20 + "px");
 					tag.css('width',tag.contents().width() + 20 + "px");
-				},300);
+				},800);
 			});
 		}
 	});
