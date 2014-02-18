@@ -41,7 +41,7 @@ Thuộc tính của đường cong Bezier bao gồm: <em>linewidth</em> : độ 
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                 </div>
-                <p class="title01">Khung edit HTML (có thể sửa và test trực tiếp):</p>
+                <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
                 <div class="str_syntax">
                     <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -60,8 +60,8 @@ Thuộc tính của đường cong Bezier bao gồm: <em>linewidth</em> : độ 
       var context = canvas.getContext('2d');
 
       context.beginPath();
-      context.moveTo(188, 150);
-      context.quadraticCurveTo(288, 0, 388, 150);
+      context.moveTo(188, 130);
+      context.bezierCurveTo(140, 10, 388, 10, 388, 170);
       context.lineWidth = 10;
 
       // line color

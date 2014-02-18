@@ -159,10 +159,15 @@ iframe.out {
 .CodeMirror-scroll {
 	width: 700px!important;	
 }
-#main {
-	width: 700px;
-	margin: 20px auto;
+#main {width: 700px; margin: 20px auto;}
+
+.note01 {
+	color: #999;
+	font-size: 90%;
+	font-weight: normal;
+	font-style: italic;
 }
+.co_gray01 { color: #999; }
 
 /* clearfix
 ------------------------------------------------------------------------*/

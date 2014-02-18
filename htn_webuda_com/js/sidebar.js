@@ -41,6 +41,7 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-arcs.html" title="đường cung tròn">Arc</a></dd>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-quadratic-curves.html" title="đường cong với 1 điểm kiểm soát">Quadratic Curve</a></dd>\
 				<dd>-<a href= "'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong Bezier">Bezier Curve</a></dd>\
+				<dt>Paths - Vẽ đường path</dt>\
 			</dl>\
 		</li>\
 		<li>+<a href= "'+i+'html5/syntax-code.html" title="định dạng code">syntaxHighlighter<br />( định dạng code )</a></li>\

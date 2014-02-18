@@ -20,7 +20,7 @@
         <div class="frame_code">
             <iframe class="out" id="preview" scrolling="no"></iframe>
         </div>
-        <p class="title01">Khung edit HTML (có thể sửa và test trực tiếp):</p>
+        <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
         <div class="str_syntax">
 <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
@@ -33,24 +33,25 @@
 &lt;body&gt;
 &lt;div id="wrap"&gt;
 &lt;canvas id="myCanvas" width="600" height="155"&gt;&lt;/canvas&gt;
- &lt;script&gt;
-		var canvas1 = document.getElementById('myCanvas');
-		var context1 = canvas1.getContext('2d');
-		var x = canvas1.width / 2;
-		var y = canvas1.height / 2;
-		var radius = 30;
-		var startAngle = 0 * Math.PI;
-		var endAngle = 0.5 * Math.PI;
-		var counterClockwise = false;
-	
-		context1.beginPath();
-		context1.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-		context1.lineWidth = 15;
-	
-		// line color
-		context1.strokeStyle = 'black';
-		context1.stroke();
-	  &lt;/script&gt;
+&lt;script&gt;
+	var canvas1 = document.getElementById('myCanvas');
+	var context1 = canvas1.getContext('2d');
+	var x = canvas1.width / 2;
+	var y = canvas1.height / 2;
+	var radius = 30;
+	var startAngle = 0 * Math.PI; 	// gốc bắt đầu từ vị trí 0 PI
+	var endAngle = 1.5 * Math.PI;	// gốc bắt kết thúc ở vị trí 1.5 PI
+									// => tạo nên 3/4 vòng tròn
+	var counterClockwise = false;
+
+	context1.beginPath();
+	context1.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+	context1.lineWidth = 15;
+
+	// line color
+	context1.strokeStyle = 'black';
+	context1.stroke();
+&lt;/script&gt;
 &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</textarea>
@@ -59,8 +60,8 @@
     </article>
 </div>
 <!-- _________________________________codeEditor_______________________________________ -->
-<script src="../../js/codeMirror.js?a=2"></script>
-<script type="text/javascript" src="../../js/code_fn.js?n=2"></script>
+<script src="../../js/codeMirror.js?"></script>
+<script type="text/javascript" src="../../js/code_fn.js?"></script>
 <!-- __________________________________________________________________________________ -->
 </body>
 </html>
