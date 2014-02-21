@@ -409,6 +409,15 @@ table.gsc-search-box td.gsc-input {
 
 #content h3.h3_kanji {
 	font-weight: normal;
+	min-height: 80px;
+	vertical-align: middle;
+	position: relative;
+}
+#content h3.h3_kanji img {
+	position: absolute;
+	left: 85%;
+	top: 0;
+	
 }
 #content h3.h3_kanji img {
 	vertical-align: middle;
@@ -680,6 +689,7 @@ img.center,
 #content table td.td_des {
 	vertical-align: middle;
 }
+#content table td.td_des .pb0 { line-height: 2em; }
 #content table td.td_write {
 	text-align: center;
 	vertical-align: middle;
@@ -760,7 +770,7 @@ img.center,
 	border-bottom: 1px solid #e6e6e6;
 	font-size: 220%;
 	margin: -1.1em 0 0.5em 5em;
-	padding: 0 0 10px 0;
+	padding: 0 0 10px 150px;
 }
 .list_des dd.kanji {
 	font-size: 600%;
