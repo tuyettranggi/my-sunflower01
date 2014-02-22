@@ -646,6 +646,7 @@ canvas#ex1 {
 	background: url(../images/icon_prev.png) no-repeat 0 50%;
 }
 
+
 /*-----------------------------------------------------------------xxx */
 
 
@@ -776,6 +777,16 @@ img.center,
 	font-size: 600%;
 	margin: -0.8em 0 0.5em 1.8em;
 }
+.list_des dd.unite strong {
+	display: block;
+	float: left;
+	min-width: 57px;
+	clear: both;
+}
+.list_des dd.unite span {
+	font-size: 60%;
+	line-height: 2.8em;
+}
 .list_text { padding-bottom: 10px;}
 .list_text li {
 	color: #666;
@@ -787,9 +798,11 @@ img.center,
 .list_text li .text_black {font-size: 110%; padding-left: 2px;}
 .list_text li.indent1 {padding-left: 25px; text-indent: -10px;}
 .list_text li .ttl {
+	color: #C8514C;
 	padding-bottom: 5px;
 }
 .list_text li .inner {
+	font-size: 85%;
 	margin: -5px 0 0 -5px;
 	padding: 0 5px;
 }
