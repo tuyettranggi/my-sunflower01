@@ -13,16 +13,16 @@ else if($('body').is('.rank3')){
 // tao table kanji
 $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
         <tr>\
-          <td><a href="'+i+'kanji/nhat.html" title="Nhật">日</a></td>\
-		  <td><a href="'+i+'kanji/nguyet.html" title="Nguyệt">月</a></td>\
-		  <td><a href="'+i+'kanji/hoa.html" title="Hỏa">火</a></td>\
-		  <td><a href="'+i+'kanji/thuy.html" title="Thủy">水</a></td>\
-		  <td><a href="'+i+'kanji/moc.html" title="Mộc">木</a></td>\
-		  <td><a href="'+i+'kanji/kim.html" title="Kim">金</a></td>\
-		  <td><a href="'+i+'kanji/tho.html" title="Thổ">土</a></td>\
-		  <td><a href="'+i+'kanji/son.html" title="Sơn">山</a></td>\
-		  <td><a href="'+i+'kanji/xuyen.html" title="Xuyên">川</a></td>\
-		  <td><a href="'+i+'kanji/dien.html" title="Điền">田</a></td>\
+          <td><a href="'+i+'kanji/nhat_sun.html" title="Nhật - sun">日</a></td>\
+		  <td><a href="'+i+'kanji/nguyet_moon.html" title="Nguyệt - moon">月</a></td>\
+		  <td><a href="'+i+'kanji/hoa_fire.html" title="Hỏa - fire">火</a></td>\
+		  <td><a href="'+i+'kanji/thuy_water.html" title="Thủy - water">水</a></td>\
+		  <td><a href="'+i+'kanji/moc_tree.html" title="Mộc - tree">木</a></td>\
+		  <td><a href="'+i+'kanji/kim_gold.html" title="Kim - gold">金</a></td>\
+		  <td><a href="'+i+'kanji/tho_soil.html" title="Thổ - soil">土</a></td>\
+		  <td><a href="'+i+'kanji/son_mountain.html" title="Sơn - mountain">山</a></td>\
+		  <td><a href="'+i+'kanji/xuyen_river.html" title="Xuyên - river">川</a></td>\
+		  <td><a href="'+i+'kanji/dien_ricefield.html" title="Điền - rice fild">田</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
@@ -30,11 +30,11 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
         </tr>\
 		<tr>\
-          <td><a href="'+i+'kanji/giang.html" title="Giáng">降</a></td>\
+          <td><a href="'+i+'kanji/giang_descend.html" title="Giáng - descend">降</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/chung.html" title="Chung">終</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/chung_finish.html" title="Chung - finish">終</a></td>\
+		  <td><a href="'+i+'kanji/xuan_spring.html" title="Xuân - spring">春</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
