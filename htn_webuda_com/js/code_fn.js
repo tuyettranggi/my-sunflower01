@@ -87,7 +87,7 @@ function ResizeIframe(id){
 	ths.css({'display':'block','width':'auto','height':'auto'});
 	
 	var frame = document.getElementById(id);
-	ths.css('height',ths.contents().height() + "px");
+	ths.css('height',ths.contents().height()-3 + "px");
 	ths.css('width',ths.contents().width() + "px");
 	},200);
 }
