@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Opacity | CSS3</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/color.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Opacity</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<p>* This color uses opacity:</p>
+
+<div class="opacityColor01">
+<div class="opacityColor01_1"></div>
+<div class="opacityColor01_2"></div>
+<div class="opacityColor01_3"></div>
+<div class="opacityColor01_4"></div>
+<div class="opacityColor01_5"></div>
+</div>
+
+<p>* This color uses RGB values:</p>
+
+<div class="rgbColor02">
+<div class="rgbColor02_1"></div>
+<div class="rgbColor02_2"></div>
+<div class="rgbColor02_3"></div>
+<div class="rgbColor02_4"></div>
+<div class="rgbColor02_5"></div>
+</div>
+
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p>&lt;p&gt;* This color uses opacity:&lt;/p&gt;<br /><br />
+
+&lt;div class="opacityColor01"&gt;<br />
+&lt;div class="opacityColor01_1"&gt;&lt;/div&gt;<br />
+&lt;div class="opacityColor01_2"&gt;&lt;/div&gt;<br />
+&lt;div class="opacityColor01_3"&gt;&lt;/div&gt;<br />
+&lt;div class="opacityColor01_4"&gt;&lt;/div&gt;<br />
+&lt;div class="opacityColor01_5"&gt;&lt;/div&gt;<br />
+&lt;/div&gt;<br /><br />
+
+&lt;p&gt;* This color uses RGB values:&lt;/p&gt;<br /><br />
+
+&lt;div class="rgbColor02"&gt;<br />
+&lt;div class="rgbColor02_1"&gt;&lt;/div&gt;<br />
+&lt;div class="rgbColor02_2"&gt;&lt;/div&gt;<br />
+&lt;div class="rgbColor02_3"&gt;&lt;/div&gt;<br />
+&lt;div class="rgbColor02_4"&gt;&lt;/div&gt;<br />
+&lt;div class="rgbColor02_5"&gt;&lt;/div&gt;<br />
+&lt;/div&gt;</p>
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+div.opacityColor01 div,
+div.rgbColor02 div {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+div.opacityColor01_1 {
+    background-color: rgb(255,0,0);
+    opacity: 0.2;
+}
+div.opacityColor01_2 {
+    background-color: rgb(255,0,0);
+    opacity: 0.4;
+}
+div.opacityColor01_3 {
+    background-color: rgb(255,0,0);
+    opacity: 0.6;
+}
+div.opacityColor01_4 {
+    background-color: rgb(255,0,0);
+    opacity: 0.8;
+}
+div.opacityColor01_5 {
+    background-color: rgb(255,0,0);
+    opacity: 1;
+}
+
+div.rgbColor02_1 {
+    background-color: rgb(243,191,189);
+}
+div.rgbColor02_2 {
+    background-color: rgb(246,143,142);
+}
+div.rgbColor02_3 {
+    background-color: rgb(249,95,94);
+}
+div.rgbColor02_4 {
+    background-color: rgb(252,47,47);
+}
+div.rgbColor02_5 {
+    background-color: rgb(255,0,0);
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://www.css3.info/preview/opacity/" target="_blank">http://www.css3.info/preview/opacity/</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="hsl_color.html">HSL colors</a></li>
+<li><a href="hsla_color.html">HSLA colors</a></li>
+<li><a href="opacity.html">Opacity</a></li>
+<li><a href="rgba_color.html">RGBA colors</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Transform | CSS3</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/transform.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Transform</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<ul class="photoAlbum">
+
+<li><a href="#" class="large polaroid img1"><img src="images/volcanic.jpg" alt="">This breathtaking volcanic lake is at Wai-O-Tapu Thermal Wonderland</a></li>
+<li><a href="#" class="polaroid img2"><img src="images/waterfall.jpg" alt="">This lovely waterfall was at Rotorua in Rainbow Springs</a></li>
+<li><a href="#/" class="small polaroid img3"><img src="images/leaf.jpg" alt="">Ferntastic</a></li>
+<li><a href="#" class="medium polaroid img4"><img src="images/whale.jpg" alt="">At Kaikoura we went whale watching!</a></li>
+<li><a href="#" class="polaroid img5"><img src="images/seal.jpg" alt="">Found this little cutie on a walk in New Zealand!</a></li>
+<li><a href="#" class="polaroid img6"><img src="images/lake.jpg" alt="">An amazing bubbling volcanic spring, a bit muddy</a></li>
+<li><a href="#" class="polaroid img7"><img src="images/simon.jpg" alt="">Simon in a giant Kiwi, pretending to be a Kiwi (the bird)</a></li>
+<li><a href="#" class="small polaroid img8"><img src="images/albatross.jpg" alt="">Albatross in Dunedin</a></li>
+<li><a href="#" class="medium polaroid img9"><img src="images/raft.jpg" alt="">White water rafting in Queenstown</a></li>
+<li><a href="#" class="polaroid img10"><img src="images/whiteisland.jpg" alt="">White Island</a></li>
+<li><a href="#" class="small polaroid img11"><img src="images/sulphur.jpg" alt="">Sulphurous</a></li>
+<li><a href="#" class="small polaroid img12"><img src="images/sealions.jpg" alt="">Sea lions!</a></li>
+<li><a href="#" class="small polaroid img13"><img src="images/horses.jpg" alt="">Horse riding</a></li>
+<li><a href="#" class="small polaroid img14"><img src="images/camping.jpg" alt="">Stewart Island</a></li>
+<li><a href="#" class="polaroid img15"><img src="images/us.jpg" alt="">Us in a blue cave on the Franz Josef glacier</a></li>
+</ul>
+
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p>&lt;p class="transformStyle01"&gt;Example 1 (rotate)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle02"&gt;Example 2 (skew)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle03"&gt;Example 3 (scale)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle04"&gt;Example 4 (matrix)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle05"&gt;Example 5 (translate)&lt;/p&gt;</p>
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+a.polaroid {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 10px 10px 20px 10px;
+	width: 150px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	z-index: 2;
+	font-size: 0.7em;
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+	-webkit-transition: all 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+	z-index: 999;
+	border-color: #6A6A6A;
+	-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-webkit-transform: rotate(0deg) scale(1.05);
+	-moz-transform: rotate(0deg) scale(1.05);
+	transform: rotate(0deg) scale(1.05);
+}
+.polaroid img {
+	margin: 0 0 15px;
+	width: 150px;
+	height: 150px;
+}
+
+a img {
+	border: none;
+	display: block;
+}
+
+.photoAlbum {
+	color: #333;
+	font-family: "Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 70em;
+	height: 450px;
+	margin-top: 5em;
+	min-width: 800px;
+	max-width: 900px;
+}
+.photoAlbum .polaroid {
+	position: absolute;
+}
+.photoAlbum .small {
+	width: 75px;
+	padding: 6px 6px 12px 6px;
+	font-size: 0.6em;
+}
+.photoAlbum .small img {
+	width: 75px;
+	height: 75px;
+}
+.photoAlbum .medium {
+	width: 200px;
+	padding: 13px 13px 26px 13px;
+	font-size: 0.8em;
+}
+.photoAlbum .medium img {
+	width: 200px;
+	height: 200px;
+}
+.photoAlbum .large {
+	width: 300px;
+	padding: 20px 20px 30px 20px;
+	font-size: 1em;
+}
+.photoAlbum .large img {
+	width: 300px;
+	height: 300px;
+}
+.photoAlbum .img1 {
+	bottom: 10px;
+	right: 365px;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+.photoAlbum .img2 {
+	top: 50px;
+	right: 20px;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+.photoAlbum .img3 {
+	left: 400px;
+	top: 0;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.photoAlbum .img4 {
+	top: 10px;
+	left: 495px;
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+.photoAlbum .img5 {
+	bottom: 0;
+	right: 0;
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+.photoAlbum .img6 {
+	bottom: 10px;
+	right: 156px;
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	transform: rotate(6deg);
+}
+.photoAlbum .img7 {
+	bottom:0;
+	left:400px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+.photoAlbum .img8 {
+    bottom: -20px;
+    left: 700px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photoAlbum .img9 {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photoAlbum .img10 {
+    top: 0;
+    left: 20px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+.photoAlbum .img11 {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.photoAlbum .img12 {
+	top: 0;
+	left: 680px;
+	-webkit-transform: rotate(18deg);
+	-moz-transform: rotate(18deg);
+	transform: rotate(18deg);
+}
+.photoAlbum .img13 {
+	bottom: -20px;
+	right: 630px;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+.photoAlbum .img14 {
+    top: 90px;
+    left: 430px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.photoAlbum .img15 {
+    left: 176px;
+    top: 20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+a:hover,
+a:focus {
+    z-index: 5;
+}
+
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE, Opera</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://www.w3schools.com/css3/css3_2dtransforms.asp" target="_blank">http://www.w3schools.com/css3/css3_2dtransforms.asp</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="transform2D.html">transform 2D</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

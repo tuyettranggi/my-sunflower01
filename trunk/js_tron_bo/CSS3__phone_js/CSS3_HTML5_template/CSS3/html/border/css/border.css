@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+table.borderRadiusTable {
+	font-size: 110%;
+	margin-bottom: 30px;
+	width: 780px;
+}
+
+table.borderRadiusTable tr th {
+	background: #FFFFCC;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+table.borderRadiusTable tr td {
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	width: 50%;
+}
+
+
+/* # border color
+---------------------------------------------------------------------------- */
+
+div#content p.borderColor01 {
+	border: 8px solid #000;
+	-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	padding: 5px 5px 5px 15px;
+}
+
+
+/* # border image
+---------------------------------------------------------------------------- */
+
+div#content p.borderImage01 {
+	border: 10px double orange;
+	-moz-border-image: url(../images/border.png) 28 round round; /* for firefox */
+	-o-border-image: url(../images/border.png) 28 round round; /* for opera */
+	-khtml-border-image: url(../images/border.png) 28 round round; /* for chrome and safari */
+	padding: 10px 15px;
+}
+
+div#content p.borderImage02 {
+	border: 10px double orange;
+	-moz-border-image: url(../images/border.png) 28 stretch stretch; /* for firefox */
+	-o-border-image: url(../images/border.png) 28 stretch stretch; /* for opera */
+	-khtml-border-image: url(../images/border.png) 28 stretch stretch; /* for chrome and safari */
+	padding: 10px 15px;
+	margin-top: 30px;
+}
+
+
+/* # border radius
+---------------------------------------------------------------------------- */
+
+div#content p.borderRadiusStyle01 {
+	background: #ffff33;
+	-moz-border-radius: 10px; /* topleft topright bottomright bottomleft */
+	border-radius: 10px;
+	padding: 10px;
+}
+
+div#content p.borderRadiusStyle02 {
+	background: #ffff33;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+div#content p.borderRadiusStyle03 {
+	background: #ffff33;
+	-moz-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+div#content p.borderRadiusStyle04 {
+	background: #ffff33;
+	-moz-border-radius: 0 10px 0 10px;
+	border-radius: 0 10px 0 10px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+
+/* # box shadow
+---------------------------------------------------------------------------- */
+
+div#content p.boxShadow {
+	background: #ffff33;
+	-moz-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 2px 4px 6px rgba(0,0,0,0.6);
+	box-shadow: 2px 4px 6px rgba(0,0,0,0.6);
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+
+/* # drawbyboder
+---------------------------------------------------------------------------- */
+
+.draw {
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+}
+.circle {
+ background-color: #c06;
+ -moz-border-radius:75px;
+ -webkit-border-radius: 75px;
+ border-radius: 75px;
+ height: 100px;
+ width: 100px;
+ display: block;
+}
+.half_circle {
+ background-color: blue;
+ -moz-border-radius:75px 75px 0 0;
+ -webkit-border-radius: 75px 75px 0 0;
+ border-radius: 75px 75px 0 0;
+ height: 50px;
+ width: 100px;
+ display: block;
+}
+.q_circle {
+ background-color: green;
+ -moz-border-radius: 75px 0 0 0;
+ -webkit-border-radius: 75px 0 0 0;
+ border-radius: 75px 0 0 0;
+ height: 50px;
+ width: 50px;
+ display: block;
+}
+.triangle {
+  border-color: red transparent transparent transparent;
+  border-style: solid;
+  border-width: 40px;
+  height: 0;
+  width: 0;
+}
+.triangle2 {
+  border-color: transparent  yellow transparent  transparent;
+  border-style: solid;
+  border-width: 40px;
+  height: 0;
+  width: 0;
+}
+.triangle3 {
+  border-color: transparent transparent green transparent;
+  border-style: solid;
+  border-width: 40px;
+  height: 0;
+  width: 0;
+}
+.triangle4 {
+  border-color: transparent transparent  transparent orange;
+  border-style: solid;
+  border-width: 40px;
+  height: 0;
+  width: 0;
+}
+.happyface {
+background-color: yellow;
+-moz-border-radius: 75px;
+-webkit-border-radius: 75px;
+border-radius: 75px;
+height: 100px;
+position: relative;
+width: 100px;
+text-align: center;
+}
+.happyface b {
+background-color: black;
+-moz-border-radius:75px;
+-webkit-border-radius: 75px;
+border-radius: 75px;
+height: 20px;
+width: 20px;
+display: block;
+float: left;
+margin-left: 20px;
+margin-top: 25px;
+}
+.happyface i {
+background-color: red;
+-moz-border-radius:0 0 75px 75px;
+-webkit-border-radius: 0 0 75px 75px;
+border-radius: 0 0 75px 75px;
+height: 30px;
+width: 50px;
+display: lock;
+position: absolute;
+bottom: 12px;
+left: 24px;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

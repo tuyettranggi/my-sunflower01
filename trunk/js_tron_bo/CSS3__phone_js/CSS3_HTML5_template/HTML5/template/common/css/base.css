@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+	color: #1a5eba;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+article h2.bHead {
+	background: #7c7d7d;
+	border: 1px solid #000;
+	clear: both;
+	color: #fff;
+	font-size: 130%;
+	font-weight: bold;
+	height: 35px;
+	padding: 15px 0 0 10px;
+}
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+header {
+	height: 90px;
+	position: relative;
+	margin: 10px auto 0 auto;
+	width: 960px;
+}
+
+header h1#description {
+	color: #888;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+header #logo {
+	float: left;
+	padding: 30px 0 0 0;
+	width: 150px;
+}
+
+header section {
+	float: right;
+	text-align: right;
+	width: 500px;
+}
+
+header nav.hNav {
+	margin: 10px 0 0 0;
+}
+
+header nav.hNav ul {
+	background: url(../images/bg_line.gif) no-repeat right center;
+	float: right;
+	padding-right: 5px;
+}
+
+header nav.hNav ul li {
+	background: url(../images/bg_line.gif) no-repeat 0 4px;
+	float: left;
+	padding-right: 6px;
+	padding-left: 11px;
+	width: auto;
+}
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+nav#gNav {
+	background: #7c7b7b;
+	clear: both;
+	height: 40px;
+}
+
+nav#gNav dl {
+	margin: 0 auto;
+	width: 960px;
+}
+
+nav#gNav dl dt {
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+nav#gNav dl dd ul li {
+	float: left;
+	width: auto;
+}
+
+nav#gNav dl dd ul li a {
+	display: block;
+}
+
+nav#gNav dl dd ul li a:hover {
+	overflow: hidden;
+}
+
+nav#gNav dl dd ul li a:hover img {
+	visibility: hidden;
+}
+
+nav#gNav dl dd ul li#gNav01 a {background: url(../images/gnav_gnav01_o.gif) no-repeat left top;}
+nav#gNav dl dd ul li#gNav02 a {background: url(../images/gnav_gnav02_o.gif) no-repeat left top;}
+nav#gNav dl dd ul li#gNav03 a {background: url(../images/gnav_gnav03_o.gif) no-repeat left top;}
+nav#gNav dl dd ul li#gNav04 a {background: url(../images/gnav_gnav04_o.gif) no-repeat left top;}
+nav#gNav dl dd ul li#gNav05 a {background: url(../images/gnav_gnav05_o.gif) no-repeat left top;}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+section#pageBody {
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
+	width: 960px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+article {
+	float: left;
+	width: 710px;
+}
+
+article p {
+	margin-bottom: 0;
+}
+
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+aside {
+	float: right;
+	width: 220px;
+}
+
+aside .bHead {
+	background: url(../images/bg_bh.gif) no-repeat left bottom;
+	color: #fff;
+	font-size: 120%;
+	font-weight: bold;
+	height: 35px;
+	padding: 15px 0 2px 10px;
+}
+
+aside section {
+	margin-bottom: 10px;
+}
+
+aside section nav.lNav {
+	margin: 10px 0 0 0;
+}
+
+aside section nav.lNav ul {
+	background: url(../images/bg_dotted.gif) repeat-x left top;
+}
+
+aside section nav.lNav ul li {
+	background: url(../images/bg_dotted.gif) repeat-x left bottom;
+	padding: 5px 0 7px 14px;
+	text-indent: -14px;
+	width: auto;
+}
+
+aside section nav.lNav ul li a {
+	background: url(../images/ico_arrow02.gif) no-repeat 0 3px;
+	padding-left:15px;
+}
+
+aside section h3 {
+	background: url(../images/bg_mh.gif) no-repeat left top;
+	border: 1px solid #7c7b7b;
+	color: #fff;
+	height: 33px;
+	font-size: 140%;
+	font-weight: bold;
+	padding: 7px 0 0 0;
+	text-align: center;
+}
+
+aside section div.itemContent {
+	border: 1px solid #7c7b7b;
+	padding: 5px;
+}
+
+aside section p.itemLink {
+	text-align: right;
+}
+
+aside section p.itemLink a {
+	background: url(../images/ico_arrow02.gif) no-repeat left center;
+	padding-left: 15px;
+}
+
+aside ul.banner li {
+	margin-bottom: 10px;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+footer {
+	border-top: 2px solid #7c7b7b;
+	clear: both;
+	height: 110px;	
+}
+
+footer section#footerInner {
+	margin: 7px auto 0 auto;
+	width: 960px;
+}
+
+footer section#footerInner section {
+	float: left;
+}
+
+footer nav.fNav {
+	float: right;
+	width: 500px;
+}
+
+footer nav.fNav ul {
+	background: url(../images/bg_line.gif) no-repeat right center;
+	float: right;
+	padding-right: 5px;
+}
+
+footer nav.fNav ul li {
+	background: url(../images/bg_line.gif) no-repeat 0 4px;
+	float: left;
+	padding-right: 6px;
+	padding-left: 11px;
+	width: auto;
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+header,
+nav.hNav ul,
+nav#gNav dl dd ul,
+section#pageBody,
+footer ,
+nav.fNav ul,
+ul.topicPath {
+	zoom: 1;
+}
+
+header:after,
+nav.hNav ul:after,
+nav#gNav dl dd ul:after,
+section#pageBody:after,
+footer :after,
+nav.fNav ul:after,
+ul.topicPath:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+section,
+header,
+footer,
+nav {
+	display: block;
+}
+
+/* # Common Classes
+---------------------------------------------------------------------------- */
+
+ul.topicPath {
+	margin-bottom: 10px;
+}
+
+ul.topicPath li {
+	background: url(../images/ico_arrow01.gif) no-repeat right center;
+	float: left;
+	margin-right: 8px;
+	padding-right: 12px;
+	width: auto;
+}
+
+ul.topicPath li.last {
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+p.pageTop {
+	margin-top: 10px;
+	text-align: right;
+}
+
+p.pageTop a {
+	background: url(../images/ico_arrow03.gif) no-repeat left center;
+	padding-left: 15px;
+}

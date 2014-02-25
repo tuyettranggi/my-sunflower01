@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Media_player</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/combines.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Media_player</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<div id="player">
+<h2>Media Player</h2>
+<button class="control" id="previous">Prev.</button>
+<button class="control" id="play">Play</button>
+<button class="control" id="next">Next</button>
+
+<div id="progressbg">
+<div id="progressbar">
+</div>
+</div>
+</div>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+<div class="sectionBody">
+&lt;div id="player"&gt;<br />
+&lt;h2>Media Player&lt;/h2&gt;<br />
+&lt;button class="control" id="previous"&gt;Prev.&lt;/button&gt;<br />
+&lt;button class="control" id="play"&gt;Play&lt;/button&gt;<br />
+&lt;button class="control" id="next"&gt;Next&lt;/button&gt;<br />
+
+&lt;div id="progressbg"&gt;<br />
+&lt;div id="progressbar"&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+#player {
+    -moz-border-radius: 6px 6px 6px 6px;
+    -moz-box-shadow: 0 -20px 40px #AAAAAA inset, 0 20px 40px #FFFFFF inset,
+	 0 2px 6px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0 20px 15px 10px;
+    width: 500px;
+}
+h2 {
+    -moz-border-radius: 5px 5px 0 0;
+    -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 2px groove rgba(255, 255, 255, 0.75);
+    color: #444444;
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 14px;
+    margin: 0 -20px 10px -10px;
+    padding: 5px 15px;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.control {
+    -moz-border-radius: 50px 50px 50px 50px;
+    -moz-box-shadow: 0 -1px 3px rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.2) inset,
+	 0 -20px 5px rgba(0, 0, 0, 0.15) inset, 5px -10px 5px rgba(0, 0, 0, 0.15) inset,
+	  -5px -10px 5px rgba(0, 0, 0, 0.15) inset, 0 15px 20px #FFFFFF inset, 
+	  0 -15px 30px #999999 inset, 0 2px 1px #FFFFFF;
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    height: 50px;
+    margin: 4px;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 1px #FFFFFF;
+    width: 50px;
+}
+.control:hover {
+    -moz-box-shadow: 0 -2px 10px #0088FF inset, 0 0 5px #0088FF, 
+	0 -1px 3px rgba(255, 255, 255, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.1) inset,
+	 0 -20px 5px rgba(0, 0, 0, 0.15) inset, 
+	5px -10px 5px rgba(0, 0, 0, 0.15) inset, -5px -10px 5px rgba(0, 0, 0, 0.15) inset,
+	 0 15px 25px #DDEEFF inset, 0 -15px 30px #3377EE inset, 0 2px 1px #FFFFFF;
+    -moz-transform: scale(1.1);
+    background: none repeat scroll 0 0 #88CCFF;
+    color: #004488;
+}
+.control:active {
+    -moz-box-shadow: 2px -5px 15px #0088FF inset, 0 0 5px #0088FF,
+	 0 0 7px #0088FF, 2px -1px 5px rgba(255, 255, 255, 0.15) inset,
+	  1px 3px 6px rgba(0, 0, 0, 0.15) inset, 2px -18px 5px rgba(0, 0, 0, 0.15) inset,
+	   7px -8px 5px rgba(0, 0, 0, 0.15) inset, -3px -8px 5px rgba(0, 0, 0, 0.15) inset,
+	    2px 17px 20px #CCDDEE inset, 2px -13px 30px #1155AA inset, 0 2px 1px #FFFFFF;
+    background-color: #66AADD;
+}
+#play {
+    -moz-transform: scale(1.3);
+}
+#play:hover {
+    -moz-transform: scale(1.4);
+}
+#progressbg {
+    -moz-border-radius: 4px 4px 4px 4px;
+    -moz-box-shadow: 0 1px 3px #333333 inset, 0 -4px 10px #555555 inset,
+	 0 1px 1px rgba(255, 255, 255, 0.75), 0 -1px 5px rgba(0, 0, 0, 0.25);
+    background-color: #777777;
+    border: 1px solid #333333;
+    display: inline-block;
+    height: 16px;
+    width: 300px;
+}
+#progressbar {
+    -moz-border-radius: 2px 2px 2px 2px;
+    -moz-box-shadow: 0 -8px 1px #2266AA inset, 0 -4px 10px #004488 inset, 1px 0 1px #000000;
+    background-color: #0066CC;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 14px;
+    width: 10px;
+}
+#progressbg:hover #progressbar {
+    -moz-box-shadow: 0 -8px 1px #2266AA inset, 0 -4px 10px #004488 inset,
+	 0 0 5px #2288FF, 1px 0 1px #000000;
+    background: none repeat scroll 0 0 #66AAFF;
+    width: 299px;
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://devfiles.myopera.com/articles/1661/widgetstyling_mediaui.html" target="_blank">http://devfiles.myopera.com/articles/1661/widgetstyling_mediaui.html</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="media_player.html">media_player</a></li>
+<li><a href="phone_ul.html">phone_ul</a></li>
+<li><a href="windows7.html">windows7</a></li>
+<li><a href="button.html">button</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

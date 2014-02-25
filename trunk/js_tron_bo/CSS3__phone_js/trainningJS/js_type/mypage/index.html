@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>登録情報の確認・変更トップ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_mypage.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem -->
+<section id="content" class="cMypage cEntry">
+<div id="contentHead">
+<h1>登録情報の確認・変更</h1>
+<!-- / id contentHead --></div>
+
+<div id="mypageLeadBox">
+<p id="userDetail">各種登録情報の確認・変更ができます。</p>
+</div>
+
+<section id="myPageResumeSec" class="entrySec">
+<h2 class="mh"><span>履歴書・職務経歴書・スキルシートなど</span></h2>
+<section class="entrySec">
+<p class="leadText">登録する経歴は常に最新の情報にしておくと、企業から閲覧される可能性が高くなります。</p>
+<ul class="basicBoxList1 entryTargetList noBG">
+<li>
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>履歴書</strong></dt>
+<dd class="floatR">
+<p class="floatL registered fmFont24"><strong>登録済</strong></p>
+<p class="floatL"><a class="btn1 arrowRBtn" href="/mypage/user_detail_confirm.do"><span>登録・更新</span></a></p>
+</dd>
+</dl>
+</li>
+
+<li>
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>職務経歴書</strong></dt>
+<dd class="floatR">
+<p class="floatL unregistered fmFont24"><strong>未登録項目あり</strong></p>
+<p class="floatL"><a class="btn1 arrowRBtn" href="/mypage/user_detail_confirm.do#experience"><span>登録・更新</span></a></p>
+</dd>
+</dl>
+</li>
+
+<li>
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>希望条件</strong></dt>
+<dd class="floatR">
+<p class="floatL registered fmFont24"><strong>登録済</strong></p>
+<p class="floatL"><a class="btn1 arrowRBtn" href="/mypage/user_detail_confirm.do#hope"><span>登録・更新</span></a></p>
+</dd>
+</dl>
+</li>
+
+<li>
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>スキルシート</strong></dt>
+<dd class="floatR">
+<p class="floatL registered fmFont24"><strong>登録済</strong></p>
+<p class="floatL"><a class="btn1 arrowRBtn" href="/mypage/user_detail_confirm.do#skill"><span>登録・更新</span></a></p>
+</dd>
+</dl>
+</li>
+</ul>
+<!-- / class entrySec --></section>
+<!-- / id myPageResumeSec --></section>
+
+<section id="myPageLoginSec" class="entrySec">
+<h2 class="mh"><span>ログイン情報</span></h2>
+<section class="entrySec">
+<ul class="fmItemList resumeListReset">
+<li>
+<dl class="resumeList clearfix">
+<dt><strong>登録ID</strong></dt>
+<dd>1234567890（登録IDは変更できません）</dd>
+</dl>
+</li>
+
+<li>
+<dl class="resumeList clearfix">
+<dt><strong>ログインID</strong></dt>
+<dd>abcdefgh@abc.com</dd>
+</dl>
+</li>
+
+<li>
+<dl class="resumeList clearfix">
+<dt><strong>パスワード</strong></dt>
+<dd>* * * * * * * * *</dd>
+</dl>
+</li>
+</ul>
+
+<p class="alignC mb20"><a href="/mypage/edit_user_input.do" class="btn1 arrowRBtn"><span>登録・更新</span></a></p>
+<!-- / class entrySec --></section>
+<!-- / id myPageLoginSec --></section>
+
+<section id="myPageServiceSec" class="entrySec">
+<h2 class="mh"><span>サービス利用設定</span></h2>
+<section class="entrySec">
+<ul class="basicBoxList1 entryTargetList noSpaceBtm">
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>直接スカウト</strong></dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/touroku/index02.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="btn3 applicationBtn" href="#"><span>利用する</span></a></p>
+<p class="underOff fmFont24"><strong>停止中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL"><strong>オファーDM</strong></dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/touroku/index03.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL textReset"><strong>「type人材紹介」からのスカウト</strong></dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/touroku/shoukai_scout.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL">スキルマッチング</dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/touroku/index01.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL">希望条件マッチングメール</dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/touroku/index05.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+</ul>
+<!-- / class entrySec --></section>
+<!-- / id myPageServiceSec --></section>
+
+<section id="myPageChangeSec" class="entrySec">
+<h2 class="mh"><span>転職メールサービスの利用設定</span></h2>
+<section class="entrySec">
+<ul class="basicBoxList1 entryTargetList noSpaceBtm">
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL">求人総合転職情報ニュース</dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/mail/index01.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="btn3 applicationBtn" href="#"><span>利用する</span></a></p>
+<p class="underOff fmFont24"><strong>停止中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL">営業職向け転職情報ニュース</dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/mail/sales.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+
+<li class="noBG">
+<dl class="resumeList clearfix">
+<dt class="floatL">コンサルタント向け転職情報</dt>
+<dd class="floatR">
+<p><a class="aPC" href="/s/sample/mail/consultant.html"><span>サンプルはこちら</span></a></p>
+</dd>
+</dl>
+<div class="linkList alignC">
+<p><a class="aArrow1" href="/s/sample/touroku/index02.html"><span>停止する</span></a></p>
+<p class="underOn fmFont24"><strong>利用中</strong></p>
+</div>
+</li>
+</ul>
+<!-- / class entrySec --></section>
+<!-- / id myPageChangeSec --></section>
+
+<section id="myPageSetupSec" class="entrySec">
+<h2 class="mh"><span>セレクト表示モードの設定</span></h2>
+<section class="entrySec">
+<dl class="resumeList setupList clearfix">
+<dt class="floatL"><strong>セレクト表示モード</strong></dt>
+<dd class="floatR">
+<p class="floatL registered fmFont24"><strong>登録済</strong></p>
+<p class="floatL"><a class="btn1 arrowRBtn" href="/mypage/select_mode_input.do"><span>登録・更新</span></a></p>
+</dd>
+</dl>
+<p class="noteText">※セレクト表示モードはPC版でのみご利用いただける機能です</p>
+<!-- / class entrySec --></section>
+<!-- / id myPageSetupSec --></section>
+
+<section id="myPageConditionSec" class="entrySec">
+<h2 class="mh"><span>登録している検索条件</span></h2>
+<section class="entrySec">
+<ul class="fmItemList alignC">
+<li>現在、3条件登録</li>
+<li>
+<p class="alignC"><a class="btn1 arrowRBtn floatNone" href="/mypage/condition_list.do"><span>条件の登録・更新</span></a></p>
+</li>
+</ul>
+<!-- / class entrySec --></section>
+<!-- / id myPageConditionSec --></section>
+
+<section id="myPageWithdrawalSec" class="entrySec">
+<h2 class="mh"><span>退会</span></h2>
+<section class="entrySec">
+<p class="alignC brBtm"><a href="/mypage/withdraw_confirm.do" class="aArrow6"><span>退会する</span></a></p>
+<!-- / class entrySec --></section>
+<!-- / id myPageWithdrawalSec --></section>
+
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a></p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>text_shadow</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/text.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+
+<div id="pageBody">
+<div id="content">
+<h1>text_shadow</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody sectionBodyLast">
+<div >
+<p><span class="glow">1.Glow Text </span>, <a href="http://themegamag.com" class="glowlink" >Glow on hover ...</a> <span class="extraGlow">Extra glow</span> </p>
+
+</div>
+<div style="background:#666">
+<p class="applestyle">2.Apple Style text</p>
+</div>
+
+<div style="background:#ccc">
+<p class="Emboss">3.Photoshop Emboss</p>
+<p class="PillowEmboss">4.Photoshop Pillow Emboss</p>
+</div>
+<div class="blurytext"><p>5.Blurry  text * </p></div>
+
+<div class="insettext" ><p>6.Inset text</p></div>
+<div style="background:white" class="Stroke">
+<p>7.Stroke Text</p>
+</div>
+<div class="effect3D"  >
+<p>8. Fake 3D Text ; </p>
+</div>
+
+<div id="preview-multi_text_shadows">
+<p>Multiple shadows are Hot</p>
+</div>
+
+</div>
+<!-- / class section --></div>
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p class="example">example</p>
+&lt;div&gt;<br />
+&lt;p&gt;&lt;span class="glow"&gt;1.Glow Text &lt;/span&gt;, &lt;a href="http://themegamag.com" class="glowlink" &gt;Glow on hover ...&lt;/a&gt; &amp; &lt;span class="extraGlow"&gt;Extra glow&lt;/span&gt; &lt;/p&gt;<br />
+&lt;/div&gt;<br />
+
+&lt;div style="background:#666"&gt;<br />
+&lt;p class="applestyle"&gt;2.Apple Style text&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+
+&lt;div style="background:#ccc"&gt;<br />
+&lt;p class="Emboss"&gt;3.Photoshop Emboss&lt;/p&gt;<br />
+&lt;p class="PillowEmboss"&gt;4.Photoshop Pillow Emboss&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+&lt;div class="blurytext"&gt;<br />
+&lt;p&gt;5.Blurry  text * &lt;/p&gt;<br />
+&lt;/div&gt;<br />
+
+&lt;div class="insettext"&gt;<br />
+&lt;p&gt;6.Inset text&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+
+&lt;div style="background:white" class="Stroke"&gt;<br />
+&lt;p&gt;7.Stroke Text&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+&lt;div class="effect3D"&gt;<br />
+&lt;p&gt;8. Fake 3D Text ; &lt;/p&gt;<br />
+&lt;/div&gt;<br />
+&lt;div id="preview-multi_text_shadows"&gt;<br />
+&lt;p&gt;Multiple shadows are Hot&lt;/p&gt;<br />
+&lt;/div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<p class="example">example</p>
+<pre>
+/*********Glowing Link ***********/
+a.glowlink{
+	color : #ff0000;
+	font-weight: bold;
+	font-size : 40px;
+}
+a.glowlink:hover , .glow {
+	color:#ff0000 ;
+	font-size : 40px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow:0 0 20px yellow ;
+}
+.extraGlow {
+	font-size : 40px;
+	color:#ff0000;
+	font-weight: bold;
+	text-shadow:0 0 30px yellow , 0 0 70px yellow ; 
+	padding: 0 0 0 20px;
+}
+
+
+/*********Apple Style Text********/
+.applestyle{ 
+	background:#666;
+	font-size : 44px;
+	color: #000;
+	text-shadow: 0px 1px 1px #fff;
+	padding: 0 0 0 20px;
+}
+/*******Emboss *********/
+.Emboss  {
+	background:#ccc;color:#ccc;text-shadow: -1px -1px white, 1px 1px #333;
+	font-size : 44px;
+	padding: 0 0 0 20px;
+}
+/*******Pillow Emboss  *********/
+.PillowEmboss {
+	background:#ccc;
+	font-size : 44px;
+	color:#ddd;
+	text-shadow: 1px 1px white, -1px -1px #444;
+	padding: 0 0 0 20px;
+}
+/*******Blurry Text *********/
+
+.blurytext {
+	background: #000;
+	color: transparent;
+	font-size : 54px;
+	text-shadow: #ff0000 0 0 10px;
+	padding: 0 0 0 20px;
+}
+
+/*******Inset Text *********/
+.insettext{
+	color: #344251;
+	font-size : 44px;
+	text-shadow: 1px 1px 0px #bad3ed;
+	font-weight: bold;
+	background:#bad3ed;    
+	padding: 0 0 0 20px;      
+}
+/*****Text Stroke**********/
+.Stroke{
+	font-size : 44px;
+	color:red;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px #000, -1px -1px 0px #000;
+	padding: 0 0 0 20px;
+}
+
+/*****Fake 3D Effect **********/
+.effect3D {
+	font-size : 44px;
+	color:rgba(255,255,0,.7) ;
+	font-weight: bold;
+	text-shadow: 1px 1px rgba(255,128,0,.7),
+	 2px 2px rgba(255,128,0,.7), 3px 3px rgba(255,128,0,.7), 
+	 4px 4px rgba(255,128,0,.7), 5px 5px rgba(255,128,0,.7);
+	padding: 0 0 0 20px;
+}
+
+/*****Fake fire **********/
+div#content div.section div.sectionBody #preview-multi_text_shadows p {
+    background: none repeat scroll 0 0 black;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    padding: 40px 0 10px;
+    text-align: center;
+    text-shadow: 0 0 4px white, 0 -5px 4px #FFFF33, 
+	2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px -25px 18px #FF2200;
+}
+
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<p class="example">example</p>
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE6, IE7, IE8</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://themegamag.com/wp-content/uploads/2010/07/demo.html" target="_blank">http://themegamag.com/wp-content/uploads/2010/07/demo.html</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">homePage</a></li>
+<li><a href="text_shadow.html">text_shadow</a></li>
+<li><a href="gradient_text.html">gradient_text</a></li>
+<li><a href="glow_text.html">glow_text</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+<!-- / id layout --></div>
+</body>
+</html>

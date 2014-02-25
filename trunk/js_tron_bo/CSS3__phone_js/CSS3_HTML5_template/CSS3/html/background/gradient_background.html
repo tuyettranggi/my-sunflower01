@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>CSS3 Gradient Background</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/background.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>CSS3 Gradient Background</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<p class="example">example01</p>
+<div id="linearBg1"></div>
+
+<p class="example exampleContent">example02</p>
+<div id="linearBg2"></div>
+
+<p class="example exampleContent">example03</p>
+<div id="radialBg"></div>
+</div>
+
+<p class="example exampleContent">example04</p>
+<div class="goodBg">
+<p class="goodBgSection"></p>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p class="example">example01</p>
+&lt;div id="linearBg1"&gt;&lt;/div&gt;
+
+<p class="example exampleContent">example02</p>
+&lt;div id="linearBg2"&gt;&lt;/div&gt;
+
+<p class="example exampleContent">example03</p>
+&lt;div id="radialBg"&gt;&lt;/div&gt;<br />
+&lt;p class="example exampleContent"&gt;example04&lt;/p&gt;<br />
+&lt;div class="goodBg"&gt;<br />
+&lt;p class="goodBgSection"&gt;&lt;/p&gt;<br />
+&lt;/div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+
+<p class="example">example01</p>
+<pre>
+#linearBg1 {
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/linear_bg_1.png);
+  background: -moz-linear-gradient(100% 100% 180deg, #2F2727, #1a82f7);
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+}
+</pre>
+
+<p class="example exampleContent">example02</p>
+<pre>
+#linearBg2 {
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/linear_bg_2.png);
+  background: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+}
+</pre>
+
+<p class="example exampleContent">example03</p>
+<pre>
+#radialBg{
+  width: 100px;
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/radial_bg.png) center center no-repeat;
+  background: -moz-radial-gradient(center 45deg, circle closest-corner,
+  #1a82f7 0%, #2F2727 100%);
+  background: -webkit-gradient(radial, center center, 0, center center, 70,
+  from(#1a82f7), to(#2F2727));
+}
+</pre>
+
+<p class="example exampleContent">example04</p>
+<pre>
+.goodBg {
+    background-image: url(../images/ru.png);
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+
+.goodBgSection {
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    0 1px rgba(255, 255, 255, 0.3) inset, 0 10px rgba(255, 255, 255,  0.2) inset, 
+    0 10px 20px rgba(255, 255, 255, 0.25) inset, 0 -15px 30px rgba(0, 0, 0, 0.3) inset;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 100px;
+    left: 35px;
+    margin: 10px;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 100px;
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome,  Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE6, IE7, IE8,Opera</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://css-tricks.com/examples/CSS3Gradient/" target="_blank">http://css-tricks.com/examples/CSS3Gradient/</a></li>
+<li><a href="http://www.zenelements.com/blog/css3-gradients/" target="_blank">http://www.zenelements.com/blog/css3-gradients/</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">homePage</a></li>
+<li><a href="background-clip.html">background-clip</a></li>
+<li><a href="background-origin.html">background-origin</a></li>
+<li><a href="background-size.html">background-size</a></li>
+<li><a href="multiple_background.html">multiple_background</a></li>
+<li><a href="gradient_background.html">CSS3 Gradient Background</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

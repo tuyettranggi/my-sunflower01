@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Transform | CSS3</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/transform.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Transform</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<p class="transformStyle01">Example 1 (rotate)</p>
+<p class="transformStyle02">Example 2 (skew)</p>
+<p class="transformStyle03">Example 3 (scale)</p>
+<p class="transformStyle04">Example 4 (matrix)</p>
+<p class="transformStyle05">Example 5 (translate)</p>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p>&lt;p class="transformStyle01"&gt;Example 1 (rotate)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle02"&gt;Example 2 (skew)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle03"&gt;Example 3 (scale)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle04"&gt;Example 4 (matrix)&lt;/p&gt;</p>
+<p>&lt;p class="transformStyle05"&gt;Example 5 (translate)&lt;/p&gt;</p>
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+p.transformStyle01 {
+    background: #ffff33;
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    margin: 20px 0;
+    padding: 10px;
+}
+
+p.transformStyle02 {
+	background: #ffff33;
+	-moz-transform: skew(-7deg,-3deg);
+	-webkit-transform: skew(-7deg,-3deg);
+	-o-transform: skew(-7deg,-3deg);
+	margin: 20px 0;
+	padding: 10px;
+}
+
+p.transformStyle03 {
+	background: #ffff33;
+	border: 1px solid black;
+	margin: 110px 0 90px 60px;
+	height: 50px;
+	transform: scale(2,4);
+	-moz-transform: scale(2,4);
+	-webkit-transform: scale(2,4);
+	-o-transform: scale(2,4);
+	width: 100px;
+}
+
+p.transformStyle04 {
+	background: #ffff33;
+	border: 1px solid black;
+	height: 50px;
+	transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+	-moz-transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+	-webkit-transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+	-o-transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+	width: 100px;
+}
+
+p.transformStyle05 {
+	background: #ffff33;
+	border: 1px solid black;
+	height: 50px;
+	transform: translate(150px,5px);
+	-moz-transform: translate(150px,5px);
+	-webkit-transform: translate(150px,5px);
+	-o-transform: translate(150px,5px);
+	width: 100px;
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://www.w3schools.com/css3/css3_2dtransforms.asp" target="_blank">http://www.w3schools.com/css3/css3_2dtransforms.asp</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="transform2D.html">transform 2D</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

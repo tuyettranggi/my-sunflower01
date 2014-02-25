@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Border image | CSS3</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/border.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Border image</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<p class="borderImage01">Example 1</p>
+<p class="borderImage02">Example 2</p>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p>&lt;p class="borderImage01"&gt;Example 1&lt;/p&gt;</p>
+<p>&lt;p class="borderImage02"&gt;Example 2&lt;/p&gt;</p>
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+p.borderImage01 {
+    border: 10px double orange;
+    -moz-border-image: url(../images/border.png) 28 round round;
+    -o-border-image: url(../images/border.png) 28 round round;
+    -khtml-border-image: url(../images/border.png) 28 round round;
+    padding: 10px 15px;
+}
+
+p.borderImage02 {
+    border: 10px double orange;
+    -moz-border-image: url(../images/border.png) 28 stretch stretch;
+    -o-border-image: url(../images/border.png) 28 stretch stretch;
+    -khtml-border-image: url(../images/border.png) 28 stretch stretch;
+    padding: 10px 15px;
+    margin-top: 30px;	
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://www.css3.info/preview/border-image/" target="_blank">http://www.css3.info/preview/border-image/</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="border_color.html">border-color</a></li>
+<li><a href="border_image.html">border-image</a></li>
+<li><a href="border_radius.html">border-radius</a></li>
+<li><a href="box_shadow.html">box-shadow</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

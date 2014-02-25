@@ -1,0 +1,15 @@
+type_20111104:
+
+
+click h2, content of h2 is opened (slide down - slide up)
+ => job\area.html
+
+
+click button detail : + ‚³‚ç‚ÉÚ‚µ‚­Ý’è : content .checkMore appear (slide down) & button "+ ‚³‚ç‚ÉÚ‚µ‚­Ý’è" change to  "•Â‚¶‚é"
+click "•Â‚¶‚é"	=> box .checkMore is closed, page scroll to position of button more (+ ‚³‚ç‚ÉÚ‚µ‚­Ý’è)
+ => job\search_01.html & job\area.html
+
+
+check all selection
+ => job\area.html
+ => \sp_common\js\script_checkAll.js

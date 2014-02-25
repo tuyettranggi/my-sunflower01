@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* ------------Background-01rigin01------------------------*/
+
+.backgroundOrigin01, .backgroundOrigin02, .backgroundOrigin03 {
+    float: left;
+}
+
+.backgroundOrigin01 {
+    background: url(../images/bg_origin.jpg) no-repeat scroll left top #33cc66;
+    border: 20px double #AABBCC;
+    color: #DDEEFF;
+    margin: 10px 0;
+    padding: 120px 10px 25px;
+    width: 180px;
+}
+
+
+.backgroundOrigin02 {
+    background: url(../images/bg_origin.jpg) no-repeat scroll left top #33cc66;
+    border: 20px double #AABBCC;
+    color: #DDEEFF;
+    margin: 10px 20px;
+    padding: 120px 10px 25px;
+    width: 140px;
+}
+
+.backgroundOrigin03 {
+    background: url(../images/bg_origin.jpg) no-repeat scroll left top #33cc66;
+    border: 10px double #AABBCC;
+    color: #DDEEFF;
+    margin: 10px 0;
+    padding: 10px 10px 155px;
+    width: 200px;
+}
+
+
+/* ------------Background-clip01------------------------*/
+
+.backgroundClip01 {
+    background: url(../images/bg_clip01.jpg) no-repeat scroll left top transparent;
+    border: 1px solid #333333;
+    height: 280px;
+    margin: 0;
+    padding: 40px 20px 0 20px;
+    width: 198px;
+}
+
+.clipBox01 {
+    background: none repeat scroll 0 0 #33cc66;
+}
+
+.clipBox02 {
+    background: none repeat scroll 0 0 #33cc66;
+}
+
+.clipBox01, .clipBox02 {
+    border: 10px double #778899;
+	margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* ------------Multiple_background-------------------------*/
+
+div.example {
+    background: url(../images/bg_multiple_top.gif) no-repeat scroll left top,
+	url(../images/bg_multiple_content.jpg) no-repeat scroll 11px 11px,
+	url(../images/bg_multiple_bottom.gif) no-repeat scroll left bottom,
+	url(../images/bg_multiple_middle.gif) repeat-y scroll left center transparent;
+    height: 100px;
+    padding: 150px 20px 20px;
+    width: 695px;
+}
+
+
+div.example01 {
+    background: url(../images/rose.png) no-repeat scroll 150px -20px,
+	url(../images/driedrose.png) no-repeat scroll 0 0%,
+	url(../images/fieldsky.jpg) no-repeat scroll 0 0 transparent;
+    height: 200px;
+    margin-top: 10px;
+    padding: 150px 0 20px;
+    width: 720px;
+}
+
+
+/* ------------Background-size-------------------------*/
+
+.bgSize01 {
+	background:url(../images/img_size01.gif) no-repeat 0 0;
+	-moz-background-size:80px 60px; /* Firefox */
+	background-size:80px 60px;
+	background-repeat:no-repeat;
+	padding-top:40px;
+}
+
+
+
+/* ------------gradient_background-------------------------*/
+
+
+#linearBg1 {
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/linear_bg_1.png);
+  background: -moz-linear-gradient(100% 100% 180deg, #2F2727, #1a82f7);
+  background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+}
+
+#linearBg2 {
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/linear_bg_2.png);
+  background: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+}
+
+#radialBg{
+  width: 100px;
+  height: 100px;
+  background-color: #1a82f7;
+  background: url(images/radial_bg.png) center center no-repeat;
+  background: -moz-radial-gradient(center 45deg, circle closest-corner, #1a82f7 0%, #2F2727 100%);
+  background: -webkit-gradient(radial, center center, 0, center center, 70, from(#1a82f7), to(#2F2727));
+}
+
+
+
+/* ------------goodBg-------------------------*/
+
+.goodBg {
+    background-image: url(../images/ru.png);
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+
+.goodBgSection {
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.3) inset, 0 10px rgba(255, 255, 255, 0.2) inset, 0 10px 20px rgba(255, 255, 255, 0.25) inset, 0 -15px 30px rgba(0, 0, 0, 0.3) inset;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 100px;
+    left: 35px;
+    margin: 10px;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 100px;
+}

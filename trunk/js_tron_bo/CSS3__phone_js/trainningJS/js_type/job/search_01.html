@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>複合検索結果一覧ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_job.js" charset="shift_jis"></script>
+</head>
+
+<body>
+<section id="content" class="cJob cMypage cEntry">
+<div id="jobOfferDetailInfo" class="entrySec mt40">
+<!-- button more : click open box checkmore, and button "+ さらに詳しく設定" change to  "閉じる"
+	click "閉じる"	=> box is closed, page scroll to position of button more (+ さらに詳しく設定)
+ -->
+<h2>click button below: + さらに詳しく設定</h2>
+<div class="innerContent">
+<form action="/mypage/hope.do" method="post">
+<table class="tableStyle">
+<tr>
+<th class="bgGrey">雇用形態</th>
+<td>
+<ul>
+<li><input type="checkbox" name="system" id="system01"> <label for="system01">正社員</label></li>
+<li><input type="checkbox" name="system" id="system02"> <label for="system02">契約社員</label></li>
+<li><input type="checkbox" name="system" id="system03"> <label for="system03">派遣社員</label></li>
+<li><input type="checkbox" name="system" id="system04"> <label for="system04">紹介予定派遣</label></li>
+<li><input type="checkbox" name="system" id="system05"> <label for="system05">アルバイト・パート</label></li>
+<li><input type="checkbox" name="system" id="system06"> <label for="system06">業務委託</label></li>
+<li><input type="checkbox" name="system" id="system07"> <label for="system07">その他</label></li>
+</ul>    </td>
+</tr>
+
+<tr>
+<th class="bgGrey">こだわり条件</th>
+<td>
+<ul>
+<li><input type="checkbox" name="condition" id="condition01"> <label for="condition01"><img src="../sp_common/images/ico_welcome.gif" alt="">未経験歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition02"> <label for="condition02">急募求人</label></li>
+<li><input type="checkbox" name="condition" id="condition03"> <label for="condition03">転勤なし</label></li>
+<li><input type="checkbox" name="condition" id="condition04"> <label for="condition04">学歴不問</label></li>
+<li><input type="checkbox" name="condition" id="condition05"> <label for="condition05">第2新卒歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition06"> <label for="condition06">年収600万円以上</label></li>
+<li><input type="checkbox" name="condition" id="condition07"> <label for="condition07">年俸制導入</label></li>
+<li><input type="checkbox" name="condition" id="condition08"> <label for="condition08">U・Iターン歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition09"> <label for="condition09">上場企業</label></li>
+<li><input type="checkbox" name="condition" id="condition10"> <label for="condition10">設立5年以内</label></li>
+<li><input type="checkbox" name="condition" id="condition11"> <label for="condition11">中途入社者5割以上</label></li>
+<li><input type="checkbox" name="condition" id="condition12"> <label for="condition12">従業員100名以下</label></li>
+<li><input type="checkbox" name="condition" id="condition13"> <label for="condition13">従業員1,000名以上</label></li>
+<li><input type="checkbox" name="condition" id="condition14"> <label for="condition14">平均年齢20代</label></li>
+<li><input type="checkbox" name="condition" id="condition15"> <label for="condition15">外資系企業</label></li>
+<li><input type="checkbox" name="condition" id="condition16"> <label for="condition16">社宅・家賃補助制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition17"> <label for="condition17">年間休日120日以上</label></li>
+<li><input type="checkbox" name="condition" id="condition18"> <label for="condition18">完全週休2日制</label></li>
+</ul>
+
+<!-- button more -->
+
+<ul class="checkMore">
+<li><input type="checkbox" name="condition" id="condition19"> <label for="condition19">語学が活かせる</label></li>
+<li><input type="checkbox" name="condition" id="condition20"> <label for="condition20">海外勤務あり</label></li>
+<li><input type="checkbox" name="condition" id="condition21"> <label for="condition21">上場準備中</label></li>
+<li><input type="checkbox" name="condition" id="condition22"> <label for="condition22">公的機関</label></li>
+<li><input type="checkbox" name="condition" id="condition23"> <label for="condition23">女性社員5割以上</label></li>
+<li><input type="checkbox" name="condition" id="condition24"> <label for="condition24">社内ベンチャー制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition25"> <label for="condition25">独立支援制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition26"> <label for="condition26">高成長企業</label></li>
+<li><input type="checkbox" name="condition" id="condition27"> <label for="condition27">20代で管理職登用あり</label></li>
+<li><input type="checkbox" name="condition" id="condition28"> <label for="condition28">社員持株制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition29"> <label for="condition29">フレックス勤務</label></li>
+<li><input type="checkbox" name="condition" id="condition30"> <label for="condition30">服装自由</label></li>
+<li><input type="checkbox" name="condition" id="condition31"> <label for="condition31">歩合給制あり</label></li>
+<li><input type="checkbox" name="condition" id="condition32"> <label for="condition32">ストックオプション制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition33"> <label for="condition33">残業が少ない</label></li>
+<li><input type="checkbox" name="condition" id="condition34"> <label for="condition34">オフィス内禁煙・分煙</label></li>
+<li><input type="checkbox" name="condition" id="condition35"> <label for="condition35">マイカー通勤可</label></li>
+<li><input type="checkbox" name="condition" id="condition36"> <label for="condition36">資格取得支援制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition37"> <label for="condition37">育児・介護休暇あり</label></li>
+</ul>    </td>
+</tr>
+</table>
+
+<p id="plus01" class="checkMoreBtn alignC"><a class="aPlusL" href="#">さらに詳しく設定</a></p>
+<!-- / button more -->
+</form>
+
+<p class="brTop mt40">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text<br>
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text<br>
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text<br>
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text<br>
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+<!-- / class innerContent -->
+</div>
+<!-- / id condition -->
+<!-- / id jobOfferDetailInfo -->
+</div>
+<!-- / id content --></section>
+</body>
+</html>

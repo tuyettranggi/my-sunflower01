@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>新規会員登録　基本情報入力</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_join.js" charset="shift_jis"></script>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/Library/header_login2.lbi" -->
+<!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<!-- / id siteHeaderInner -->
+</div>
+<!-- / id siteHeader -->
+</header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&-->
+<!-- #EndLibraryItem -->
+<section id="content" class="cJoin cEntry cResume cMypage">
+<div id="contentHead">
+<h1>会員登録手続き</h1>
+<p><a href="#" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<div id="mypageLeadBox">
+<p>会員登録に必要な以下の内容を入力してください。</p>
+<!-- / id mypageLeadBox --></div>
+
+<div id="jobOfferDetailInfo">
+<form action="/join/reg_user_confirm.do" method="post">
+<section id="info" class="entrySec">
+<h2 class="mh"><span>基本情報</span></h2>
+
+<section class="entrySec">
+<dl class="entryBasicList1 noBG">
+<dt>氏名&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="必須"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<label for="reg_user_confirm_user_lastname" class="fmResumeNameLabel1 fmSizeMin2em lkColor">姓</label><input type="text" name="user.lastname" id="reg_user_confirm_user_lastname" class="fmSize183">
+<label for="reg_user_confirm_user_firstname" class="fmResumeNameLabel2 fmSizeMin2em lkColor">名</label><input type="text" name="user.firstname" id="reg_user_confirm_user_firstname" class="fmSize183">
+</li>
+<li>
+<label for="reg_user_confirm_user_lastnameKana" class="fmResumeNameKanaLabel1 fmSizeMin2em lkColor">セイ</label><input type="text" name="user.lastnameKana" id="reg_user_confirm_user_lastnameKana" class="fmSize183">
+<label for="reg_user_confirm_user_firstnameKana" class="fmResumeNameKanaLabel2 fmSizeMin2em lkColor">メイ</label><input type="text" name="user.firstnameKana" id="reg_user_confirm_user_firstnameKana" class="fmSize183">
+<span class="fmFormat">(全角カナ)</span>
+</li>
+</ul>
+</dd>
+
+<dt>性別&nbsp;&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="必須"></span></dt>
+<dd>
+<input type="radio" name="user.sex" id="reg_user_confirm_user_sex1" value="1" checked="checked">
+<label for="reg_user_confirm_user_sex1" class="lkColor">男性</label>
+<input type="radio" name="user.sex" id="reg_user_confirm_user_sex2" value="2">
+<label for="reg_user_confirm_user_sex2" class="lkColor">女性</label>
+</dd>
+
+<dt>メールアドレス（ログインID）&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="email" name="user.email" id="reg_user_confirm_user_email" class="fmSize530">
+<span class="fmFormat">(半角)</span>
+<p>※携帯メールアドレスはご利用いただけません。<br>
+<a href="#" target="_blank">※メールアドレスを変更される際の注意点</a></p>
+</dd>
+
+<dt>メールアドレス再入力&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="email" name="emailRetype" id="reg_user_confirm_emailRetype" class="fmSize530">
+<span class="fmFormat">(半角)</span>
+</dd>
+
+<dt>ご希望のパスワード&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="password" name="user.password" id="reg_user_confirm_user_password" class="fmSize530">
+<span class="fmFormat">(半角)</span>
+<p>0-9、a-zの半角英数字で4文字以上、20文字以内で入力してください</p>
+</dd>
+
+<dt>パスワード再入力&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="password" name="passwordRetype" id="reg_user_confirm_passwordRetype" class="fmSize530">
+<span class="fmFormat">(半角)</span>
+</dd>
+
+<dt>ログイン方法&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li><input type="radio" name="loginWay" id="reg_user_confirm_loginWay0" checked="checked" value="0"><label for="reg_user_confirm_loginWay0" class="lkColor">自動でログインする <em class="note">（推奨）</em></label></li>
+<li><input type="radio" name="loginWay" id="reg_user_confirm_loginWay1" value="1"><label for="reg_user_confirm_loginWay1" class="lkColor">毎回手動でログインする</label></li>
+</ul>
+</dd>
+<!-- / class entryBasicList1 --></dl>
+
+<div id="featureBox" class="joinBox">
+<div id="feature">
+<p class="featureTitle">■会員登録をすると、下記のサービスが無料でご利用いただけます。<br>
+（ご登録後に設定を変更することができます）</p>
+<ul>
+<li>
+<p><img src="../sp_common/images/join/img_company.gif" alt=""></p>
+<div>
+<p class="title">【 マッチングサービス 】</p>
+<p>＠typeのシステムが、あなたのスキル・経験や希望と、企業が求める条件とのマッチングを行い、自動的におすすめをお知らせします。</p>
+</div>
+</li>
+
+<li>
+<p><img src="../sp_common/images/join/img_mail_service.gif" alt=""></p>
+<div>
+<p class="title">【 転職メールサービス 】</p>
+<p>ご登録いただいた経験業種や職種、＠type上での行動履歴をもとに、＠type事務局が様々な情報をお知らせします。</p>
+</div>
+</li>
+
+<li>
+<p><img src="../sp_common/images/join/img_mail_receive.gif" alt=""></p>
+<div>
+<p class="title"><input type="checkbox" name="scoutAndJinzaiFlag" id="scoutAndJinzaiFlag" checked="checked"><label for="scoutAndJinzaiFlag">【スカウトメールを受け取る】</label></p>
+<p>あなたの登録情報を匿名で公開し、興味・関心を持った求人企業から、あなた宛にスカウトメールが届きます。（「typeの人材紹介」からもスカウトをお届けします）</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<dl class="entryBasicList1 noBG pdBtm">
+<dt>＠typeを知ったきっかけ&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_free.png" alt="任意"></span></dt>
+<dd>
+<select name="user.routeValue" id="reg_user_confirm_user_routeValue" class="ipd260" style="background-color: rgb(255, 255, 255);">
+<option value="0">選択してください</option>
+<option value="4">サーチエンジン検索結果（Yahoo!、Google等）</option>
+<option value="3">インターネット広告（バナー、メール等）</option>
+<option value="12">ポータルサイトの転職面（msn、livedoor等）</option>
+<option value="13">女の転職＠type</option>
+<option value="14">typeの人材紹介</option>
+<option value="15">Webマガジン エンジニアtype</option>
+<option value="5">電車内広告</option>
+<option value="8">友人・知人の紹介</option>
+<option value="9">その他</option>
+</select>
+</dd>
+
+<dt>専門転職ニュースを受け取る&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_free.png" alt="任意"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li><input type="checkbox" name="user.salesMailFlag" id="user.salesMailFlag"><label for="user.salesMailFlag">営業向け新着転職情報ニュース</label></li>
+<li class="lastList"><input type="checkbox" name="user.consultantMailFlag" id="user.consultantMailFlag"><label for="user.consultantMailFlag">コンサルタント向け新着転職情報ニュース</label></li>
+</ul>
+</dd>
+<!-- / class entryBasicList1 --></dl>
+<!-- / class entrySec --></section>
+<!-- / id info --></section>
+<!--&&& フリースペース：会員規約・個人情報[START] &&&-->
+<section id="member" class="entrySec">
+<h2 id="title01" class="mh alignC noBG"><span>＠type 会員規約</span></h2>
+
+<section class="entrySec">
+<div class="basicBox pdBtm">
+<div class="basicBoxInner">
+<p>●第1条　（＠type）<br>
+1)「＠type」とは、株式会社キャリアデザインセンター（以下「cdc」といいます）が提供するインターネット上における求人および求職に関するサービス（http：//type.jp/）及び、付随するメール配信その他の求人・求職支援サービスの総称をいいます。</p>
+
+<p class="moreInfo hiddenTxt">●第2条　（会員）<br>
+1)「＠type会員」（以下「会員」といいます）とは、＠typeに個人を特定する情報およびその他の付随する情報を登録し、cdcがこれを承認した方をいいます。会員は＠typeが提供する会員向けサービス（以下「会員サービス」）を利用できるものとします。<br>
+2）会員は＠typeに登録した時点で、本規約の内容をすべて承諾したものとみなします。<br><br>
+●第3条　（会員の責任および会員登録情報の変更等）<br>
+1)＠typeの利用者は、本規約に同意の上自らの意思によって会員となり、登録時にお知らせする方法に従って＠typeを利用するものとします。<br>
+2)会員登録の際に入力した情報は、会員本人がその内容の一切について責任を負うものとします。<br>
+3)会員は自らの責任のもとに＠typeを利用し、利用に関わる一切の責任を負うものとします。<br>
+4)会員は登録した情報をいつでも変更、追加、削除することができます。<br><br>
+●第4条　（会員の禁止事項）<br>
+会員は＠typeの利用において、以下の行為をしないものとします。<br>
+1)意図的に虚偽の情報を登録する行為<br>
+2）肖像権、著作権、商標権、その他の知的財産権等、他人の権利を侵害する行為<br>
+3)第三者を誹謗、中傷、脅迫する行為<br>
+4)犯罪行為や犯罪に結びつく行為、法令に反する行為、公序良俗に反する行為、またはその恐れのある行為<br>
+5)＠typeを利用して入手した情報を、複製、販売、出版等、私的利用の範囲を超えて利用する行為<br>
+6)＠typeを利用した営利目的の情報提供活動、または営業活動に付随する行為<br>
+7)＠typeの運営を妨げる行為やcdcの信頼を毀損する行為<br><br>
+●第5条（企業等からの連絡） <br>
+会員は、会員サービスの一部である「会員専用画面」において求人企業等からメッセージを受け取る場合があることを了承します。<br><br>
+●第6条　（会員サービスの変更、終了等） <br>
+1)cdcは1ヶ月の告知期間をもって会員に通知の上、＠type及び会員サービスを長期的中断もしくは終了することができ、会員はこれを了承します。<br>
+2)cdcは、会員への事前の通知なくして、会員サービスの変更または一時的な中断を行うことがあり、会員はこれを了承します。<br><br>
+●第7条　（免責） <br>
+1）会員が＠typeを利用したことにより会員に生じた損害（精神的苦痛、事業の中断、またはその他の金銭的損失等を含む一切の不利益）について、cdcの故意又は重過失による場合を除き、cdcは何ら責任を負わないものとします。 <br>
+2）会員は＠typeの利用に起因または関連して他の会員や求人企業、その他第三者との間に生じた紛争、損害賠償等について自己の費用と責任において対処するものとし、cdcには一切迷惑をかけないこととします。<br>
+3）会員による不正や違法行為等（本規約への違反行為を含む）によってcdcに損害が発生した場合、cdcは当該会員に対して損害賠償請求を行うことができるものとします。<br><br>
+●第8条（ID・パスワード）<br>
+1）会員は、会員登録の際に会員本人のＩＤ及びパスワードを設定するものとします。<br>
+2）会員は、会員本人が設定したＩＤ・パスワードの使用及び管理について、その一切の責任を負うものとします。<br>
+3）会員は、理由の如何を問わず、ＩＤ・パスワードを第三者に使用させることや、譲渡、貸与等をしてはならないものとします。<br><br>
+●第9条　（個人情報） <br>
+1）cdcは、会員の個人を特定できる情報（氏名、住所、電話番号、メールアドレス、勤務先、生年月日等　※以下「個人情報」）を会員の同意なしに求人企業、並びにその他第三者に公開しないものとします。<br>
+2）会員は＠typeに登録した時点で、本人の個人情報以外の情報が求人企業に公開される可能性があることを承認したものと判断されます。<br>
+3）個人情報の取扱いについては、別途個人情報を取得する際に示す「＠typeにおける個人情報の取扱いについて」に準じます。<br><br>
+●第10条　（第三者の範囲）<br>
+cdcが利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合に個人情報の提供を受ける者は、前条の第三者に該当しないものとします。<br>
+(委託先における個人情報の取扱いについてはcdcが責任を負います。)<br><br>
+●第11条　（登録情報の抹消）<br>
+1）会員は自らの意思によりいつでも ＠typeの登録を抹消することができます。<br>
+2）会員が登録を抹消する意思がない場合、または自ら抹消を行わない場合でも、cdcは以下の場合当該会員に対し事前の催告なく登録を抹消することができ、会員はこれを了承するものとします。 <br>
+1.2年間＠typeの会員専用画面に1度もログインしなかった場合<br>
+2.理由の如何を問わず、登録されたメールアドレスが会員本人以外の所有となったことが確認され、且つ最終ログインから1ヵ月以上経過した場合<br>
+3.本規約に定める除名の対象となる場合<br>
+3)＠typeのデータベースに保存されている応募履歴及び求人企業との送受信メッセージの履歴のうち、過去1年分を超えるものは、＠typeのデータベースのメンテナンスの際に抹消されることがあります。抹消された情報は復元することはできません。<br><br>
+●第12条　（除名）<br>
+会員が本規約に違反し、またはcdcが会員として不適切であると判断した場合、cdcは当該会員に対し事前の催告なく会員サービスの提供を一時停止または終了し、＠typeから除名することができます。<br><br>
+●第13条　（提供された情報のcdcによる二次利用） <br>
+ｃｄｃが会員から同意を得て取得した個人情報をもとに個人を特定できない形式による統計データを作成した場合、ｃｄｃは当該データについていかなる制限を受けることなく利用することができるものとし、この場合の著作権はcdcが所有するものとします。<br><br>
+●第14条　（本規約の変更）<br>
+cdcは本規約を随時変更することができるものとします。変更の内容については＠type上に1ヵ月間掲載し、1ヶ月経過した時点ですべての会員が変更後の規約に同意したものとみなします。<br><br>
+●第15条　（不可抗力）<br>
+cdcは、通常講ずべき合理的なコンピュータウィルス等への対策では防止できないサイバーテロ等によるコンピュータ関連被害、その他cdcの責に帰すべき事由によらない天変地異、火災、地震等の不可抗力による被害によって、会員サービスの提供に支障が生じ、会員サービスの提供が困難となった場合、これに起因して生じた会員の損害について一切の責任を負わないものとします。<br><br>
+●第16条（保証の否認）<br>
+1）＠type及び会員サービスにおいて提供される情報のうち、会社情報等の第三者に関する情報、求人広告その他第三者により提供される情報については、かかる第三者の責任において提供されるものであり、提供情報の正確性、有用性等についてcdcが保証するところのものではありません。<br>
+2）以下のいずれの事項についても、ｃｄｃが保証するところのものではありません。<br>
+1.＠type及び会員サービスの提供に不具合やエラー、障害等が生じないこと<br>
+2.＠type及び会員サービスから得られる情報等が正確なものであり、会員の期待を満たすものであること<br>
+3.＠type及び会員サービスを通じて入手できる情報等が会員の期待を満たすものであること<br>
+4.＠type及び会員サービスの利用により、会員の転職が成功すること<br><br>
+●第17条（準拠法および管轄裁判所）<br>
+1)＠type及び会員サービスまたは本規約に関する準拠法は日本法とします。<br>
+2)＠type及び会員サービスまたは本規約に関して生じる一切の紛争については、東京地方裁判所または東京簡易裁判所を第一審の専属的管轄裁判所とします。<br><br>
+付則<br>
+2011年8月26日改訂（2011年10月1日適用）</p>
+<!-- / class basicBoxInner --></div>
+<!-- / class basicBox --></div>
+<!-- / class entrySec --></section>
+<!-- / id member --></section>
+
+<section id="infoPersonal" class="entrySec">
+<h2 id="title02" class="mh alignC noBG"><span>個人情報の取扱いについて</span></h2>
+
+<section class="entrySec">
+<div class="basicBox">
+<div class="basicBoxInner">
+<p>●＠typeにおける個人情報の取扱いについて<br>
+制定日2004年6月1日（2011年5月1日最終改定）</p>
+
+<p class="moreInfo hiddenTxt">
+株式会社キャリアデザインセンター（以下「CDC」といいます）が運営するＷｅｂサイト「＠type」では、「労働者の個人情報保護に関する行動指針」（平成12年12月20日厚生労働省）及び「個人情報の保護に関する法律」（平成１５年法律第５７号）等各関連法規に基づき、ご利用になる皆さま（以下「利用者」といいます）が「＠type」Ｗｅｂサイトから登録された個人情報の保護を、転職情報サービスという事業運営上の最重要事項と位置づけ、以下の方針に基づいて管理・運用・維持を行っており、確実な履行に努めております。<br><br>
+1．個人情報の定義<br>
+「＠type」では以下のものを「個人情報」と定義しています。<br>
+「個人に関する情報であり、当該情報に含まれる氏名・生年月日・住所・学歴・職歴・勤務先企業名その他の記述、または、個人別に付された番号・記号その他の符号により当該個人と識別できるもの」。<br>
+※当該情報のみでは識別できない場合でも、他の情報と容易に照合することができ、それにより当該個人と識別できるものを含みます。<br><br>
+
+2．個人情報の管理及び安全対策<br>
+CDCは利用者から提供された個人情報を適切に保護・管理する体制を確立し、個人情報の適正な取得、利用および提供に関する社内規定を定めこれを遵守します。またCDCが管理する個人情報の滅失・毀損・改竄・漏洩等のリスクに対して適切な予防措置を実施し、技術面・組織面において不正アクセス対策・ウイルス対策等の安全対策を継続的に講じ、個人情報の安全性・正確性の確保を図るよう努めます。<br><br>
+
+3．個人情報の取得及び利用目的<br>
+「＠type」では、以下の目的の範囲内で個人情報を利用します。なお、個人情報の登録は利用者本人の意思によって行われるものであり、「＠type」サイト上に設置された登録フォームに記入することで登録が完了します。<br>
+1)「＠type」における利用者へのサービス提供、および本人確認など、必要に応じてCDCから利用者に対してご連絡する為<br>
+2)利用者の事前の同意を得た上で各種サービスを提供する為<br>
+3)アンケート・モニター参加の案内や懸賞への応募受付、プレゼント発送等をする為<br>
+4)「＠type」等に掲載する記事等における取材対象者を募集する為<br>
+5)利用者の属性（職種・業種等）における「＠type」等の統計データを作成・分析する為<br>
+6)利用者が役に立つと思われるキャリアアップ情報等をメールマガジンの配信・ダイレクトメールの郵送・情報誌の郵送などで提供する為<br>
+7)採用アウトソーシング業務（採用事務代行／委託元企業の応募者受付・採用セミナー運営・本人確認業務等）を遂行する為<br><br>
+
+4．個人情報の提供<br>
+CDCでは、取得した個人情報を本人の同意なく第三者に提供することや、予め本人の同意を得た利用目的の範囲外において取り扱うことはありません。但し、次に示すa～dのいずれかに該当する場合は、本人の同意を得ずに個人情報を利用・提供することがあります。<br>
+a. 法令に基づく場合。<br>
+b. 人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。<br>
+c. 公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき。<br>
+d. 国の機関若しくは地方公共団体又はその受託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることによって当該事務の遂行に支障を及ぼすおそれがあるとき。<br>
+また、利用者ご本人の意思で、「＠type」等のサイト上から求人企業に応募を行った場合、個人情報は個人情報を受け取った求人企業側において管理されることになります。<br><br>
+
+5．個人情報の委託管理<br>
+CDCではサーバーを運用・管理するデータセンタ、データベースを構築・保守するソフトウェア開発会社、メール配信代行会社など、業務上で個人情報に関わる処理を外部企業に委託する場合があります。このような委託処理を行う場合には、CDCが設定する安全対策基準を満たしていることを条件として事業者（委託先）を選定し、機密保持契約を結んだ上、事業者（委託先）が適切に個人情報を取り扱うように管理・監督いたします。<br><br>
+
+6．個人情報を提供しなかった場合に生じる結果<br>
+「＠type」の各種サービスの実施において、必ずしも全ての質問にご回答戴く必要はありませんが、それぞれの必要項目にご回答戴けなかった場合、該当するサービスが受けられないことがあります。<br><br>
+
+7．統計処理された個人情報<br>
+CDCでは事業サービス向上のために、利用者の個人情報をもとに、「『＠type』利用者の○○％が○○業界に勤務している」といった統計データを作成し、第三者に開示することがあります。但し、このような場合、利用・開示されるのは集計結果のみであり、個人情報そのものが第三者に開示されることは一切ありません。<br><br>
+
+8．個人情報の苦情・相談へのご対応（個人情報の開示・訂正・削除・利用停止について）<br>
+個人情報は登録した本人の意思で、「＠type」サイト上からいつでも照会・訂正・追加・削除・利用停止が可能です。また、個人情報についての苦情・相談は下記窓口まで電話またはメールにてお問い合わせください。<br><br>
+
+個人情報相談窓口・読者相談窓口のご案内<br>
+株式会社キャリアデザインセンター<br>
+個人情報保護管理室／個人情報保護管理責任者<br>
+東京都港区赤坂3－21－20　赤坂ロングビーチビル<br>
+電話○03－3560－1688<br>
+メール○<a href="mailto:privacy@type.jp">privacy@type.jp</a></p>
+<!-- / class basicBoxInner --></div>
+<!-- / class basicBox --></div>
+
+<p class="joinBtn"><button class="btn3 applicationBtn"><span class="reset">会員規約・個人情報取り扱いに同意して登録</span></button></p>
+
+<div class="entryNoteBox noBG">
+<div class="entryNoteBoxInner">
+<p>当サイトでは、利用者が安心して入力していただけるように、個人情報を入力するページに暗号化技術の SSL(Secure Sockets Layer) を導入しております。</p>
+<p>※個人情報を保護するため、以下の場合は入力内容が無効になりますのでご注意ください。<br>
+・約1時間以上同じページで入力を続けた場合<br>
+・応募完了前にインターネット接続を切断した場合</p>
+</div>
+</div>
+<!-- / class entrySec --></section>
+<!-- / id infoPersonal --></section>
+<!--&&& フリースペース：会員規約・個人情報[END] &&&-->
+</form>
+<!-- / id jobOfferDetailInfo --></div>
+<!-- / id content --></section>
+<!-- #BeginLibraryItem "/Library/footer_login.lbi" -->
+<!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop"> <a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a> </p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li>
+<!--
+-->
+<li><a href="/s/kojin/">個人情報について</a></li>
+<!--
+-->
+<li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul>
+<li><a href="http://type.jp">ホーム</a></li>
+<!--
+-->
+<li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent -->
+</div>
+<!-- / id siteFooter -->
+</footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&-->
+<!-- #EndLibraryItem -->
+</body>
+</html>

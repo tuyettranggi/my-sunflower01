@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>スキルマッチング一覧ページ(ログイン時）</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_mypage.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_login2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#">登録情報の確認・変更</a></li>
+<li><a href="#">ログアウト</a></li>
+<!--&&& ◆フリースペース◆メニューリスト [START] &&&-->
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+<!--&&& ◆フリースペース◆メニューリスト [END] &&&-->
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&--><!-- #EndLibraryItem -->
+<section id="content" class="cMypage cJob cEntry">
+<div id="contentHead">
+<h1>スキルマッチング一覧</h1>
+<p><a href="#" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<div id="mypageLeadBox">
+<p><strong>あなたのスキルにマッチした求人<!--&&&  システムから取得  [START]&&&-->（22件）<!--&&&  システムから取得  [END]&&&--></strong>
+あなたの経験・スキルにマッチした求人です。<br>
+スキルマッチング度であなたにどれだけ合っているか簡単に分かります。応募は、職種名をクリックした求人の詳細ページから行なってください。</p>
+<!-- / id mypageLeadBox --></div>
+
+<div class="use">
+<div class="useInner clearfix">
+<p class="title floatL"><strong>スキルマッチング</strong></p>
+<p class="under floatL"><!--&&&  システムから取得  [START]&&&-->利用中<!--&&&  システムから取得  [END]&&&--></p>
+<p class="floatL"><a class="btn1 deleteBtn" href="/mypage/anony_stop_confirm.do"><span>利用停止</span></a></p>
+</div>
+<!-- / class use --></div>
+
+<div id="jobOfferDetailInfo">
+<section id="condition" class="showContent noSelection">
+<h2 class="mh"><a href="#" class="base">絞り込み条件</a></h2>
+<div class="innerContent noBG noBDB">
+<ul class="basicBoxList1 infoList noBG noBDB">
+<li class="noBDB">
+<table class="conditionTable">
+<tr>
+<th>職種</th>
+<td><p><a class="btn1 arrowRBtn" href="/job/jobcategory_select.do?id=job3IdList" target="_blank"><span>選択する</span></a></p></td>
+</tr>
+</table>
+</li>
+<li class="lastList noBDB">
+<table class="conditionTable">
+<tr>
+<th>業種</th>
+<td><p><a class="btn1 arrowRBtn" href="/job/industrycategory_select.do?id=industryIdList"><span>選択する</span></a></p></td>
+</tr>
+</table>
+</li>
+</ul>
+
+<form action="#" method="post">
+<div class="otherCondition">
+<table>
+<tr>
+<th>その他の条件</th>
+<td>
+<ul>
+<li><input type="checkbox" name="condition" id="condition01"> <label for="condition01">未経験歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition02"> <label for="condition02">年収600万円以上</label></li>
+<li><input type="checkbox" name="condition" id="condition03"> <label for="condition03">新着・更新情報のみ表示</label></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="fmBoxReset alignC">
+<p class="alignC"><button class="btn4 arrowRBtn"><span>この条件で絞り込む</span></button></p>
+</div>
+</form>
+<!-- / class innerContent --></div>
+<p class="jobText alignC">マッチした求人は<!--&&&  システムから取得  [START]&&&-->28<!--&&&  システムから取得  [END]&&&-->件です</p>
+<!-- / id condition --></section>
+
+<section id="skill">
+<h2 class="mh alignC"><span>スキルマッチング求人一覧</span></h2>
+<div class="innerContent noBG">
+<ul class="basicBoxList1 noBG infoList">
+<li>
+<dl class="entryBasicList1 noSpaceBtm">
+<dt><p class="fxIndnt">企業名：<span><!--&&&  システムから取得  [START]&&&-->すまいる不動産<!--&&&  システムから取得  [END]&&&--></span></p><!--&&&  システムから取得  [END]&&&--></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<p>職種名：<span><a href="/job/detail.do"><!--&&&  システムから取得  [START]&&&-->【不動産アドバイザー】営業・業界未経験者大歓迎！成長できる<!--&&&  システムから取得  [END]&&&--></a><img src="../sp_common/images/mypage/ico_add.gif" alt="追加"></span></p>
+</li>
+<li>スキルマッチング度：<!--&&&  システムから取得  [START]&&&--><span class="percent">80％</span><!--&&&  システムから取得  [END]&&&--></li>
+<li class="noBrBtm">応募期限：<span class="date"><!--&&&  システムから取得  [START]&&&-->11/11/31<!--&&&  システムから取得  [END]&&&--></span></li>
+</ul>
+</dd>
+</dl>
+</li>
+
+<li>
+<dl class="entryBasicList1 noSpaceBtm">
+<dt><p class="fxIndnt">企業名：<span><!--&&&  システムから取得  [START]&&&-->すまいる不動産<!--&&&  システムから取得  [END]&&&--></span></p><!--&&&  システムから取得  [END]&&&--></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<p>職種名：<span><a href="/job/detail.do"><!--&&&  システムから取得  [START]&&&-->【不動産アドバイザー】営業・業界未経験者大歓迎！成長できる<!--&&&  システムから取得  [END]&&&--></a><img src="../sp_common/images/mypage/ico_add.gif" alt="追加"></span></p>
+</li>
+<li>スキルマッチング度：<!--&&&  システムから取得  [START]&&&--><span class="percent">80％</span><!--&&&  システムから取得  [END]&&&--></li>
+<li class="noBrBtm">応募期限：<span class="date"><!--&&&  システムから取得  [START]&&&-->11/11/31<!--&&&  システムから取得  [END]&&&--></span></li>
+</ul>
+</dd>
+</dl>
+</li>
+
+<li>
+<dl class="entryBasicList1 noBG">
+<dt><p class="fxIndnt">企業名：<span><!--&&&  システムから取得  [START]&&&-->すまいる不動産<!--&&&  システムから取得  [END]&&&--></span></p><!--&&&  システムから取得  [END]&&&--></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<p>職種名：<span><a href="/job/detail.do"><!--&&&  システムから取得  [START]&&&-->【不動産アドバイザー】営業・業界未経験者大歓迎！成長できる<!--&&&  システムから取得  [END]&&&--></a><img src="../sp_common/images/mypage/ico_add.gif" alt="追加"></span></p>
+</li>
+<li>スキルマッチング度：<!--&&&  システムから取得  [START]&&&--><span class="percent">80％</span><!--&&&  システムから取得  [END]&&&--></li>
+<li>応募期限：<span class="date"><!--&&&  システムから取得  [START]&&&-->11/11/31<!--&&&  システムから取得  [END]&&&--></span></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+<div class="fmBoxReset alignC">
+<p class="alignC"><a class="btn3 arrowRBtn" href="#"><span>全件を表示する（<!--&&&  システムから取得  [START]&&&-->28<!--&&&  システムから取得  [END]&&&-->件）</span></a></p>
+</div>
+<!-- / class innerContent --></div>
+<!-- / id skill --></section>
+
+<!-- / id jobOfferDetailInfo --></div>
+
+
+<!-- / id content --></section><!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a></p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem -->
+
+</body>
+</html>
