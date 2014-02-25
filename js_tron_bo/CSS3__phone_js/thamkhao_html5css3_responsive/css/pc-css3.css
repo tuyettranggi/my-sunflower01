@@ -1,0 +1,265 @@
+﻿@charset "UTF-8";
+
+/* これはPC版のCSS3記述用のcssです。 */
+
+
+/* header */
+
+#index #header h2 img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-ms-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-o-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+}
+
+
+#header #header03 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-ms-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	-o-box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+	box-shadow: 0px 3px 4px rgba(0,0,0,.4);
+}
+
+
+#header #header01 #header01_01 p.tel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.3) inset;
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.3) inset;
+  -ms-box-shadow: 0px 1px 3px rgba(0,0,0,.3) inset;
+  -o-box-shadow: 0px 1px 3px rgba(0,0,0,.3) inset;
+  box-shadow: 0px 1px 3px rgba(0,0,0,.3) inset;
+
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#68C42C), to(#52A52A)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #68C42C, #52A52A); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #68C42C, #52A52A); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #68C42C, #52A52A); /* IE10 */
+  background-image: -o-linear-gradient(top, #68C42C, #52A52A); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #68C42C, #52A52A);
+}
+
+#header #header02 ul#header_nav li.li01 {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#68C42C), to(#52A52A)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #68C42C, #52A52A); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #68C42C, #52A52A); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #68C42C, #52A52A); /* IE10 */
+  background-image: -o-linear-gradient(top, #68C42C, #52A52A); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #68C42C, #52A52A);
+}
+
+#header #header02 ul#header_nav li.li02 {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#454545), to(#121212)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #454545, #121212); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #454545, #121212); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #454545, #121212); /* IE10 */
+  background-image: -o-linear-gradient(top, #454545, #121212); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #454545, #121212);
+}
+
+
+
+.rborder {
+  border-right: solid 1px #777777;
+}
+.rborder2 {
+  border-right: solid 1px #B9E079;
+}
+.lborder {
+  border-left: solid 1px #000000;
+}
+
+/* contents */
+
+#index #content h3 {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0x;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#68C42C), to(#52A52A)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #68C42C, #52A52A); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #68C42C, #52A52A); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #68C42C, #52A52A); /* IE10 */
+  background-image: -o-linear-gradient(top, #68C42C, #52A52A); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #68C42C, #52A52A);
+}
+#content h3 {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0x;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E3E3E3)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #E3E3E3); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff, #E3E3E3); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff, #E3E3E3); /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff, #E3E3E3); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff, #E3E3E3);
+}
+
+#area #content h3 {
+  background-image: none; /* Saf4+, Chrome */
+  background-image: none; /* Chrome 10+, Saf5.1+ */
+  background-image: none; /* FF3.6 */
+  background-image: none; /* IE10 */
+  background-image: none; /* Opera 11.10+ */
+  background-image: none;
+}
+
+.index_link,.index_link2,plan_link {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#D6D6D6)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #F4F4F4, #D6D6D6); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #F4F4F4, #D6D6D6); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #F4F4F4, #D6D6D6); /* IE10 */
+  background-image: -o-linear-gradient(top, #F4F4F4, #D6D6D6); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #F4F4F4, #D6D6D6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.index_link a,.index_link2 a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+.index_title4 {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0x;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E3E3E3)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #E3E3E3); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff, #E3E3E3); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff, #E3E3E3); /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff, #E3E3E3); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff, #E3E3E3);
+}
+
+
+.plan_link {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#D6D6D6)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #F4F4F4, #D6D6D6); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #F4F4F4, #D6D6D6); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #F4F4F4, #D6D6D6); /* IE10 */
+  background-image: -o-linear-gradient(top, #F4F4F4, #D6D6D6); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #F4F4F4, #D6D6D6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.plan_link a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+/* navi */
+
+.nav_title {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#68C42C), to(#52A52A)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #68C42C, #52A52A); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #68C42C, #52A52A); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #68C42C, #52A52A); /* IE10 */
+  background-image: -o-linear-gradient(top, #68C42C, #52A52A); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #68C42C, #52A52A);
+	border-radius: 5px 5px 0 0;
+}
+
+#navi ul.ul01 li {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E0E0E0)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #E0E0E0); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff, #E0E0E0); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff, #E0E0E0); /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff, #E0E0E0); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff, #E0E0E0);
+}
+
+#navi ul.ul02 li {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#E0E0E0)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #E0E0E0); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff, #E0E0E0); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff, #E0E0E0); /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff, #E0E0E0); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff, #E0E0E0);
+}
+
+.nav_link3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F4F4F4), to(#D6D6D6)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #F4F4F4, #D6D6D6); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #F4F4F4, #D6D6D6); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #F4F4F4, #D6D6D6); /* IE10 */
+  background-image: -o-linear-gradient(top, #F4F4F4, #D6D6D6); /* Opera 11.10+ */
+  background-image: linear-gradient(top, #F4F4F4, #D6D6D6);
+	border-radius: 5px;
+}
+
+.nav_link3 a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+.pcmail {
+  float: right;
+	_margin-left: 10px;
+}
+
+
+/*↓PCでは不可視にする↓*/
+.h2_mob {
+  display: none;
+}
+/*↑PCでは不可視にする↑*/
+
+
+/*↓スマホでは不可視にする↓*/
+.logo_mob {
+  display: none;
+}
+/*↑スマホでは不可視にする↑*/
+
+
+
+
+
+
+
+
+
+
+
+

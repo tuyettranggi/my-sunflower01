@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<meta name="description" content="" />
+<meta name="Keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="iphone/public/stylesheets/base.css" />
+</head>
+
+<body>
+<section id="alertBox">
+<form action="#" method="post">
+<div class="boxInner">
+<ul class="useList">
+<li><input type="radio" id="all" name="choice" value=""><label for="all">すべて利用する。</label></li>
+<li><input type="radio" id="numberText" name="choice" value=""><label for="numberText">利用するTポイント数を指定する。</label><br>
+<input id="number" name="number" type="text" size="20" onFocus="if (this.value == 'ポイント数を入力') this.value = ''; this.style.color='#000000';" onBlur="if (this.value == '') this.value = 'ポイント数を入力'; this.style.color='#aaaaaa';" value="ポイント数を入力" /><label for="number">pt</label></li>
+<li><input type="radio" id="none" name="choice" value="" checked="checked"><label for="none">利用しない。</label></li>
+</ul>
+</div>
+</form>
+<!-- / id alertBox --></section>
+</body>
+</html>

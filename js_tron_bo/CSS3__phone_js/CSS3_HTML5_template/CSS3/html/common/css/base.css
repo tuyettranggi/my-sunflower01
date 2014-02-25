@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a    { color: #3366cc; text-decoration: none; outline: none; }
+a:hover   { text-decoration: underline; }
+
+
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 75%;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	line-height: 1.5;
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#layout {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+
+/* # header
+---------------------------------------------------------------------------- */
+
+div#header {
+}
+
+
+/* # gNav
+---------------------------------------------------------------------------- */
+
+div#gNav {
+}
+
+
+/* # pageBody
+---------------------------------------------------------------------------- */
+
+div#pageBody {
+	padding-top: 20px;
+}
+
+
+/* # content
+---------------------------------------------------------------------------- */
+
+div#content {
+	float: right;
+	width: 780px;
+}
+
+div#content h1 {
+	color: #900b09;
+	font-size: 160%;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+div#content div.section {
+	background: #f3f9fe;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+div#content div.section h2 {
+	color: #617f10;
+	font-size: 140%;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+div#content div.section div.sectionBody {
+	background: #fff;
+	border: 1px solid #ccc;
+	font-size: 110%;
+	padding: 10px;
+}
+
+div#content div.section div.sectionBody pre {
+	font-size: 120%;
+}
+
+div#content div.section div.sectionInner {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+div#content div.section div.sectionFooter {
+	padding: 10px 0 5px 0;
+}
+
+div#content div.section div.sectionFooter dl {
+	float: left;
+	width: 470px;
+}
+
+div#content div.section div.sectionFooter dl dd {
+	font-weight: bold;
+	margin: -1.5em 0 0 0;
+	padding: 0 0 0 11em;
+}
+
+div#content dl.relatedLinks dt {
+	font-weight: bold;
+}
+
+.example {
+	background: #000;
+	color: #fff;
+	padding: 4px 10px;
+	margin-bottom: 10px;
+}
+
+.exampleContent {
+	clear: both;
+	margin: 20px 0 20px;
+}
+
+div#content dl.relatedLinks a {
+	margin: 0;
+}
+
+/* # sidebar
+---------------------------------------------------------------------------- */
+
+div#sidebar {
+	background: url(../images/bg_dot.gif) repeat-x 0 0;
+	margin-top: 50px;
+	float: left;
+	padding-top: 1px;
+	width: 200px;
+}
+
+div#sidebar ul li a {
+	background: #f3f9fe url(../images/bg_dot.gif) repeat-x left bottom;
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	padding: 6px 0 3px 10px;
+	height: 16px;
+}
+
+div#sidebar ul li a:hover {
+	background: #900B09;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* # footer
+---------------------------------------------------------------------------- */
+
+div#footer {
+}
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+
+div#pageBody,
+div#content div.section div.sectionBody,
+div#content div.section div.sectionFooter {
+	zoom: 1;
+}
+
+div#pageBody:after,
+div#content div.section div.sectionBody:after,
+div#content div.section div.sectionFooter:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+/* # common classes
+---------------------------------------------------------------------------- */
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>勤務地検索条件設定ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_job.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_checkAll.js" charset="shift_jis"></script>
+</head>
+
+<body>
+<section id="content" class="cJob cMypage cEntry">
+<div id="jobOfferDetailInfo" class="entrySec jobSec mt40">
+<!-- script_checkAll.js phai su dung doan js viet cho label trong script_common.js -->
+<!-- check all -->
+<form action="#" method="post">
+<dl class="entryBasicList1 noBG checkAll">
+<dt class="noBrTop wholeArea"><input type="checkbox" id="all" name="all" value=""> <label for="all">select all</label></dt>
+<dd class="noSpaceBtm">
+<ul class="fmItemList">
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area01" value=""> <label for="area01">埼玉県</label></p>
+<p class="floatR">1件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area02" value=""> <label for="area02">千葉県</label></p>
+<p class="floatR">40件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area03" value=""> <label for="area03">東京都(23区を除く)</label></p>
+<p class="floatR">60件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area04" value=""> <label for="area04">東京23区</label></p>
+<p class="floatR">80件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area05" value=""> <label for="area05">神奈川県(横浜市、川崎市を除く)</label></p>
+<p class="floatR">100件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area06" value=""> <label for="area06">横浜市</label></p>
+<p class="floatR">120件</p>
+</li>
+<li>
+<p class="floatL pl20"><input type="checkbox" name="area" id="area07" value=""> <label for="area07">川崎市</label></p>
+<p class="floatR">140件</p>
+</li>
+</ul>
+</dd>
+</dl>
+<!-- / check all -->
+
+</form>
+<form action="#" method="post">
+
+<section id="conditionInfo" class="showContent">
+<h2 class="mh"><a href="#" class="base">open content</a></h2>
+<div class="innerContent noBG shadowBG">
+<dl class="entryBasicList1 noBG">
+<dt>click button detail : + さらに詳しく設定</dt>
+<dd>
+<ul class="fmItemList brBtm noPdBtm">
+<li><input type="checkbox" name="condition" id="condition01" value=""> <label for="condition01"><img src="../sp_common/images/ico_welcome.gif" alt="" class="welcome">未経験歓迎</label></li>
+</ul>
+<!-- button more -->
+<ul class="fmItemList noSpaceBtm brBtm noBrTop checkMore">
+<li><input type="checkbox" name="condition" id="condition02" value=""> <label for="condition02">年収600万円以上</label></li>
+<li><input type="checkbox" name="condition" id="condition03" value=""> <label for="condition03">転勤なし</label></li>
+<li><input type="checkbox" name="condition" id="condition04" value=""> <label for="condition04">学歴不問</label></li>
+<li><input type="checkbox" name="condition" id="condition05" value=""> <label for="condition05">語学が活かせる</label></li>
+<li><input type="checkbox" name="condition" id="condition06" value=""> <label for="condition06">第2新卒歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition07" value=""> <label for="condition07">外資系企業</label></li>
+<li><input type="checkbox" name="condition" id="condition08" value=""> <label for="condition08">上場企業</label></li>
+<li><input type="checkbox" name="condition" id="condition09" value=""> <label for="condition09">設立5年以内</label></li>
+<li><input type="checkbox" name="condition" id="condition10" value=""> <label for="condition10">中途入社者5割以上</label></li>
+<li><input type="checkbox" name="condition" id="condition11" value=""> <label for="condition11">従業員100名以下</label></li>
+<li><input type="checkbox" name="condition" id="condition12" value=""> <label for="condition12">従業員1,000名以上</label></li>
+<li><input type="checkbox" name="condition" id="condition13" value=""> <label for="condition13">社員持株制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition14" value=""> <label for="condition14">フレックス勤務</label></li>
+<li><input type="checkbox" name="condition" id="condition15" value=""> <label for="condition15">服装自由</label></li>
+</ul>
+
+
+<p id="plus01" class="checkMoreBtn alignC"><a class="aPlusL" href="#">さらに詳しく設定</a></p>
+<!-- / button more -->
+</dd>
+</dl>
+<!-- / class innerContent --></div>
+<!-- / id conditionInfo --></section>
+
+<div class="fmBoxReset">
+<p class="fmSubmit noSpaceBtm"><button class="btn3 applicationBtn"><span>チェックした条件で検索する</span></button></p>
+</div>
+</form>
+<!-- / id jobOfferDetailInfo --></div>
+<!-- / id content --></section>
+
+<!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a></p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/" target="_blank">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html" target="_blank">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem -->
+</body>
+</html>

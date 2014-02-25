@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+
+/* # text_shadow
+---------------------------------------------------------------------------- */
+
+.text_shadow {
+	color: #000;
+	background-color: #fff;
+	text-shadow: 2px 2px 2px #617F10;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+.text_wrap {
+	word-wrap:  break-word;
+	width: 200px;
+	padding: 5px;
+	border: 1px solid #617F10;
+}
+
+
+/* # gradient text
+---------------------------------------------------------------------------- */
+
+
+div#content div.section .gradient1 h2 {
+    font: bold 300%/100% "Lucida Grande",Arial,sans-serif;
+    margin: 30px 0 50px;
+    position: relative;
+	background: #ff7900;
+}
+.gradient1 h2 span {
+    background: url(../images/gradient-white.png) repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 31px;
+    position: absolute;
+    width: 100%;
+}
+
+div#content div.section .gradient2 h2 {
+    color: #464646;
+    font: bold 310%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -2px;
+    margin: 30px 0 50px;
+    position: relative;
+    text-transform: uppercase;
+	background: #ff7900;
+}
+.gradient2 h2 span {
+    background: url(../images/gradient-glossy.png) repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 38px;
+    position: absolute;
+    width: 100%;
+}
+.gradient2 a {
+    color: #000000;
+    text-decoration: none;
+}
+.gradient2 a:visited {
+    color: #000000;
+}
+.gradient2 a:hover {
+    color: #555555;
+}
+
+.gradient3 {
+    background: none repeat scroll 0 0 #D7E1E3;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .gradient3 h2 {
+    color: #ff0000;
+    font: bold 280%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -2px;
+    margin: 0;
+    position: relative;
+}
+.gradient3 span {
+    background: url(../images/gradient-grey.png) repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 29px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.gradient4 {
+    background: url(../images/gradient4-bg.png) repeat-x scroll left bottom #000000;
+    margin: 30px 0 50px;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .gradient4 h2 {
+    color: #ff0000;
+    font: 440%/100% "Lucida Grande",Arial,sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+.gradient4 span {
+    background: url(../images/gradient-dark.png) repeat-x scroll 0 0 transparent;
+    bottom: -0.1em;
+    display: block;
+    height: 53px;
+    position: absolute;
+    width: 100%;
+}
+
+
+div#content div.section .gradient5 {
+    background: none repeat scroll 0 0 #000000;
+    margin: 30px 0 50px;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .gradient5 h2 {
+    color: #ff0000;
+    font: 400%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -1px;
+    margin: 0;
+    position: relative;
+}
+.gradient5 h2 span {
+    background: url(../images/gradient-shine.png) repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 45px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.gradient6 {
+    background: none repeat scroll 0 0 #000000;
+    margin: 30px 0 50px;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .gradient6 h2 {
+    color: #ff0000;
+    font: bold 310%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -2px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.gradient6 h2 span {
+    background: url(../images/gradient-dark-stripe.png) repeat-x scroll 0 0 transparent;
+    bottom: -0.1em;
+    display: block;
+    height: 49px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.gradient7 {
+    background: none repeat scroll 0 0 #000000;
+    margin: 30px 0 50px;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .gradient7 h2 {
+    color: #ff0000;
+    font: bold 310%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -2px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.gradient7 h2 span {
+    background: url(../images/gradient-dark-stripe-hz.png) repeat-x scroll 0 0 transparent;
+    bottom: -0.1em;
+    display: block;
+    height: 49px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.pattern {
+    background: none repeat scroll 0 0 #000000;
+    margin: 30px 0 50px;
+    padding: 30px 0 30px 30px;
+}
+div#content div.section .pattern h2 {
+    color: #ff0000;
+    font: bold 600%/100% "Lucida Grande",Arial,sans-serif;
+    letter-spacing: -6px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.pattern h2 span {
+    background: url(../images/pattern-zebra.png) repeat scroll 0 0 transparent;
+    display: block;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********Glowing Link ***********/
+a.glowlink{
+	color : #ff0000;
+	font-weight: bold;
+	font-size : 40px;
+}
+a.glowlink:hover , .glow {
+	color:#ff0000 ;
+	font-size : 40px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow:0 0 20px yellow ;
+}
+.extraGlow {
+	font-size : 40px;
+	color:#ff0000;
+	font-weight: bold;
+	text-shadow:0 0 30px yellow , 0 0 70px yellow ; 
+	padding: 0 0 0 20px;
+}
+
+
+/*********Apple Style Text********/
+.applestyle{ 
+	background:#666;
+	font-size : 44px;
+	color: #000;
+	text-shadow: 0px 1px 1px #fff;
+	padding: 0 0 0 20px;
+}
+/*******Emboss *********/
+.Emboss  {
+	background:#ccc;color:#ccc;text-shadow: -1px -1px white, 1px 1px #333;
+	font-size : 44px;
+	padding: 0 0 0 20px;
+}
+/*******Pillow Emboss  *********/
+.PillowEmboss {
+	background:#ccc;
+	font-size : 44px;
+	color:#ddd;
+	text-shadow: 1px 1px white, -1px -1px #444;
+	padding: 0 0 0 20px;
+}
+/*******Blurry Text *********/
+
+.blurytext {
+	background: #000;
+	color: transparent;
+	font-size : 54px;
+	text-shadow: #ff0000 0 0 10px;
+	padding: 0 0 0 20px;
+}
+
+/*******Inset Text *********/
+.insettext{
+	color: #344251;
+	font-size : 44px;
+	text-shadow: 1px 1px 0px #bad3ed;
+	font-weight: bold;
+	background:#bad3ed;    
+	padding: 0 0 0 20px;      
+}
+/*****Text Stroke**********/
+.Stroke{
+	font-size : 44px;
+	color:red;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px #000, -1px -1px 0px #000;
+	padding: 0 0 0 20px;
+}
+
+/*****Fake 3D Effect **********/
+.effect3D {
+	font-size : 44px;
+	color:rgba(255,255,0,.7) ;
+	font-weight: bold;
+	text-shadow: 1px 1px rgba(255,128,0,.7), 2px 2px rgba(255,128,0,.7), 3px 3px rgba(255,128,0,.7), 4px 4px rgba(255,128,0,.7), 5px 5px rgba(255,128,0,.7);
+	padding: 0 0 0 20px;
+}
+
+
+/*****Fake fire **********/
+
+div#content div.section div.sectionBody #preview-multi_text_shadows p {
+    background: none repeat scroll 0 0 black;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+    padding: 40px 0 10px;
+    text-align: center;
+    text-shadow: 0 0 4px white, 0 -5px 4px #FFFF33, 2px -10px 6px #FFDD33, -2px -15px 11px #FF8800, 2px -25px 18px #FF2200;
+}

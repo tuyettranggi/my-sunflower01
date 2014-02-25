@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>基本情報の変更ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/Library/header_login2.lbi" -->
+<!--&&& 【ログイン】ヘッダーテンプレート [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">ログアウト</a></li>
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner -->
+</div>
+<!-- / id siteHeader -->
+</header>
+<!--&&& 【ログイン】ヘッダーテンプレート [END] &&&-->
+<!-- #EndLibraryItem -->
+<section id="content" class="cJoin cEntry cResume cMypage">
+<div id="contentHead">
+<h1>基本情報の変更</h1>
+<p><a href="#" class="btn1 backBtn"><span>戻る</span></a></p>
+<!-- / id contentHead --></div>
+
+<div id="jobOfferDetailInfo">
+<form action="type.jp/mypage/index.do" method="post">
+<section id="basicInfo" class="entrySec">
+<h2 class="mh"><span>基本情報</span></h2>
+
+<section class="entrySec">
+<dl class="entryBasicList1 noBG">
+<dt>氏名&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="必須"></span></dt>
+<dd>
+<ul class="fmItemList">
+<li>
+<p class="fmTitle">漢字</p>
+<p><label for="edit_user_complete_user_lastname" class="fmSizeMin2em">姓</label><input type="text" name="user.lastname" id="edit_user_complete_user_lastname" class="fmSize240 fmSizeMr12" value="山田">
+<label for="edit_user_complete_user_firstname" class="fmSizeMin2em">名</label><input type="text" name="user.firstname" id="edit_user_complete_user_firstname" class="fmSize240" value="太郎"></p>
+</li>
+<li>
+<p class="fmTitle">カナ</p>
+<p><label for="edit_user_complete_user_lastnameKana" class="fmSizeMin2em ">セイ</label><input type="text" name="user.lastnameKana" id="edit_user_complete_user_lastnameKana" class="fmSize240 fmSizeMr12" value="ヤマダ">
+<label for="edit_user_complete_user_firstnameKana" class="fmSizeMin2em">メイ</label><input type="text" name="user.firstnameKana" id="edit_user_complete_user_firstnameKana" class="fmSize240" value="タロウ"></p>
+<p>（全角カナ）</p>
+</li>
+</ul>
+</dd>
+
+<dt>性別&nbsp;&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="必須"></span></dt>
+<dd><input type="radio" name="user.sex" id="edit_user_complete_user_sex1" checked="checked" value="1" class="inline sp-r5"/><label for="edit_user_complete_user_sex1" class="mr15">男性</label><input type="radio" name="user.sex" id="edit_user_complete_user_sex2" value="2" class="inline sp-r5"/><label for="edit_user_complete_user_sex2">女性</label></dd>
+
+<dt>メールアドレス（ログインID）&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<p><input type="email" name="user.email" id="edit_user_complete_user_email" class="fmSize510" value="test@test.com"> <span class="fmFormat fmSizeMr0">(半角)</span></p>
+<p>※携帯メールアドレスはご利用いただけません。</p>
+<p class="alignC"><a href="/help/category_4.html#q14" class="aPC">メールアドレスを変更される際の注意点</a></p>
+</dd>
+
+<dt>メールアドレス再入力&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="email" name="emailRetype" id="edit_user_complete_emailRetype" class="fmSize510" value="test@test.com">
+<span class="fmFormat">(半角)</span>
+</dd>
+
+<dt>ご希望のパスワード&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<ul class="fmItemList mbN30">
+<li>
+<p><input type="password" name="user.password" id="edit_user_complete_user_password" class="fmSize510" value="1234"> <span class="fmFormat fmSizeMr0">(半角)</span></p>
+<p>0-9、a-zの半角英数字で4文字以上、20文字以内で入力してください</p>
+</li>
+</ul>
+</dd>
+
+<dt>パスワード再入力&nbsp;<span class="fmDuty"><img src="../sp_common/images/ico_required.png" alt="任意"></span></dt>
+<dd>
+<input type="password" name="passwordRetype" id="edit_user_complete_passwordRetype" class="fmSize510" value="1234">
+<span class="fmFormat">(半角)</span>
+</dd>
+<!-- / class entryBasicList1 --></dl>
+<!-- / class entrySec --></section>
+<!-- / id basicInfo --></section>
+
+<div class="entryNoteBox">
+<div class="entryNoteBoxInner">
+<p>当サイトでは、利用者が安心して入力していただけるように、個人情報を入力するページに暗号化技術のSSL(Secure Sockets Layer) を導入しております。</p>
+<p>※個人情報を保護するため、以下の場合は入力内容が無効になり<br>
+<span class="ml15">ますのでご注意ください。</span><br>
+・約１時間以上同じページで入力を続けた場合<br>
+・応募完了前にインターネット接続を切断した場合</p>
+<!-- / class entryNoteBoxInner --></div>
+<!-- / class entryNoteBox --></div>
+
+<p class="fmSubmit"><button class="btn3 applicationBtn"><span>保存して戻る</span></button></p>
+</form>
+<!-- / id jobOfferDetailInfo --></div>
+<!-- / id content --></section>
+<!-- #BeginLibraryItem "/Library/footer_login.lbi" -->
+<!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop"> <a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a> </p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li>
+<!--
+-->
+<li><a href="/s/kojin/">個人情報について</a></li>
+<!--
+-->
+<li><a href="/help/category_14.html">@type会員規約</a></li>
+</ul>
+<ul>
+<li><a href="http://type.jp">ホーム</a></li>
+<!--
+-->
+<li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent -->
+</div>
+<!-- / id siteFooter -->
+</footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&-->
+<!-- #EndLibraryItem -->
+</body>
+</html>

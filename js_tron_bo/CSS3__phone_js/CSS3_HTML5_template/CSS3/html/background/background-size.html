@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>multiple_background</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/background.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>multiple_background</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody clearfix">
+<div class="bgSize01 clearfix">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p><img src="images/img_size01.gif" alt="Flowers" width="224" height="162" /></p>
+</div>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+&lt;div class="bgSize"&gt;<br />
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.&lt;/p&gt;<br />
+&lt;p&gt;Original image: &lt;img src="img_size01.gif" alt="Flowers" width="224" height="162" />&lt;/p&gt;<br />
+&lt;/div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<pre>
+div.bgSize {
+background: url(images/img_size01.gif);
+-moz-background-size:80px 60px; /* Firefox */
+background-size:80px 60px;
+background-repeat:no-repeat;
+padding-top:40px;
+}
+
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE6, IE7, IE8</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://www.w3schools.com/css3/tryit.asp?filename=trycss3_background-size" target="_blank">http://www.w3schools.com/css3/tryit.asp?filename=trycss3_background-size</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">homePage</a></li>
+<li><a href="background-clip.html">background-clip</a></li>
+<li><a href="background-origin.html">background-origin</a></li>
+<li><a href="background-size.html">background-size</a></li>
+<li><a href="multiple_background.html">multiple_background</a></li>
+<li><a href="gradient_background.html">CSS3 Gradient Background</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>

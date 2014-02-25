@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# gNav
+# pageBody
+# content
+# sidebar
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+
+/* ------------------------------------------------box-sizing--------------------------------------------------------*/
+
+/* ------------boxSizing01------------------------*/
+
+div.boxSizing01 {
+	width:35em;
+	border: 10px solid #900;
+	height: 40px;
+}
+
+div.boxSizing01 div.split {
+	box-sizing: border-box;/* IE8, Opera */
+	-o-box-sizing: border-box;
+	-icab-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box;/* Safari and Chrome */
+	width:50%;
+	height: 40px;
+	text-align: center;
+	border: 10px silver ridge;
+	padding: 2px;
+	float:left;
+}
+
+/* ------------boxSizing02------------------------*/
+
+div.boxSizing02 {
+	width: 300px;
+	border: 10px solid #ddccb5;
+	height: 60px;
+}
+
+div.boxSizing02 .boxes {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box;/* Safari and Chrome */
+	width: 50%;
+	height: 60px;
+	text-align: center;
+	border: 5px solid #897048;
+	padding: 2px;
+	float: left;
+}
+
+
+/* ------------------------------------------------resize--------------------------------------------------------*/
+
+/* ------------resize01------------------------*/
+
+div.resize01 {
+	padding: 20px;
+	border: 1px solid;
+	resize: both;
+	overflow: auto;
+	width: 300px;
+}
+
+
+/* ------------resize02------------------------*/
+
+div.resize02 {
+	max-width: 100px;
+	height: 100px;
+	border: 1px solid;
+	resize: vertical;
+	overflow: auto;
+}
+
+div.vertical {
+    max-height: 700px;
+    min-height: 100px;
+}
+
+
+/* ------------resize03------------------------*/
+
+div.resize03 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	resize: horizontal;
+	overflow: auto;
+}
+
+div.horizontal {
+    max-width: 600px;
+    min-width: 100px;
+}
+
+
+/* ------------------------------------------------outline--------------------------------------------------------*/
+
+/* ------------outline01------------------------*/
+
+.ui_outline {
+    border: 2px solid black;
+    height: 70px;
+    outline: 2px solid #897048;
+    outline-offset: 15px;
+	outline-style: 30px;
+	margin: 30px;
+    padding: 10px;
+    width: 150px;
+}

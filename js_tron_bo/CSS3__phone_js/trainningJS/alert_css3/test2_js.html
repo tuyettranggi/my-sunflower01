@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+<meta name="description" content="" />
+<meta name="Keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="iphone/public/stylesheets/base.css" />
+<script type="text/javascript" src="iphone/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="iphone/public/js/iphone.js"></script>
+<script type="text/javascript" src="iphone/public/js/script.js"></script>
+
+<style type="text/css">
+<!--
+#alertView{
+	position: absolute;
+	top: 35%;
+	left: 27.8%;
+	border: 4px solid rgba(236, 237, 237, 0.9);
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background: rgb(11,27,68);
+	background:  rgba(11,27,68, 1) ; /* dinh 0.9 : trong suot*/
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	overflow:hidden;
+	text-align: center;
+	display: none;
+}
+
+#alertView div#shine {
+	position: absolute;
+	top: -1514px;
+	height: 1570px;
+	width: 1650px;
+	border-radius: 1500px;
+	-moz-border-radius: 1500px;
+	-webkit-border-radius: 1500px;
+	background: rgb(255, 255, 255);
+	left: -550px;
+	background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgba(59,81,119, 0.5)),
+    color-stop(0.06, rgba(255,255,255, 0.5))
+	);
+	background:	-moz-linear-gradient(
+    center bottom,
+    rgba(59,81,119, 0.5) 0%,
+    rgba(255,255,255, 0.5) 4%
+	);
+	opacity: 1;
+	filter: alpha(opacity = 05);
+	z-index: 5;
+}
+
+#alertView h2, #alertView p {
+	color: white;
+	margin: 0;
+	/*padding: 5px 10px;*/
+	position: relative;
+	z-index: 20;
+}
+
+#alertView p {
+	font-size: 140%!important;
+	text-align: center;
+}
+
+#alertView h2 {
+	font-size: 150%;
+	text-shadow: 2px -1px 1px #001841;
+	text-align:center;
+}
+
+#alertView .button {
+	display: inline-block;
+	margin-right: -10px;
+	position: relative;
+}
+
+#alertView .button span {
+	height: 37px;
+	position: absolute;
+	top: 11px;
+	background: rgb(255, 255, 255);
+	left: 11px;
+	background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgba(18,18,18, 0.1)),
+    color-stop(0.06, rgba(255,255,255, 0.5))
+	);
+	background:	-moz-linear-gradient(
+    center bottom,
+    rgba(18,18,18, 0.5) 0%,
+    rgba(255,255,255, 0.5) 4%
+	);
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	opacity: 0.2;
+	filter: alpha(opacity = 02);
+	z-index: 5;
+	width: 252px;
+}
+
+#alertView .button a {
+	background: #101f47
+	display: block;
+	width: 100px;
+	float: left;
+	margin: 11px;
+	border: 2px solid #121e3b;
+	border-radius: 5px;
+	-moz-box-shadow:
+		0px 10px 0px 0px rgba(0,0,0,0),
+		0px 1px 0px 0px rgb(60,73,105);
+	-webkit-box-shadow:
+		0px 10px 0px 0px rgba(0,0,0,0),
+		0px 1px 0px 0px rgb(60,73,105);
+	box-shadow:
+		0px 10px 0px 0px rgba(0,0,0,0),
+		0px 1px 0px 0px rgb(60,73,105);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.13, rgb(18,18,18)),
+    color-stop(1, rgb(24,39,78))
+	);
+	background: -moz-linear-gradient(
+    center bottom,
+    rgb(12,28,69) 55%,
+/*    rgb(133,133,133) 43%,*/
+    rgb(109,118,142) 100%
+	);
+	
+	color: #fff!important;
+	text-shadow: 2px -1px 1px #0e1017;
+	padding: 10px;
+	width: 230px;
+}
+#alertView .button:nth-child(even) {
+	margin-right: 0;
+}
+/*#alertView .button p {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#alertView .button p a{
+	color: #333333;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	font: bold 14px/1.2em Helvetica, Arial, sans-serif;
+	margin: 0;
+	display: block;
+	padding: 7px 0 10px;
+	text-shadow: 0 1px 1px #5E5E5E;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}*/
+ 
+#alertView .button a:active {
+	-moz-box-shadow: 0 0 15px white;
+	-webkit-box-shadow: 0 0 15px white;
+}
+-->
+</style>
+</head>
+<body>
+<section id="wrap">
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<h1 id="siteId"><a href="#"><img src="iphone/public/images/logo.png" alt="TSUTAYA.com eBOOKS"></a></h1>
+<ul>
+<li><a href="#"><img src="iphone/public/images/03_btn.png" alt=""></a></li>
+<li><a href="#"><img src="iphone/public/images/04_btn.png" alt=""></a></li>
+</ul>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+
+<section id="content" class="mb70">
+<h2 class="bHead">会員退会</h2>
+<div class="mHeadSection">
+<h3>注意文言</h3>
+<ul class="textList">
+<li>・「退会」ボタンを押すと、アプリ画面が閉じられ、ブラウザが起動します。</li>
+<li>・「退会」ボタンを押すと、自動的にログアウトされますので、ご注意下さい。</li>
+<li>・TSUTAYA onlineで提供する全てのサービスがご<br>
+利用頂けなくなります。（TSUTAYA店頭で使えるクーポンなどの割引チケットやオンラインショッピングでのお買い物など）</li>
+<li>・電子書籍サービスのみ利用停止をご希望の場合は、「メルマガ設定」よりメールマガジンを解除し、本サイトをログアウトしてください。</li>
+<li>・購入した本を読むことができなくなります。</li>
+<li>・購入履歴が消去されます。</li>
+<li>・欲しい本リストに登録済みの商品が消去されます。</li>
+</ul>
+
+<p class="alignC"><a href="javascript:;" class="button01"><span>退会する</span></a></p>
+
+<div id="alertView">
+<h2>本当に、本当に</h2>
+<p>退会してもよろしいですか？</p>
+<p class="button"><a href="#"><span>&nbsp;</span>キャンセル</a></p>
+<p class="button"><a href="#"><span>&nbsp;</span>退会する</a></p>
+<div id="shine"></div>
+</div>
+<!-- / class mHeadSection --></div>
+<!-- / id content --></section>
+
+<footer id="siteFooter">
+<p id="siteFCopy">(c)TSUTAYA.com Co., Ltd.</p>
+<div id="siteFInner">
+<ul id="siteFNav" class="siteFNavCenter">
+<li><a href="#"><img src="iphone/public/images/account_fnav.png" alt="アカウント"></a></li>
+<li><a href="#"><img src="iphone/public/images/agreement_fnav.png" alt="規約"></a></li>
+<li><a href="#"><img src="iphone/public/images/help_fnav.png" alt="ヘルプ"></a></li>
+</ul>
+<!-- / id siteFInner --></div>
+<!-- / id siteFooter --></footer>
+</section>
+</body>
+</html>

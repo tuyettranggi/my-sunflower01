@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="shift_jis">
+<title>新規検索条件登録ページ</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../sp_common/css/base.css" media="screen">
+<script src="../sp_common/js/jquery.min.js"></script>
+<script src="../sp_common/js/script_common.js" charset="shift_jis"></script>
+<script src="../sp_common/js/script_mypage.js" charset="shift_jis"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/header_nomenu2.lbi" --><!--&&& 【ログイン】ヘッダーテンプレート(メニュー無し) [START] &&&-->
+<header id="siteHeader">
+<div id="siteHeaderInner">
+<p id="siteId"><a href="#"><img src="../sp_common/images/h_logo.png" alt="@type&reg;"></a></p>
+<p id="hTagline">自分を磨く、キャリアをつくる。<br>
+転職サイトは[アット・タイプ]</p>
+<nav id="gNav">
+<dl>
+<dt><a href="#gNavContent" class="btn1 openBtn"><span>メニュー</span></a></dt>
+<dd>
+<ul id="gNavContent">
+<li><a href="#" class="self">登録情報の確認・変更</a></li>
+<li><a href="#" class="self">ログアウト</a></li>
+<!--&&& ◆フリースペース◆メニューリスト [START] &&&-->
+<li><a href="#" class="self">求人情報から探す</a></li>
+<li><a href="#">企業からのスカウト</a></li>
+<li><a href="#">マッチングサービス</a></li>
+<li><a href="#">検討中リスト</a></li>
+<li><a href="#">応募/メッセージ管理</a></li>
+<li><a href="#">転職ノウハウ</a></li>
+<li><a href="#">非公開求人の紹介</a></li>
+<!--&&& ◆フリースペース◆メニューリスト [END] &&&-->
+</ul>
+</dd>
+</dl>
+</nav>
+<!-- / id siteHeaderInner --></div>
+<!-- / id siteHeader --></header>
+<!--&&& 【ログイン】ヘッダーテンプレート(メニュー無し) [END] &&&--><!-- #EndLibraryItem -->
+<section id="content" class="cMypage cJob cEntry">
+<div id="contentHead">
+<h1>新規条件登録</h1>
+<!-- / id contentHead --></div>
+
+<div id="mypageLeadBox">
+<p>条件を入力して登録ボタンをクリックしてください。</p>
+</div>
+
+<div class="conditionDetail">
+<div class="innerContent noBG">
+<ul class="basicBoxList1 infoList noSpaceBtm">
+<li class="noBDB">
+<table class="conditionTable">
+<tr>
+<th class="bgGrey">職種</th>
+<td><p><a class="btn1 arrowRBtn" href="http://type.jp/job/jobcategory_select.do?id=searchCondition.job3IdList" target="_blank"><span>変更する</span></a></p></td>
+</tr>
+</table>
+<p class="detailText pt20 pb20">
+<!--&&&  システムから取得  [START]&&&-->
+プロジェクトマネージャー・サブリーダー（制御・ファームウェア系・組込系） / アプリケーション開発
+<!--&&&  システムから取得  [END]&&&-->
+</p>
+</li>
+
+<li class="noBDB">
+<table class="conditionTable">
+<tr>
+<th class="bgGrey">業種</th>
+<td><p><a class="btn1 arrowRBtn" href="http://type.jp/job/industrycategory_select.do?id=searchCondition.industryIdList" target="_blank"><span>変更する</span></a></p></td>
+</tr>
+</table>
+<p class="detailText pt20 pb20">
+<!--&&&  システムから取得  [START]&&&-->
+コンサルティング、シンクタンク / 運輸・交通 / 放送・出版・広告・マスコミ・印刷 / 人材派遣・アウトソーシング
+<!--&&&  システムから取得  [END]&&&-->
+</p>
+</li>
+
+<li class="lastList noBDB">
+<table class="conditionTable">
+<tr>
+<th class="bgGrey">勤務地</th>
+<td><p><a class="btn1 arrowRBtn" href="http://type.jp/job/area_select.do?id=searchCondition.placeIdList" target="_blank"><span>変更する</span></a></p></td>
+</tr>
+</table>
+<p class="detailText pt20 pb20">
+<!--&&&  システムから取得  [START]&&&-->
+川崎市 / 岐阜県 / 静岡県 / 愛知県 / 三重県
+<!--&&&  システムから取得  [END]&&&-->
+</p>
+</li>
+</ul>
+<!-- / class innerContent --></div>
+
+<div class="innerContent noBG">
+<form action="#" method="post">
+<dl class="entryBasicList1">
+<dt>キーワード</dt>
+<dd>
+<input id="fmKeyword" class="fmSize510 mb10" type="text" name="fmKeyword">
+<span class="fmFormat">を含む</span>
+<p>※複数キーワード不可</p>
+</dd>
+</dl>
+
+<table class="tableStyle">
+<tr>
+<th class="bgGrey">雇用形態</th>
+<td>
+<ul>
+<li><input type="checkbox" name="system" id="system01"> <label for="system01">正社員</label></li>
+<li><input type="checkbox" name="system" id="system02"> <label for="system02">契約社員</label></li>
+<li><input type="checkbox" name="system" id="system03"> <label for="system03">派遣社員</label></li>
+<li><input type="checkbox" name="system" id="system04"> <label for="system04">紹介予定派遣</label></li>
+<li><input type="checkbox" name="system" id="system05"> <label for="system05">アルバイト・パート</label></li>
+<li><input type="checkbox" name="system" id="system06"> <label for="system06">業務委託</label></li>
+<li><input type="checkbox" name="system" id="system07"> <label for="system07">その他</label></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<dl class="entryBasicList1">
+<dt>年収</dt>
+<dd>
+<select name="search.salaryId" id="search_search_salaryId" class="inline sp-r5 fmSize258 fmSizeMr12">
+<option value="">指定しない</option>
+<option value="7">200万円</option>
+<option value="8">250万円</option>
+<option value="9">300万円</option>
+<option value="10">350万円</option>
+<option value="11">400万円</option>
+<option value="12">450万円</option>
+<option value="13">500万円</option>
+<option value="14">550万円</option>
+<option value="15">600万円</option>
+<option value="16">650万円</option>
+<option value="17">700万円</option>
+<option value="18">750万円</option>
+<option value="19">800万円</option>
+<option value="20">850万円</option>
+<option value="21">900万円</option>
+<option value="22">950万円</option>
+<option value="23">1000万円</option>
+<option value="24">1050万円</option>
+<option value="25">1100万円</option>
+<option value="26">1150万円</option>
+<option value="27">1200万円</option>
+<option value="28">1250万円</option>
+<option value="29">1300万円</option>
+<option value="30">1350万円</option>
+<option value="31">1400万円</option>
+<option value="32">1500万円</option>
+</select>以上
+</dd>
+</dl>
+
+<dl class="entryBasicList1">
+<dt>年齢</dt>
+<dd>
+<select name="search.ageId" id="search_search_ageId" class="fmSize258">
+<option value="">指定しない</option>
+<option value="18">18歳を含む</option>
+<option value="19">19歳を含む</option>
+<option value="20">20歳を含む</option>
+<option value="21">21歳を含む</option>
+<option value="22">22歳を含む</option>
+<option value="23">23歳を含む</option>
+<option value="24">24歳を含む</option>
+<option value="25">25歳を含む</option>
+<option value="26">26歳を含む</option>
+<option value="27">27歳を含む</option>
+<option value="28">28歳を含む</option>
+<option value="29">29歳を含む</option>
+<option value="30">30歳を含む</option>
+<option value="31">31歳を含む</option>
+<option value="32">32歳を含む</option>
+<option value="33">33歳を含む</option>
+<option value="34">34歳を含む</option>
+<option value="35">35歳を含む</option>
+<option value="36">36歳を含む</option>
+<option value="37">37歳を含む</option>
+<option value="38">38歳を含む</option>
+<option value="39">39歳を含む</option>
+<option value="40">40歳を含む</option>
+<option value="41">41歳を含む</option>
+<option value="42">42歳を含む</option>
+<option value="43">43歳を含む</option>
+<option value="44">44歳を含む</option>
+<option value="45">45歳を含む</option>
+<option value="46">46歳を含む</option>
+<option value="47">47歳を含む</option>
+<option value="48">48歳を含む</option>
+<option value="49">49歳を含む</option>
+<option value="50">50歳を含む</option>
+<option value="51">51歳を含む</option>
+<option value="52">52歳を含む</option>
+<option value="53">53歳を含む</option>
+<option value="54">54歳を含む</option>
+<option value="55">55歳を含む</option>
+<option value="56">56歳を含む</option>
+<option value="57">57歳を含む</option>
+<option value="58">58歳を含む</option>
+<option value="59">59歳を含む</option>
+<option value="60">60歳以上を含む</option>
+</select>
+</dd>
+</dl>
+
+<table class="tableStyle">
+<tr>
+<th class="bgGrey">その他条件</th>
+<td>
+<ul>
+<li><input type="checkbox" name="condition" id="condition01"> <label for="condition01"><img src="../sp_common/images/ico_welcome.gif" alt="">未経験歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition02"> <label for="condition02">急募求人</label></li>
+<li><input type="checkbox" name="condition" id="condition03"> <label for="condition03">転勤なし</label></li>
+<li><input type="checkbox" name="condition" id="condition04"> <label for="condition04">学歴不問</label></li>
+<li><input type="checkbox" name="condition" id="condition05"> <label for="condition05">第2新卒歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition06"> <label for="condition06">年収600万円以上</label></li>
+<li><input type="checkbox" name="condition" id="condition07"> <label for="condition07">年俸制導入</label></li>
+<li><input type="checkbox" name="condition" id="condition08"> <label for="condition08">U・Iターン歓迎</label></li>
+<li><input type="checkbox" name="condition" id="condition09"> <label for="condition09">上場企業</label></li>
+<li><input type="checkbox" name="condition" id="condition10"> <label for="condition10">設立5年以内</label></li>
+<li><input type="checkbox" name="condition" id="condition11"> <label for="condition11">中途入社者5割以上</label></li>
+<li><input type="checkbox" name="condition" id="condition12"> <label for="condition12">従業員100名以下</label></li>
+<li><input type="checkbox" name="condition" id="condition13"> <label for="condition13">従業員1,000名以上</label></li>
+</ul>
+
+<ul class="checkMore">
+<li><input type="checkbox" name="condition" id="condition14"> <label for="condition14">平均年齢20代</label></li>
+<li><input type="checkbox" name="condition" id="condition15"> <label for="condition15">外資系企業</label></li>
+<li><input type="checkbox" name="condition" id="condition16"> <label for="condition16">社宅・家賃補助制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition17"> <label for="condition17">年間休日120日以上</label></li>
+<li><input type="checkbox" name="condition" id="condition18"> <label for="condition18">完全週休2日制</label></li>
+<li><input type="checkbox" name="condition" id="condition19"> <label for="condition19">語学が活かせる</label></li>
+<li><input type="checkbox" name="condition" id="condition20"> <label for="condition20">海外勤務あり</label></li>
+<li><input type="checkbox" name="condition" id="condition21"> <label for="condition21">上場準備中</label></li>
+<li><input type="checkbox" name="condition" id="condition22"> <label for="condition22">公的機関</label></li>
+<li><input type="checkbox" name="condition" id="condition23"> <label for="condition23">女性社員5割以上</label></li>
+<li><input type="checkbox" name="condition" id="condition24"> <label for="condition24">社内ベンチャー制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition25"> <label for="condition25">独立支援制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition26"> <label for="condition26">高成長企業</label></li>
+<li><input type="checkbox" name="condition" id="condition27"> <label for="condition27">20代で管理職登用あり</label></li>
+<li><input type="checkbox" name="condition" id="condition28"> <label for="condition28">社員持株制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition29"> <label for="condition29">フレックス勤務</label></li>
+<li><input type="checkbox" name="condition" id="condition30"> <label for="condition30">服装自由</label></li>
+<li><input type="checkbox" name="condition" id="condition31"> <label for="condition31">歩合給制あり</label></li>
+<li><input type="checkbox" name="condition" id="condition32"> <label for="condition32">ストックオプション制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition33"> <label for="condition33">残業が少ない</label></li>
+<li><input type="checkbox" name="condition" id="condition34"> <label for="condition34">オフィス内禁煙・分煙</label></li>
+<li><input type="checkbox" name="condition" id="condition35"> <label for="condition35">マイカー通勤可</label></li>
+<li><input type="checkbox" name="condition" id="condition36"> <label for="condition36">資格取得支援制度あり</label></li>
+<li><input type="checkbox" name="condition" id="condition37"> <label for="condition37">育児・介護休暇あり</label></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p id="plus01" class="checkMoreBtn alignC"><a class="aPlusL" href="#">さらに詳しく設定</a></p>
+
+<dl class="entryBasicList1">
+<dt>新着・更新</dt>
+<dd>
+<ul class="fmItemList noPdBtm">
+<li>
+<input id="fmUpdate" type="checkbox" value="" name="fmUpdate"> <img src="../sp_common/images/mypage/ico_new.gif" alt="NEW"> <label for="fmUpdate">新着・更新情報のみ表示</label>
+</li>
+</ul>
+</dd>
+</dl>
+
+<dl class="entryBasicList1 fmRegister">
+<dt>登録条件の名前</dt>
+<dd>
+<label for="fmRegister">この登録条件に名前をつけてください。</label><br>
+<input id="fmRegister" class="fmSize530" type="text" name="fmRegister"><br>
+（例：東京23区の営業職）
+</dd>
+</dl>
+
+<div class="fmBoxReset">
+<p class="fmSubmit"><button class="btn3 applicationBtn"><span>条件を登録する</span></button></p>
+</div>
+</form>
+<!-- / class innerContent --></div>
+<!-- / class conditionDetail --></div>
+<!-- / id content --></section>
+
+<!-- #BeginLibraryItem "/Library/footer_login.lbi" --><!--&&& 【ログイン】フッターテンプレート [START] &&&-->
+<footer id="siteFooter">
+<p id="pageTop">
+<a href="#siteHeader" class="btn1"><span>ページのTOPへ</span></a></p>
+<div id="siteFInner">
+<p id="siteFPCBtn"><a href="#" class="pcSiteBtn btn1"><span>PCサイトに切り替える</span></a></p>
+<nav id="siteFNav">
+<ul>
+<li><a href="/company/" target="_blank">会社案内</a></li><!--
+--><li><a href="/s/kojin/" target="_blank">個人情報について</a></li><!--
+--><li><a href="/help/category_14.html" target="_blank">@type会員規約</a></li>
+</ul>
+<ul><li><a href="http://type.jp">ホーム</a></li><!--
+--><li><a href="#">ログアウト</a></li>
+</ul>
+</nav>
+<!--&&& ◆フリースペース◆コピーライト [START] &&&-->
+<p id="siteFCopy">Copyright 1999-2011 CAREER DESIGN CENTER CO.LTD. All Rights Reserved. </p>
+<!--&&& ◆フリースペース◆コピーライト [END] &&&-->
+<!-- / id sFContent --></div>
+<!-- / id siteFooter --></footer>
+<!--&&& 【ログイン】フッターテンプレート [END] &&&--><!-- #EndLibraryItem -->
+</body>
+</html>

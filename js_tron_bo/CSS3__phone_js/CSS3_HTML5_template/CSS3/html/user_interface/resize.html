@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Resize</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/user_interface.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>Resize</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody">
+<p class="example">example01</p>
+<div class="resize01">This area can easily be resized by clicking and dragging at the corner. Have a play!</div>
+<br />
+
+<p class="example">example02</p>
+<div class="resize02 vertical">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<br />
+
+<p class="example">example03</p>
+<div class="resize03 horizontal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+
+<div class="sectionBody">
+<p class="example">example01</p>
+&lt;div class="resize01"&gt;This area can easily be resized by clicking and dragging at the corner. Have a play!&lt;/div&gt;
+<br />
+<br />
+
+<p class="example">example02</p>
+&lt;div class="resize02 vertical"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
+
+<p class="example">example03</p>
+&lt;div class="resize03 horizontal"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+
+<div class="sectionBody">
+<p class="example">example01</p>
+<pre>
+div.resize01 {
+	padding: 20px;
+	border: 1px solid;
+	resize: both;
+	overflow: auto;
+	width: 300px;
+}
+</pre>
+<br />
+
+<p class="example">example02</p>
+<pre>
+div.resize02 {
+	max-width: 100px;
+	height: 100px;
+	border: 1px solid;
+	resize: vertical;
+	overflow: auto;
+}
+div.vertical {
+    max-height: 300px;
+    min-height: 100px;
+}
+</pre>
+
+<p class="example">example03</p>
+<pre>
+div.resize03 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	resize: horizontal;
+	overflow: auto;
+}
+div.horizontal {
+    max-width: 600px;
+    min-width: 100px;
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>Firefox, IE6, IE7, IE8</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li><a href="http://designshack.co.uk/tutorials/introduction-to-css3-part-4-user-interface" target="_blank">http://designshack.co.uk/tutorials/introduction-to-css3-part-4-user-interface</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">homePage</a></li>
+<li><a href="box-sizing.html">box-sizing</a></li>
+<li><a href="resize.html">resize</a></li>
+<li><a href="outline.html">outline</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+<!-- / id layout --></div>
+</body>
+</html>

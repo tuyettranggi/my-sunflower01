@@ -1,0 +1,27 @@
+ebook_sp_20111220:
+
+backBtn	=> CCC_iphone_ebk013-01_d02.html
+
+redirect to link href CCC_iphone_ebk012.html => CCC_iphone_ebk-f007.html
+
+SLIDE DOWN - SLIDE UP	=> CCC_iphone_ebk005.html
+slideDown when it was clicked first time, sd time : slide up
+
+click toggle anh change img active by other img	=> CCC_iphone_ebk002.html
+set background to image = img active ( _on ) + change text of select element
+
+
+
+label	=> CCC_iphone_ebk013-01_d02.html
+
+Button : toggle content (box appear when button was clicked) 
+=>	CCC_iphone_ebk005.html	(@type : button gNav)
+
+
+check all selection => iphone\public\js\script_checkAll.js
+
+
+
+set color and focus to <input>
+----------------------------------------------------------------------------------------------------
+<input id="" name="" type="text" size="20" onFocus="if (this.value == 'キーワードを入力') this.value = ''; this.style.color='#000000';" onBlur="if (this.value == '') this.value = 'キーワードを入力'; this.style.color='#aaaaaa';" value="キーワードを入力" />

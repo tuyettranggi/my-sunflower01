@@ -1,0 +1,88 @@
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {
+	display: block;
+	position: relative;
+}
+/* End hide from IE-mac */
+
+a {
+	color: #333333;
+}
+
+a:hover {
+	color: #666666;
+}
+
+
+html{
+    height:100%;
+}
+body{
+    height:100%;
+	-webkit-text-size-adjust:none
+}
+ 
+* html div#container{
+    height:100%;
+}
+ 
+div#container{
+	position:relative;
+	min-height: 100%;
+}
+
+body > #container {
+    height: auto;
+}
+ 
+div#main{
+	width: 780px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+
+#footer{
+	position:absolute;
+	bottom:0px;
+	width:780px;
+	border-right-width: 0px;
+	border-bottom-width: 3px;
+	border-left-width: 0px;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+html {  
+	overflow:hidden;  
+    overflow-y:scroll;  
+}
+
+body{
+	color: #333333;
+}
+
+#container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+}
+
+#container a span {
+	display: none;
+}

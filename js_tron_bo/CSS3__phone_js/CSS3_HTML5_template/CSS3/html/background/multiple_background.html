@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>multiple_background</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="css/background.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="../common/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="contents" href="/" title="ホーム" />
+</head>
+
+<body>
+<div id="layout">
+<div id="header">
+<!-- / id header --></div>
+
+<div id="pageBody">
+<div id="content">
+<h1>multiple_background</h1>
+
+<div class="section">
+<h2>Preview</h2>
+<div class="sectionBody clearfix">
+<p class="example">example01</p>
+<div class="example">
+multiple_background<br />
+multiple_background<br />
+multiple_background<br />
+multiple_background<br />
+multiple_background
+</div>
+
+<p class="example exampleContent">example02</p>
+
+<div class="example01">
+</div>
+</div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>HTML:</h2>
+<div class="sectionBody">
+<p class="example">example01</p>
+&lt;div class="example"&gt;<br />
+multiple_background<br />
+multiple_background<br />
+multiple_background<br />
+multiple_background<br />
+multiple_background<br />
+&lt;/div&gt;
+
+<p class="example exampleContent">example02</p>
+&lt;div class="example01"&gt;
+&lt;div&gt;
+<!-- / class sectionBody --></div>
+<!-- / class section --></div>
+
+<div class="section">
+<h2>CSS:</h2>
+<div class="sectionBody">
+<p class="example">example01</p>
+<pre>
+div.example {
+    background: url(images/bg_multiple_top.gif) no-repeat scroll left top,
+	url(images/bg_multiple_content.jpg) no-repeat scroll 11px 11px,
+	url(images/bg_multiple_bottom.gif) no-repeat scroll left bottom,
+	url(images/bg_multiple_middle.gif) repeat-y scroll left center transparent;
+    height: 100px;
+    padding: 150px 20px 20px;
+    width: 695px;
+}
+</pre>
+
+<p class="example exampleContent">example02</p>
+<pre>
+div.example01 {
+    background: url(images/rose.png) no-repeat scroll 150px -20px,
+	url(images/driedrose.png) no-repeat scroll 0 0%,
+	url(images/fieldsky.jpg) no-repeat scroll 0 0 transparent;
+    height: 200px;
+    margin-top: 10px;
+    padding: 150px 20px 20px;
+    width: 720px;
+}
+</pre>
+<!-- / class sectionBody --></div>
+
+<div class="sectionFooter">
+<p class="example">example01</p>
+<dl class="browserSupport">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE6, IE7, IE8</dd>
+</dl>
+
+<p class="example exampleContent">example02</p>
+<dl class="browserSupport clearfix">
+<dt>Browser support:</dt>
+<dd>Firefox, Chrome, Opera, Safari</dd>
+<dt>Browser not support:</dt>
+<dd>IE6, IE7, IE8</dd>
+</dl>
+<!-- / class sectionFooter --></div>
+<!-- / class section --></div>
+
+<dl class="relatedLinks">
+<dt>Related Links:</dt>
+<dd>
+<ul>
+<li>example01 <a href="http://www.css3.info/wp-content/uploads/2007/09/multiple-backgrounds-example.html" target="_blank">http://www.css3.info/wp-content/uploads/2007/09/multiple-backgrounds-example.html</a></li>
+<li>example02 <a href="http://people.opera.com/zibin/multiple_background_image_zibin.html" target="_blank">http://people.opera.com/zibin/multiple_background_image_zibin.html</a></li>
+</ul>
+</dd>
+</dl>
+
+<!-- / id content --></div>
+
+<div id="sidebar">
+<ul>
+<li><a href="../index.html">homePage</a></li>
+<li><a href="background-clip.html">background-clip</a></li>
+<li><a href="background-origin.html">background-origin</a></li>
+<li><a href="background-size.html">background-size</a></li>
+<li><a href="multiple_background.html">multiple_background</a></li>
+<li><a href="gradient_background.html">CSS3 Gradient Background</a></li>
+</ul>
+<!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<!-- / id layout --></div>
+</body>
+</html>
