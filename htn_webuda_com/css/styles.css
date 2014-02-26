@@ -259,20 +259,24 @@ aside ul li ul li {
 	margin-bottom: 0;
 	color: #666;
 	font-size: 90%;
-	padding: 3px 7px 2px 25px;
+	padding: 3px 7px 2px 5px;
 }
 aside ul li a { padding-left: 7px; padding-right: 7px; }
 
 aside p {padding: 0;}
 
-aside ul li dl { padding: 7px 0 0 10px; font-size: 90%; }
+aside ul li dl { 
+	padding: 7px 0 0 0;
+	font-size: 90%;
+	margin-left: -5px;
+}
 aside ul li dl dt {
 	font-weight: bold;
 	background: #EFEDED;
-	padding: 3px 10px 3px 20px;
+	padding: 3px 10px 3px 25px;
 	margin-bottom: 3px;
 }
-aside ul li dd { padding: 0 0 5px 15px; }
+aside ul li dd { padding: 0 0 5px 20px; }
 
 
 /*==========================================================================*/
