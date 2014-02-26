@@ -30,14 +30,14 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 			</ul>\
 			<dl>\
 				<dt>Lines - Đường thẳng</dt>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-lines.html" title="vẽ đường thẳng">Line</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-line-width.html" title="độ dày đường line">Line Width</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-line-color.html" title="định màu đường line">Line Color</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-line-caps.html" title="định loại đường line">Line Cap</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-lines.html" title="vẽ đường thẳng">Line</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-line-width.html" title="độ dày đường line">Line Width</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-line-color.html" title="định màu đường line">Line Color</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-line-caps.html" title="định loại đường line">Line Cap</a></dd>\
 				<dt>Curves - Đường cong</dt>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-arcs.html" title="đường cung tròn">Arc</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-quadratic-curves.html" title="đường cong với 1 điểm kiểm soát">Quadratic Curve</a></dd>\
-				<dd>-<a href= "'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong Bezier">Bezier Curve</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-arcs.html" title="đường cung tròn">Arc</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-quadratic-curves.html" title="đường cong với 1 điểm kiểm soát">Quadratic Curve</a></dd>\
+				<dd><a href= "'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong Bezier">Bezier Curve</a></dd>\
 				<dt>Paths - Vẽ đường path</dt>\
 			</dl>\
 		</li>\
