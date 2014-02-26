@@ -219,50 +219,41 @@ aside {
 	text-align: center;
 }
 aside a {
-	text-decoration: none;
-}
-aside a.atv,
-aside a:hover {
-	background: #e3e3e3;
-	color: #333;
-	text-decoration: none;
-}
-
-aside a:hover {
-	margin-left: 5px;
 	padding-left: 2px;
-}
-
-aside a.atv {
-	background: #005F8B;
-	color: #fff;
+	text-decoration: none;
 	padding: 0;
-	margin-left: 5px;
 	display: inline-block;
 	text-decoration: none;
 	text-indent: 2px;
-	width: 107%;
+	width: 101%;
 	vertical-align: bottom;
+	margin: 0 -2px 0 5px;
 }
-
-aside li a.atv {
-	margin-left: 5px;
-	width: 107%;
-}
-aside li li a.atv {
-	margin-left: 2px;
+aside li li a {
 	margin-right: -17px;
-	width: 217px;
+	width: 215px;
 }
-*:first-child + html aside li dd a.atv {
+aside li dd a {
+	width: 210px;
+}
+*:first-child + html aside li dd a {
 	margin-left: -16px;
 	width: 107%;
 }
-*:first-child + html aside li li a.atv {
-	margin-left: 2px;
-	margin-right: -17px;
-	width: 217px;
+
+aside a:hover,
+aside a.atv {
 }
+
+aside a:hover {
+	background: #e3e3e3;
+	color: #333;
+}
+aside a.atv {
+	background: #005F8B;
+	color: #fff;
+}
+
 aside h3:first-child { padding-top: 0;}
 aside h3  {
 	color: #333;
@@ -289,7 +280,6 @@ aside ul li ul li {
 	font-size: 90%;
 	padding: 3px 7px 2px 5px;
 }
-aside ul li a { padding-left: 7px; padding-right: 7px; }
 
 aside p {padding: 0;}
 
@@ -460,7 +450,7 @@ table.gsc-search-box td.gsc-input {
 	margin-right: 30px;
 }
 
-.html5 h3 {
+.html5 #content h3 {
     padding: 0 0 25px 8px;
 }
 
