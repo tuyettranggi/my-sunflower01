@@ -218,6 +218,9 @@ aside {
 	width: 230px;
 	text-align: center;
 }
+aside a {
+	text-decoration: none;
+}
 aside a.atv,
 aside a:hover {
 	background: #e3e3e3;
@@ -242,17 +245,23 @@ aside a.atv {
 	vertical-align: bottom;
 }
 
-*:first-child + html aside a.atv {
-	margin-left: -16px;
-}
-
 aside li a.atv {
 	margin-left: 5px;
-	width: 100%;
+	width: 107%;
 }
-*:first-child + html aside li a.atv {
-	margin-left: 5px;
-	width: 100%;
+aside li li a.atv {
+	margin-left: 2px;
+	margin-right: -17px;
+	width: 217px;
+}
+*:first-child + html aside li dd a.atv {
+	margin-left: -16px;
+	width: 107%;
+}
+*:first-child + html aside li li a.atv {
+	margin-left: 2px;
+	margin-right: -17px;
+	width: 217px;
 }
 aside h3:first-child { padding-top: 0;}
 aside h3  {
@@ -267,7 +276,7 @@ aside h3  {
 aside ul  {	padding: 0 0 10px;}
 aside ul li  {
 	border-bottom: 1px dashed #ccc;
-	padding: 0 0 5px 25px;
+	padding: 0 0 5px 18px;
 	text-align: left;
 	margin-bottom: 7px;
 	text-indent: -18px;
