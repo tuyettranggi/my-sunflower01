@@ -15,37 +15,38 @@ else if($('body').is('.rank3')){
 
 $('aside').html('<h3>Học Tiếng Nhật</h3>\
 	<ul>\
-	<li>+<a href= "'+i+'index.html">Học tiếng Nhật</a></li>\
-	<li>+<a href= "'+i+'hoc-kanji.html">Học Kanji</a>\
+	<li>+<a href="'+i+'index.html">Học tiếng Nhật</a></li>\
+	<li>+<a href="'+i+'hoc-kanji.html">Học Kanji</a>\
 		<ul>\
-			<li>-<a href= "'+i+'kanji_n4.html">Kanji N4</a></li>\
+			<li>-<a href="'+i+'kanji_n4.html">Kanji N4</a></li>\
 		</ul>\
 	</li>\
 	</ul>\
 	<h3>Học Html5</h3>\
 	<ul>\
-		<li>+<a href= "'+i+'html5/html5-canvas.html">HTML5 Canvas</a>\
+		<li>+<a href="'+i+'html5/html5-canvas.html">HTML5 Canvas</a>\
 			<ul>\
-				<li>-<a href= "'+i+'html5/he-truc-toa-do-canvas.html">Lấy toạ độ trong canvas</a></li>\
+				<li>-<a href="'+i+'html5/he-truc-toa-do-canvas.html">Lấy toạ độ trong canvas</a></li>\
 			</ul>\
 			<dl>\
 				<dt>Lines - Đường thẳng</dt>\
-				<dd><a href= "'+i+'html5/html5-canvas-lines.html" title="vẽ đường thẳng">Line</a></dd>\
-				<dd><a href= "'+i+'html5/html5-canvas-line-width.html" title="độ dày đường line">Line Width</a></dd>\
-				<dd><a href= "'+i+'html5/html5-canvas-line-color.html" title="định màu đường line">Line Color</a></dd>\
-				<dd><a href= "'+i+'html5/html5-canvas-line-caps.html" title="định loại đường line">Line Cap</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-lines.html" title="vẽ đường thẳng">Line: Đường thẳng</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-line-width.html" title="độ dày đường line">Line Width: Độ dày đường thẳng</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-line-color.html" title="định màu đường line">Line Color</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-line-caps.html" title="định loại đường line">Line Cap</a></dd>\
 				<dt>Curves - Đường cong</dt>\
-				<dd><a href= "'+i+'html5/html5-canvas-arcs.html" title="đường cung tròn">Arc</a></dd>\
-				<dd><a href= "'+i+'html5/html5-canvas-quadratic-curves.html" title="đường cong với 1 điểm kiểm soát">Quadratic Curve</a></dd>\
-				<dd><a href= "'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong Bezier">Bezier Curve</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-arcs.html" title="đường cung tròn">Arc</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-quadratic-curves.html" title="đường cong với 1 điểm kiểm soát">Quadratic Curve</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong với 2 điểm kiểm soát">Bezier Curve</a></dd>\
 				<dt>Paths - Vẽ đường path</dt>\
+				<dd><a href="'+i+'html5/html5-canvas-paths.html" title="Đường cong có nhiều khúc">Path</a></dd>\
 			</dl>\
 		</li>\
-		<li>+<a href= "'+i+'html5/index.html">Học html5</a></li>\
-		<li>+<a href= "'+i+'html5/html5-co-ban.html">Hoc html5 cơ bản</a></li>\
-		<li>+<a href= "'+i+'html5/css-selector.html">Các tag sử dụng trong html5</a></li>\
-		<li>+<a href= "'+i+'html5/syntax-code.html" title="định dạng code">syntaxHighlighter<br />( định dạng code )</a></li>\
-		<li>+<a href= "'+i+'html5/code_editor.html" title="soan thảo code html">Code Editor</a></li>\
+		<li>+<a href="'+i+'html5/index.html">Học html5</a></li>\
+		<li>+<a href="'+i+'html5/html5-co-ban.html">Hoc html5 cơ bản</a></li>\
+		<li>+<a href="'+i+'html5/css-selector.html">Các tag sử dụng trong html5</a></li>\
+		<li>+<a href="'+i+'html5/syntax-code.html" title="định dạng code">syntaxHighlighter<br />( định dạng code )</a></li>\
+		<li>+<a href="'+i+'html5/code_editor.html" title="soan thảo code html">Code Editor</a></li>\
 	</ul>');
 });
 
