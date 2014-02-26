@@ -24,9 +24,6 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 	</ul>\
 	<h3>Học Html5</h3>\
 	<ul>\
-		<li>+<a href= "'+i+'html5/index.html">Học html5</a></li>\
-		<li>+<a href= "'+i+'html5/html5-co-ban.html">Hoc html5 cơ bản</a></li>\
-		<li>+<a href= "'+i+'html5/css-selector.html">Các tag sử dụng trong html5</a></li>\
 		<li>+<a href= "'+i+'html5/html5-canvas.html">HTML5 Canvas</a>\
 			<ul>\
 				<li>-<a href= "'+i+'html5/he-truc-toa-do-canvas.html">Lấy toạ độ trong canvas</a></li>\
@@ -44,6 +41,9 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dt>Paths - Vẽ đường path</dt>\
 			</dl>\
 		</li>\
+		<li>+<a href= "'+i+'html5/index.html">Học html5</a></li>\
+		<li>+<a href= "'+i+'html5/html5-co-ban.html">Hoc html5 cơ bản</a></li>\
+		<li>+<a href= "'+i+'html5/css-selector.html">Các tag sử dụng trong html5</a></li>\
 		<li>+<a href= "'+i+'html5/syntax-code.html" title="định dạng code">syntaxHighlighter<br />( định dạng code )</a></li>\
 		<li>+<a href= "'+i+'html5/code_editor.html" title="soan thảo code html">Code Editor</a></li>\
 	</ul>');
