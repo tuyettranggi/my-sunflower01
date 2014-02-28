@@ -33,13 +33,14 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd><a href="'+i+'html5/html5-canvas-lines.html" title="Vẽ đường thẳng">Line</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-line-width.html" title="Độ dày đường line">Line Width</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-line-color.html" title="Định màu đường line">Line Color</a></dd>\
-				<dd><a href="'+i+'html5/html5-canvas-line-caps.html" title="Định loại đường line">Line Cap</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-line-caps.html" title="Định kiểu mũ đường line">Line Cap</a></dd>\
 				<dt>Curves - Đường cong</dt>\
 				<dd><a href="'+i+'html5/html5-canvas-arcs.html" title="Đường cung tròn">Arc</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-quadratic-curves.html" title="Đường cong với 1 điểm kiểm soát">Quadratic curve</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong với 2 điểm kiểm soát">Bezier Curve</a></dd>\
 				<dt>Paths - Đường dẫn path</dt>\
-				<dd><a href="'+i+'html5/html5-canvas-paths.html" title="Đường cong có nhiều khúc">Path</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-paths.html" title="Đường dẫn">Path</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-line-joins.html" title="Định gốc kết nối cho cai đường line">Line Join</a></dd>\
 			</dl>\
 		</li>\
 		<li>+<a href="'+i+'html5/index.html">Học html5</a></li>\
