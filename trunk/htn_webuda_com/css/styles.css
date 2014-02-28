@@ -250,6 +250,7 @@ aside a.atv {
 	color: #fff!important;
 }
 aside a.atv span { color: #fff!important;}
+aside a.atv span.note_s { color: #999!important;}
 
 aside h3:first-child { padding-top: 0;}
 aside h3  {
@@ -562,7 +563,8 @@ iframe.out {
 	padding: 9px;
 	margin-bottom: 15px;
 }
-.note_s {color: #999; font-size: 12px;}
+
+.note_s {color: #999!important; font-size: 12px;}
 sup.s03,
 sup.s02,
 sup.s01 {

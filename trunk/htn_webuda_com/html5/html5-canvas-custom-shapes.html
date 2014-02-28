@@ -23,19 +23,23 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Line Cap : Mũ đường line vuông, bo tròn</h2>
-            <h3>HTML5 Canvas Line Cap Tutorial</h3>
+            <h2>Tạo hình dạng tùy chỉnh</h2>
+            <h3>HTML5 Canvas Custom Shape Tutorial</h3>
             <section>
-                <p>Để Xác định loại mũ đường line mặc định, vuông, bo tròn</p>
-
-<p>Cấu trúc: <span class="note_s">(sử dụng 1 trong 3 giá trị:)</span></p>
+                <p>Để tạo hình dạng tùy chỉnh chúng ta có thể tạo ra đường dẫn path sau đó đóng nó lại bằng <strong class="important00">.closePath()</strong>. Kết hợp sử dụng lineTo(), arcTo(), quadraticCurveTo(), bezierCurveTo() tạo ra từng đường nét thành phần tạo nên hình shape</p>
+				
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-custom-shapes/" target="_blank">more</a></p>
+				<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">closePath</span>(</span><span class="text_blue">)</span>.</p>
+				<p class="pb05">Sử dụng kết hợp:</p>
 <ul class="list_text01">
-					<li>context<strong>.lineCap</strong> = '<strong class="text_purple">Butt</strong>'; (mặc định)</li>
-					<li>context<strong>.lineCap</strong> = '<strong class="text_purple">round</strong>'; (bo tròn)</li>
-					<li>context<strong>.lineCap</strong> = '<strong class="text_purple">square</strong>'; (vuông)</li>
-				</ul>
+					<li><strong>.moveTo</strong>(<span class="text_purple">x,y</span>) : x,y tọa độ <strong>điểm bắt đầu</strong>. </li>
+					<li><strong>.lineTo(</strong><span class="text_purple">x,y</span><strong>)</strong>.</li>
+					<li><strong>.arcTo(</strong><span class="text_purple">controlX,controlY</span>,<span class="text_pink">endX,endY</span>,<span class="text_blue01">radius</span><strong>)</strong>.</li>
+					<li><strong>.quadraticCurveTo(</strong><span class="text_purple">controlX, controlY</span>, <span class="text_blue01">endX, endY</span><strong>);</strong></li>
 
-                <!-- codeEditor -->
+                    <li><strong>.bezierCurveTo(</strong><span class="text_purple">controlX1, controlY1</span>, <span class="text_blue01">controlX2, controlY2</span>,<span class="text_pink"> endX, endY</span><strong>);</strong></li>
+				</ul>
+                <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                 </div>
@@ -57,40 +61,26 @@
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
-      // butt line cap (top line)
+      // begin custom shape
       context.beginPath();
-      context.moveTo(200, canvas.height / 2 - 50);
-      context.lineTo(canvas.width - 200, canvas.height / 2 - 50);
-      context.lineWidth = 20;
-      context.strokeStyle = '#0000ff';
-      context.lineCap = 'butt';
-      context.stroke();
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
 
-      // round line cap (middle line)
-      context.beginPath();
-      context.moveTo(200, canvas.height / 2);
-      context.lineTo(canvas.width - 200, canvas.height / 2);
-      context.lineWidth = 20;
-      context.strokeStyle = '#0000ff';
-      context.lineCap = 'round';
-      context.stroke();
-
-      // square line cap (bottom line)
-      context.beginPath();
-      context.moveTo(200, canvas.height / 2 + 50);
-      context.lineTo(canvas.width - 200, canvas.height / 2 + 50);
-      context.lineWidth = 20;
-      context.strokeStyle = '#0000ff';
-      context.lineCap = 'square';
+      // complete custom shape
+      context.closePath();
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
       context.stroke();
     &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</textarea>
                 </div>
-                <!-- str_syntaxt / -->
-				
-				
-
+                <!-- codeEditor END -->
             </section>
         </article>
         <!-- content end -->
@@ -108,7 +98,6 @@
         </address>
     </footer>
     <!-- #EndLibraryItem --> </section>
-
 <!-- _________________________________codeEditor_______________________________________ -->
 <script src="../js/codeMirror.js"></script>
 <script type="text/javascript" src="../js/code_fn.js"></script>
