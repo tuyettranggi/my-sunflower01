@@ -23,19 +23,19 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>___________________________</h2>
-            <h3>___________________________</h3>
+            <h2>Tạo gốc bo tròn cho đường line</h2>
+            <h3>HTML5 Canvas Rounded Corners Tutorial</h3>
             <section>
-                <p>________________</p>
-				<h4>___________________________</h4>
-				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/____________" target="_blank">more</a></p>
-				<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">____________</span>(</span> <span class="text_purple">controlX1, controlY1</span><span class="text_red01">,</span><span class="text_blue01"> controlX2, controlY2</span><span class="text_red01">, </span><span class="text_pink">endX, endY</span> <span class="text_blue">)</span>.</p>
+                <p>Để tạo gốc bo tròn, chúng ta có thể sử dụng <em>arcTo()</em>. Được xác định bởi 1 điểm kiểm soát, 1 điểm kết thúc, và 1 bán kính.<br>
+<span class="note_s">.arcTo() có thể được thay thế bởi lineTo() và arc().</span></p>
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-rounded-corners/" target="_blank">more</a></p>
+				<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">arcTo</span>(</span> <span class="text_purple">controlX, controlY</span><span class="text_red01">,</span><span class="text_blue01"> endX, endY</span><span class="text_red01">, </span><span class="text_pink">radius</span> <span class="text_blue">)</span>.</p>
 <ul class="list_text01">
 					<li><strong>.moveTo</strong>(x,y) : x,y : tọa độ <strong>điểm bắt đầu</strong>. </li>
-					<li><strong>.____________(</strong><span class="text_purple">x1, y1</span>, <span class="text_blue01">x2, y2</span>,<span class="text_pink"> x3, y3</span><strong>);</strong><br>
-<span class="text_purple">x1, y1</span>: Tọa độ điểm kiểm soát 1.<br>
-<span class="text_blue01">x2, y2</span>: Tọa độ điểm kiểm soát 2.<br>
-<span class="text_pink"> x3, y3</span>: Tọa độ điểm kết thúc.</li>
+					<li><strong>.arcTo(</strong><span class="text_purple">x1,y1</span>, <span class="text_blue01">x2,y2</span>,<span class="text_pink"> radius</span><strong>);</strong><br>
+<span class="text_purple">x1,y1</span>: Tọa độ điểm kiểm soát.<br>
+<span class="text_blue01">x2,y2</span>: Tọa độ điểm kết thúc.<br>
+<span class="text_pink">radius</span>: Bán kính.</li>
 				</ul>
                 <!-- codeEditor START -->
                 <div class="frame_code">
@@ -43,7 +43,37 @@
                 </div>
                 <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
                 <div class="str_syntax">
-                    <textarea style="display: none;" id="code" name="code"></textarea>
+                    <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var rectWidth = 200;
+      var rectHeight = 100;
+      var rectX = 189;
+      var rectY = 50;
+      var cornerRadius = 50;
+
+      context.beginPath();
+      context.moveTo(rectX, rectY);
+      context.lineTo(rectX + rectWidth - cornerRadius, rectY);
+      context.arcTo(rectX + rectWidth, rectY, rectX + rectWidth, rectY + cornerRadius, cornerRadius);
+      context.lineTo(rectX + rectWidth, rectY + rectHeight);
+      context.lineWidth = 5;
+      context.stroke();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
                 </div>
                 <!-- codeEditor END -->
             </section>
