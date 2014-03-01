@@ -18,7 +18,7 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 	<li>+<a href="'+i+'index.html">Học tiếng Nhật</a></li>\
 	<li>+<a href="'+i+'hoc-kanji.html">Học Kanji</a>\
 		<ul>\
-			<li>-<a href="'+i+'kanji_n4.html">Kanji N4</a></li>\
+			<li>-<a href="'+i+'kanji/nhat_sun.html">Kanji N4</a></li>\
 		</ul>\
 	</li>\
 	</ul>\

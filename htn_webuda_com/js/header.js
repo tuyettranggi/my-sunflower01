@@ -24,7 +24,7 @@ $('header').html('<nav id="gnav">\
       </nav>\
       <section class="headerInner clearfix">\
         <div class="hSection">\
-          <h1>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h1>\
+          <h1>_</h1>\
           <canvas id="logo">\
             <!--<script type="text/javascript" src="'+i+'"js/logo.js"></script>-->\
           </canvas>\
@@ -35,6 +35,10 @@ $('header').html('<nav id="gnav">\
 
 includeBottomJs(i+"js/logo.js");
 includeTopJs(i+"js/se.js");
+
+var $h1 = $('title').text();
+$h1 = $h1.substr(0,$h1.indexOf('|'));
+$('h1').text($h1);
 });
 
 function includeBottomJs(jsFilePath) {
