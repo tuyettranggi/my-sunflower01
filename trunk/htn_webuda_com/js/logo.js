@@ -14,20 +14,23 @@ ctx.beginPath();
   ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
   ctx.stroke();*/
   
-  var x = 60;        var y = 65;
-   var xx = 70;        var yy = 75;
-	ctx.font="70px Aria";
+  var xGo = 72;        var yGo = 69;
+   var xHon = xGo+12;        var yHon = yGo + 15;
+	ctx.font="73px Aria";
 	ctx.fillStyle = "#DE5412";
 /*  ctx.fillText("hoc-tieng-nhat.webuda.com",x-50,y+60,215);*/
-  ctx.fillText("    語",x,y,215);
-  ctx.fillText("本",xx,yy,215);
+  ctx.fillText("    語",xGo,yGo,305);
+  ctx.fillText("本",xHon,yHon,305);
   ctx.fillStyle = "#c8504b";
+  ctx.fill();
   
-  var xw = 52;        var yw = 35;
-	ctx.font="20px Aria";
+  
+  var xw = 52;        var yw = 45;
+	ctx.font="23px Aria";
 	ctx.fillStyle = "#DE5412";
-  ctx.fillText("hoc-tieng-nhat.webuda.com",xw-50,yw+60,215);
+  ctx.fillText("hoc-tieng-nhat.webuda.com",xw-50,yw+60,245);
   ctx.fillStyle = "#c8504b";
+  ctx.fill();
   
   
   
@@ -35,18 +38,18 @@ ctx.beginPath();
   ctx.beginPath();
   	var sA = 0;
 	var eA = 360 * Math.PI / 180;
-	ctx.arc(37, 39, 35, sA, eA, true);
-  	ctx.fill();
+	var xTron = 47; var yTron = 45;
+	var radius = 37;
+	ctx.arc(xTron, yTron, radius, sA, eA, true);
+  	
 	ctx.strokeStyle = '#F07D46';
+	ctx.fill();
 	ctx.lineWidth = 4;
 	ctx.stroke();
-	  
    ctx.closePath();
    
-   
-   
-	var y2 = 4 + 2;
-	var x2 = 20;
+   // chu 日
+	var x2 = xTron - 17; var y2 = 12;
 	ctx.beginPath();
 	ctx.moveTo(x2+8,y2+16);
 	//ctx.bezierCurveTo(x2+8,y2+16,x2+18,y2+12,x2+29,y2+15,x2+29,y2+20);
