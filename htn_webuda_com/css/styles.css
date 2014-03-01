@@ -139,11 +139,6 @@ header .headerInner {
 	margin: 0 auto;
 	width: 1000px;height: 143px;
 }
-
-.hSection {
-	float: left;
-	padding: 0;height: 143px;
-}
 .hSearch {
 	float: right;
 	width: 300px;
@@ -152,11 +147,14 @@ header p {padding: 0; }
 
 header h1 {
 	/*color: #D97240;*/
-	color: #999;
+	color: #fff;
 	font-size: 11px;
 	font-style: italic;
 	letter-spacing: 1px;
-	padding: 0 0 7px 2px;
+	padding: 8px 0 7px 2px;
+	float: right;
+	/*width: 514px;*/
+	text-align: right;
 }
 
 @font-face { 
@@ -179,11 +177,12 @@ header h1 {
 
 canvas#logo {
 	display: block;
-	width: 155px;
-	height: 70px;
+	float: left;
+	width: 175px;
+	height: 80px;
+	padding: 10px 0 0 20px;
 }
-
-nav#gnav {
+.hSection {
 	background: rgb(0,106,155); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(0,106,155,1) 0%, rgba(0,76,112,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,106,155,1)), color-stop(100%,rgba(0,76,112,1))); /* Chrome,Safari4+ */
@@ -197,10 +196,14 @@ nav#gnav {
 	margin-bottom: 7px;
 	display: block;
 }
-nav#gnav ul {
-	padding: 3px 0;
+.hSection nav#gnav {
 	width: 1000px;
 	margin: 0 auto;
+}
+nav#gnav ul {
+	padding: 3px 0;
+	float: left;
+	/*width: 472px;*/
 }
 nav#gnav ul li {
 	background: #005A9C;
@@ -951,6 +954,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+.hSection nav#gnav,
 .breadcrumb,
 .prev_next,
 aside ul li,
@@ -962,6 +966,7 @@ nav#gnav ul {
 	display: block;
 }
 
+.hSection nav#gnav:after,
 .breadcrumb:after,
 .prev_next:after,
 aside ul li:after,
