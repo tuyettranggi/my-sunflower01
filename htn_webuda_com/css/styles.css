@@ -121,8 +121,7 @@ section { display: block;}
 header {
 	border-bottom: 3px solid #000000;
 	margin: 0 auto;
-	padding: 0;
-	height: 140px;
+	padding: 0 0 10px;
 	
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
@@ -137,7 +136,7 @@ header {
 
 header .headerInner {
 	margin: 0 auto;
-	width: 1000px;height: 143px;
+	width: 1000px;
 }
 .hSearch {
 	float: right;
@@ -146,14 +145,12 @@ header .headerInner {
 header p {padding: 0; }
 
 header h1 {
-	/*color: #D97240;*/
-	color: #fff;
+	color: #D0E5EF;
 	font-size: 11px;
 	font-style: italic;
 	letter-spacing: 1px;
-	padding: 8px 0 7px 2px;
-	float: right;
-	/*width: 514px;*/
+	padding: 8px 0 7px 12px;
+	float: left;
 	text-align: right;
 }
 
@@ -180,7 +177,7 @@ canvas#logo {
 	float: left;
 	width: 175px;
 	height: 80px;
-	padding: 10px 0 0 20px;
+	padding: 8px 0 0 0;
 }
 .hSection {
 	background: rgb(0,106,155); /* Old browsers */
@@ -202,14 +199,15 @@ canvas#logo {
 }
 nav#gnav ul {
 	padding: 3px 0;
-	float: left;
+	float: right;
+	text-align: center;
 	/*width: 472px;*/
 }
 nav#gnav ul li {
 	background: #005A9C;
 	/* --- text shadow --- */
 	text-shadow: 1px 1px 1px #232229;
-	float: left;
+	display: inline-block;
 	font-family: font2;
 	font-size: 15px;
 	padding: 0 12px 2px;
