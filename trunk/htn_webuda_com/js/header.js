@@ -14,24 +14,24 @@ else if($('body').is('.rank3')){
 	var i = "../../";
 }
 
-$('header').html('<nav id="gnav">\
-        <ul>\
-          <li><a href="'+i+'index.html">Trang chủ</a></li>\
-          <li><a href="'+i+'hoc-kanji.html">kanji</a></li>\
-          <li><a href="'+i+'tu-vung-tieng-nhat.html">Từ vựng tiếng Nhật</a></li>\
-          <li><a href="'+i+'ngu-phap-tieng-nhat.html">Ngữ pháp tiếng Nhật</a></li>\
-        </ul>\
-      </nav>\
-      <section class="headerInner clearfix">\
-        <div class="hSection">\
-          <h1>_</h1>\
-          <canvas id="logo">\
-            <!--<script type="text/javascript" src="'+i+'"js/logo.js"></script>-->\
-          </canvas>\
-        </div>\
-        <!--<script type="text/javascript" src="'+i+'js/se.js"></script>-->\
-        <gcse:searchbox></gcse:searchbox>\
-      </section>');
+$('header').html('<div class="hSection">\
+<nav id="gnav">\
+<h1>_</h1>\
+<ul>\
+<li><a href="'+i+'index.html">Trang chủ</a></li>\
+<li><a href="'+i+'hoc-kanji.html">kanji</a></li>\
+<li><a href="'+i+'tu-vung-tieng-nhat.html">Từ vựng tiếng Nhật</a></li>\
+<li><a href="'+i+'ngu-phap-tieng-nhat.html">Ngữ pháp tiếng Nhật</a></li>\
+</ul>\
+</nav>\
+</div>\
+<section class="headerInner clearfix">\
+<canvas id="logo">\
+<!--<script type="text/javascript" src="'+i+'"js/logo.js"></script>-->\
+</canvas>\
+<!--<script type="text/javascript" src="'+i+'js/se.js"></script>-->\
+<gcse:searchbox></gcse:searchbox>\
+</section>');
 
 includeBottomJs(i+"js/logo.js");
 includeTopJs(i+"js/se.js");
