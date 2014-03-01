@@ -6,8 +6,9 @@ ctx.lineWidth = 3;
 ctx.beginPath();
   
 // 本 - 語
-var xGo = 78;        var yGo = 79;
-var xHon = xGo+17;var yHon = yGo + 15;
+
+var xHon = 101;		var yHon = 98;
+var xGo = xHon-13;    var yGo = yHon-15;
 var wHon = wGo = 200;
 ctx.font="90px Aria";
 ctx.fillStyle = "#DE5412";
@@ -17,7 +18,7 @@ ctx.fillStyle = "#c8504b";
 ctx.fill();
 
 //hoc-tieng-nhat.webuda.com
-var xw = 52;        var yw = 63;
+var xw = 52;        var yw = 68;
 ctx.font="28px Aria";
 ctx.fillStyle = "#DE5412";
 ctx.fillText("hoc-tieng-nhat.webuda.com",xw-50,yw+60,wHon+90);
@@ -30,8 +31,8 @@ ctx.fill();
 ctx.beginPath();
 var sA = 0;
 var eA = 360 * Math.PI / 180;
-var xTron = 50; var yTron = 48;
-var radius = 44;
+var xTron = 53; var yTron = 49;
+var radius = 46;
 ctx.arc(xTron, yTron, radius, sA, eA, true);
 ctx.strokeStyle = '#F07D46';
 ctx.fill();
@@ -40,7 +41,7 @@ ctx.stroke();
 ctx.closePath();
    
 // chu 日
-var x2 = xTron - 17; var y2 = yTron - 33;
+var x2 = xTron - 17; var y2 = yTron - 35;
 ctx.beginPath();
 ctx.moveTo(x2+0,y2+16);
 //ctx.bezierCurveTo(x2+8,y2+16,x2+18,y2+12,x2+29,y2+15,x2+29,y2+20);
