@@ -34,7 +34,7 @@ a:visited {
 
 p { 
 	line-height: 23px;
-	padding: 0 0 16px;
+	padding: 0 0 12px;
 }
 /*p { padding: 0 0 16px; }*/
 
@@ -74,9 +74,11 @@ img {
 }
 
 em {
-	background: #d5d2d2;
+	background: #EFEDED;
+	font-size: 90%;
+	font-style: normal;
 	font-weight: bold;
-	padding: 0 4px;
+	padding: 2px 6px;
 }
 
 /*==========================================================================*/
@@ -131,17 +133,19 @@ header .headerInner {
 .hSection {
 	float: left;
 	padding: 0;height: 143px;
-	
 }
 .hSearch {
 	float: right;
 	width: 300px;
 }
-header p {	padding: 0; }
+header p {padding: 0; }
 
 header h1 {
-	font-size: 10px;
-	padding-bottom: 10px;
+	color: #D97240;
+	font-size: 11px;
+	font-style: italic;
+	letter-spacing: 1px;
+	padding: 7px 0 2px 2px;
 }
 
 @font-face { 
