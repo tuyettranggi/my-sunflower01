@@ -207,7 +207,7 @@ nav#gnav ul li {
 	background: #005A9C;
 	/* --- text shadow --- */
 	text-shadow: 1px 1px 1px #232229;
-	display: inline-block;
+	float: left;
 	font-family: font2;
 	font-size: 15px;
 	padding: 0 12px 2px;
@@ -411,7 +411,11 @@ table.gsc-search-box td.gsc-input {
 	margin-top: 4px!important;
     width: 99%;
 }
-.gsc-search-button { vertical-align: middle;}
+.gsc-search-button {
+	vertical-align: middle;
+	margin-top: 1px!important;
+	height: 13px!important;
+}
 #gsc-iw-id1 {
 	background: #fff;
 	border:solid 1px #666;
