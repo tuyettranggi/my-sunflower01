@@ -4,8 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>html5 Canvas line joins | Canvas | Học html5 và css3 tiếng việt</title>
-<meta name="keywords" content="_______________,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<title>Canvas - Vẽ hình tròn | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Canvas hình tròn,Canvas Circle,arc(),Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
 <meta name="description" content="__________________________________________________" />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../favicon.png" />
@@ -25,19 +25,19 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Định kiểu gốc kết nối giữa các đường line</h2>
-            <h3>HTML5 Canvas Line Join Tutorial</h3>
+            <h2>Vẽ hình tròn</h2>
+            <h3>HTML5 Canvas Circle Tutorial</h3>
             <section>
-                <p>Mặc định khi hai đường thẳng nối với nhau nó sẽ tạo thành một góc nhọn, nếu chúng ta muốn chỉnh gốc này thành tròn hay một góc ngang qua có thể dùng thuộc tính <span class="important01">lineJoin</span>. lineJoin có thể sử dụng cho 1 hoặc 3 đường line kết nối với nhau.<br>
-Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu không được chỉ định, thì mặc định của gốc là kiểu <strong>miter</strong>).</p>
-<p class="note_s">Chú ý: Nếu các đường line quá mỏng có thể không thấy rõ sự khác biệt.</p>
-				
-				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/" target="_blank">more</a></p>
-				<p>Cấu trúc: <span class="note_s">(sử dụng 1 trong 3 giá trị:)</span></p>
-<ul class="list_text01">
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">miter</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">round</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">bevel</strong>';</li>
+                <p>Để vẽ một vòng tròn với HTML5 Canvas, chúng ta có thể tạo ra một vòng cung đầy đủ bằng cách sử dụng <strong class="text_red00">arc()</strong> bằng cách xác định <strong>góc bắt đầu</strong> từ <em>0</em> và <strong>góc kết thúc</strong> như <em>2 * PI</em>.</p>
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-circles/" target="_blank">more</a></p>
+				<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">arc</span>(</span> <span class="text_purple">x, y</span>,<span class="text_blue01"> radius</span>, <span class="text_pink">startAngle, endAngle</span>,<span class="text_blue01"> anticlockwise</span> <span class="text_blue">)</span>.</p>
+
+				<ul class="list_text01">
+					<li><strong>x, y</strong> : tọa độ tâm.</li>
+					<li><strong>radius</strong> : bán kính Vòng cung.</li>
+					<li><strong>startAngle</strong> : gốc bắt đầu tính bằng radian.</li>
+					<li><strong>endAngle</strong> : góc kết thúc tính bằng radian. => để tạo vòng tròn cho endAngle =<strong class="text_red01"> 2 * Math.PI</strong></li>
+					<li><strong>anticlockwise</strong> : <strong class="text_pink">true</strong>/<strong class="text_purple">false</strong> set hướng vẽ là ngược hay cùng chiều kim đồng hồ.</li>
 				</ul>
                 <!-- codeEditor START -->
                 <div class="frame_code">
@@ -60,32 +60,16 @@ Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu khôn
     &lt;script&gt;
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
 
-      // set line width for all lines
-      context.lineWidth = 25;
-
-      // miter (trái)
       context.beginPath();
-      context.moveTo(99, 150);
-      context.lineTo(149, 50);
-      context.lineTo(199, 150);
-      context.lineJoin = 'miter';
-      context.stroke();
-
-      // round (giữa)
-      context.beginPath();
-      context.moveTo(239, 150);
-      context.lineTo(289, 50);
-      context.lineTo(339, 150);
-      context.lineJoin = 'round';
-      context.stroke();
-
-      // bevel (phải)
-      context.beginPath();
-      context.moveTo(379, 150);
-      context.lineTo(429, 50);
-      context.lineTo(479, 150);
-      context.lineJoin = 'bevel';
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'green';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
       context.stroke();
     &lt;/script&gt;
   &lt;/body&gt;

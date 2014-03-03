@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>html5 Canvas line joins | Canvas | Học html5 và css3 tiếng việt</title>
-<meta name="keywords" content="_______________,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
-<meta name="description" content="__________________________________________________" />
+<title>Canvas - Tạo hình chữ nhật | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Canvas hình chữ nhật,rect(),Canvas Rectangle,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Để tạo ra một hình chữ nhật bằng cách sử dụng HTML5 Canvas, chúng ta có thể sử dụng rect(). Hình chữ nhật HTML5 Canvas được định vị trí bằng tọa độ x, y, và định kích thước với width, height. Vị trí hình chữ nhật được xác định từ góc trên bên trên bên trái của nó." />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../favicon.png" />
 <link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
@@ -25,19 +25,17 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Định kiểu gốc kết nối giữa các đường line</h2>
-            <h3>HTML5 Canvas Line Join Tutorial</h3>
+            <h2>Tạo hình chữ nhật</h2>
+            <h3>HTML5 Canvas Rectangle Tutorial</h3>
             <section>
-                <p>Mặc định khi hai đường thẳng nối với nhau nó sẽ tạo thành một góc nhọn, nếu chúng ta muốn chỉnh gốc này thành tròn hay một góc ngang qua có thể dùng thuộc tính <span class="important01">lineJoin</span>. lineJoin có thể sử dụng cho 1 hoặc 3 đường line kết nối với nhau.<br>
-Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu không được chỉ định, thì mặc định của gốc là kiểu <strong>miter</strong>).</p>
-<p class="note_s">Chú ý: Nếu các đường line quá mỏng có thể không thấy rõ sự khác biệt.</p>
-				
-				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/" target="_blank">more</a></p>
-				<p>Cấu trúc: <span class="note_s">(sử dụng 1 trong 3 giá trị:)</span></p>
+                <p>Để tạo ra một hình chữ nhật bằng cách sử dụng HTML5 Canvas, chúng ta có thể sử dụng <strong class="text_red00">rect()</strong>. Hình chữ nhật HTML5 Canvas được định vị trí bằng tọa độ <em>x, y,</em> và định kích thước với <em>width, height</em>. Vị trí hình chữ nhật được xác định từ góc trên bên trên bên trái của nó.</p>
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-rectangles/" target="_blank">more</a></p>
+				<p>Cấu trúc: <span class="text_blue"><span class="text_blue00">rect</span>(</span> <span class="text_purple">positionX, positionY</span>, <span class="text_pink">width, height</span> <span class="text_blue">)</span>.</p>
 <ul class="list_text01">
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">miter</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">round</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">bevel</strong>';</li>
+					<li><strong>.rect(</strong><span class="text_purple">x, y</span>, <span class="text_blue01"> w, h</span><strong>);</strong><br>
+<span class="text_purple">x, y</span>: Tọa độ xác định vị trí hình chữ nhật <span class="note_s">(tính từ gốc trên bên trái)</span>.<br>
+<span class="text_blue01">w</span>: chiều rộng hình chữ nhật.<br>
+<span class="text_blue01"> h</span>: chiều cao hình chữ nhật.</li>
 				</ul>
                 <!-- codeEditor START -->
                 <div class="frame_code">
@@ -61,31 +59,12 @@ Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu khôn
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
-      // set line width for all lines
-      context.lineWidth = 25;
-
-      // miter (trái)
       context.beginPath();
-      context.moveTo(99, 150);
-      context.lineTo(149, 50);
-      context.lineTo(199, 150);
-      context.lineJoin = 'miter';
-      context.stroke();
-
-      // round (giữa)
-      context.beginPath();
-      context.moveTo(239, 150);
-      context.lineTo(289, 50);
-      context.lineTo(339, 150);
-      context.lineJoin = 'round';
-      context.stroke();
-
-      // bevel (phải)
-      context.beginPath();
-      context.moveTo(379, 150);
-      context.lineTo(429, 50);
-      context.lineTo(479, 150);
-      context.lineJoin = 'bevel';
+      context.rect(188, 50, 200, 100);
+      context.fillStyle = 'yellow';
+      context.fill();
+      context.lineWidth = 7;
+      context.strokeStyle = 'black';
       context.stroke();
     &lt;/script&gt;
   &lt;/body&gt;

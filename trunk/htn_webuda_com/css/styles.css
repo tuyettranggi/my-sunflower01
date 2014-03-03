@@ -600,6 +600,7 @@ sup.s03 {margin-right: -23px; left: -16px; }
 .text_blue { color: #0000FF;}
 .text_blue00 { color: #0000FF; font-weight: bold; }
 .text_blue01 { color: #005e8a;}
+.text_blue02 { color: #0000FF; }
 ._text { color: #666; font-style: italic;}
 .text_red00 {color: #ff0000;}
 .text_red01 {color: #C8514C;}
@@ -897,6 +898,8 @@ section { padding-bottom: 25px; }
 section:last-child { padding-bottom: 0;}
 
 .indent1 { padding-left: 30px; display: block;}
+.indent2 { padding-left: 60px; display: block;}
+.indent3 { padding-left: 90px; display: block;}
 
 .font50 { font-size: 50%!important; }
 .font60 { font-size: 60%!important; }

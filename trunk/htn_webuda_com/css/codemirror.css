@@ -273,3 +273,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
     visibility: hidden;
   }
 }
+
+
+/* cai nay cho ie7 */
+.iframe .CodeMirror-scroll > div {
+	overflow-y: auto!important;
+}

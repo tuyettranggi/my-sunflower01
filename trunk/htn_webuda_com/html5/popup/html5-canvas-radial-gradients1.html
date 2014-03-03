@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>html5 canvas arcs | Canvas | Học html5 và css3 tiếng việt</title>
-<meta name="keywords" content="_______________,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
-<meta name="description" content="__________________________________________________" />
+<title>Định màu chuyển sắc hướng tâm Radial Gradient | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Canvas màu chuyển sắc radial,Radial Gradient,createRadialGradient(),addColorStop(),Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Để tạo ra một Radial gradient với HTML5 Canvas. Chúng ta có thể sử dụng createRadialGradient(). Gradient hướng tâm được xác định bởi 2 vòng tròn ảo, 1 vòng tròn bên trong và vòng tròn bắt đầu từ vòng tròn bên trong. Chuyển sắc bắt đầu từ vòng tròn bên ngoài, chuyển sắc về phía vòng tròn bên trong." />
 <link  href="../../css/iframe.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../../favicon.png" />
 <link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
@@ -26,36 +26,32 @@
         <div class="str_syntax">
 <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
-&lt;head&gt;
-&lt;style&gt;
- body {margin: 0px; padding: 0px;}
-#wrap {width: 600px; zoom:1; overflow: hidden; display: block;}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id="wrap"&gt;
-&lt;canvas id="myCanvas" width="600" height="155"&gt;&lt;/canvas&gt;
-&lt;script&gt;
-	var canvas1 = document.getElementById('myCanvas');
-	var context1 = canvas1.getContext('2d');
-	var x = canvas1.width / 2;
-	var y = canvas1.height / 2;
-	var radius = 30;
-	var startAngle = 0 * Math.PI; 	// gốc bắt đầu từ vị trí 0 PI
-	var endAngle = 1.5 * Math.PI;	// gốc bắt kết thúc ở vị trí 1.5 PI
-									// => tạo nên 3/4 vòng tròn
-	var counterClockwise = false;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.rect(0, 0, canvas.width, canvas.height);
 
-	context1.beginPath();
-	context1.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-	context1.lineWidth = 15;
+      // create radial gradient
+      var grd = context.createRadialGradient(238, 50, 10, 238, 50, 300);
+      // light blue
+      grd.addColorStop(0, '#8ED6FF');
+      // dark blue
+      grd.addColorStop(1, '#004CB3');
 
-	// line color
-	context1.strokeStyle = 'black';
-	context1.stroke();
-&lt;/script&gt;
-&lt;/div&gt;
-&lt;/body&gt;
+      context.fillStyle = grd;
+      context.fill();
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;</textarea>
         </div>
         <!-- codeEditor END -->

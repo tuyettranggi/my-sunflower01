@@ -4,9 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>html5 Canvas line joins | Canvas | Học html5 và css3 tiếng việt</title>
-<meta name="keywords" content="_______________,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
-<meta name="description" content="__________________________________________________" />
+<title>Canvas - Chỉ định màu cho hình shap | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Canvas - Màu nền background,Shape Fill,fillStyle,fill(),Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Để set màu cho hình vẽ canvas. Chúng ta có thể set thuộc tính fillStyle bằng tên màu (blue,red,yellow,...), mã màu giá trị hex (#0000ff, #ff0000,...), hoặc giá trị RGB (rgb(0,0,255), rgb(0,255,0),...). Sau đó sử dụng method fill() để tô màu cho hình shape. Nếu không được chỉ định màu, mặc định sẽ là màu đen." />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../favicon.png" />
 <link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
@@ -25,20 +25,18 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Định kiểu gốc kết nối giữa các đường line</h2>
-            <h3>HTML5 Canvas Line Join Tutorial</h3>
+            <h2>Chỉ định màu cho hình shap</h2>
+            <h3>HTML5 Canvas Shape Fill Tutorial</h3>
             <section>
-                <p>Mặc định khi hai đường thẳng nối với nhau nó sẽ tạo thành một góc nhọn, nếu chúng ta muốn chỉnh gốc này thành tròn hay một góc ngang qua có thể dùng thuộc tính <span class="important01">lineJoin</span>. lineJoin có thể sử dụng cho 1 hoặc 3 đường line kết nối với nhau.<br>
-Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu không được chỉ định, thì mặc định của gốc là kiểu <strong>miter</strong>).</p>
-<p class="note_s">Chú ý: Nếu các đường line quá mỏng có thể không thấy rõ sự khác biệt.</p>
+                <p>Để set màu cho hình vẽ canvas. Chúng ta có thể set thuộc tính <em>fillStyle</em> bằng tên màu <span class="note_s">(blue,red,yellow,...)</span>, mã màu giá trị hex <span class="note_s">(#0000ff, #ff0000,...)</span>, hoặc giá trị RGB <span class="note_s">(rgb(0,0,255), rgb(0,255,0),...)</span>. Sau đó sử dụng method fill() để tô màu cho hình shape. Nếu không được chỉ định màu, mặc định sẽ là màu đen.</p>
+				<p class="note_s">Chú ý: Khi set cả 2 thuộc tính fill() [tạo màu nền] và stroke() [tạo đường viền] cho hình shape cùng lúc, thì phải set fill() trước stroke(). Nếu không, fill(). màu nền sẽ chồng lên 1 nửa độ dày của đường viền.</p>
 				
-				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/" target="_blank">more</a></p>
-				<p>Cấu trúc: <span class="note_s">(sử dụng 1 trong 3 giá trị:)</span></p>
-<ul class="list_text01">
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">miter</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">round</strong>';</li>
-					<li>context<strong>.lineJoin</strong> = '<strong class="text_purple">bevel</strong>';</li>
-				</ul>
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-shape-fill/" target="_blank">more</a></p>
+				
+				<p class="pb0">Cấu trúc: </p>
+<p class="indent3"><span class="text_blue">.fillStyle</span> = [value];<br>
+				<span class="text_blue">.fill</span>().</p>
+
                 <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
@@ -61,31 +59,22 @@ Có 3 giá trị: <em>miter</em> , <em>round</em> , <em>bevel</em>. (Nếu khôn
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
-      // set line width for all lines
-      context.lineWidth = 25;
-
-      // miter (trái)
+      // begin custom shape
       context.beginPath();
-      context.moveTo(99, 150);
-      context.lineTo(149, 50);
-      context.lineTo(199, 150);
-      context.lineJoin = 'miter';
-      context.stroke();
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
 
-      // round (giữa)
-      context.beginPath();
-      context.moveTo(239, 150);
-      context.lineTo(289, 50);
-      context.lineTo(339, 150);
-      context.lineJoin = 'round';
-      context.stroke();
-
-      // bevel (phải)
-      context.beginPath();
-      context.moveTo(379, 150);
-      context.lineTo(429, 50);
-      context.lineTo(479, 150);
-      context.lineJoin = 'bevel';
+      // complete custom shape
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#8ED6FF';
+      context.fill();
+      context.strokeStyle = 'blue';
       context.stroke();
     &lt;/script&gt;
   &lt;/body&gt;
