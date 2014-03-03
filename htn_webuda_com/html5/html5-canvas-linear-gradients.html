@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Định màu chuyển sắc tuyến tính Linear Gradient | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Canvas màu chuyển sắc linear,Linear Gradient,createLinearGradient(),addColorStop(),Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Để tạo ra một linear gradient với HTML5 Canvas. Chúng ta có thể sử dụng createLinearGradient() để tạo gradient. Gradient tuyến tính được xác định bởi một đường ảo trong đó xác định hướng của gradient. Khi đã tạo ra chuyển sắc gradient, chúng ta có thể chèn màu sắc và cách sử dụng thuộc tính addColorStop." />
+<link  href="../css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/html5_script.js"></script>
+<!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
+<link rel="stylesheet" href="../css/codemirror.css">
+</head>
+<body class="rank2">
+<section id="wrapper">
+    <header>
+        <script type="text/javascript" src="../js/header.js"></script>
+    </header>
+    <!-- main start -->
+    <section id="main" class="clearfix">
+        <!-- content start -->
+        <article id="content">
+            <gcse:searchresults></gcse:searchresults>
+            <h2>Định màu chuyển sắc tuyến tính Linear Gradient</h2>
+            <h3>HTML5 Canvas Linear Gradient Tutorial</h3>
+            <section>
+                <p>Để tạo ra một linear gradient với HTML5 Canvas. Chúng ta có thể sử dụng <strong class="text_red">createLinearGradient()</strong> để tạo gradient. Gradient tuyến tính được xác định bởi 1 đường ảo trong đó xác định hướng của gradient. Khi đã tạo ra chuyển sắc gradient, chúng ta có thể chèn màu sắc và cách sử dụng thuộc tính <em>addColorStop</em>.</p>
+				<p>Hướng chuyển sắc di chuyển từ <strong>điểm bắt đầu</strong> đến <strong>điểm kết thúc</strong> của đường line ảo được thiết lập bởi <strong>createLinearGradient()</strong>. Trong bài học này chúng ta sử dụng 2 điểm màu, 1 là <span class="text_blue01">xanh da trời</span> thiết lập cho điểm bắt đầu. 1 là màu <span class="text_blue02">xanh dương </span>thiết lập cho điểm kết thúc. Màu sắc chuyển đổi dọc theo đường line ảo giữa 2 giá trị 0 và 1. Trong đó 0 là điểm khởi đầu, 1 là điểm kết thúc.</p>
+				
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-linear-gradients/" target="_blank">more</a></p>
+				
+				<p>Cấu trúc: var<span class="text_red"> [bien_gradient]</span> = <span class="text_blue00">createLinearGradient(</span> <span class="text_purple">startPointX, startPointY</span>,<span class="text_blue01"> width, height</span><span class="text_blue"> )</span>.</p>
+                <ul class="list_text01">
+					<li><strong>context.createLinearGradient(</strong><span class="text_purple">x, y</span>, <span class="text_blue01">w, h</span><strong>);</strong><br>
+<span class="text_purple">x, y</span>: Tọa độ bắt đầu chuyển sắc.<br>
+<span class="text_blue01">w</span>: Độ rộng vùng chuyển sắc.<br>
+<span class="text_pink"> h</span>: Độ cao vùng chuyển sắc.</li>
+					<li><span class="text_red">[bien_gradient]</span><strong>.addColorStop(</strong><span class="text_purple">startPoint</span>, <span class="text_blue01">'[color value]'</span><strong>);</strong><br>
+<span class="text_purple">startPoint</span>: Điểm bắt đầu màu dọc theo đường line ảo. Có giá trị trong khoãn 0-&gt;1<br>
+<span class="text_red01">(màu sắc được chuyển từ điểm bắt đầu cho tới hết vùng vùng chuyển sắc)</span><br>
+<span class="text_blue01">[color value]</span>: Giá trị màu <span class="note_s">(color_name, hex_value, rgb_value)</span>.</li>
+				</ul>
+                <!-- codeEditor START -->
+                <div class="frame_code">
+                    <iframe class="out" id="preview" scrolling="no"></iframe>
+                </div>
+                <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
+                <div class="str_syntax">
+                    <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      context.rect(0, 0, canvas.width, canvas.height);
+
+      // add linear gradient
+      var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+      // màu cho vùng bắt đầu chuyển sắc
+      grd.addColorStop(0, '#8ED6FF');   
+      // màu cho vùng kết thúc chuyển sắc
+      grd.addColorStop(1, '#004CB3');
+      context.fillStyle = grd;
+      context.fill();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+                </div>
+                <!-- codeEditor END -->
+            </section>
+        </article>
+        <!-- content end -->
+        <!-- navi start -->
+        <aside>
+            <script type="text/javascript" src="../js/sidebar.js"></script>
+        </aside>
+        <!-- navi end -->
+    </section>
+    <!-- main end -->
+    <!-- #BeginLibraryItem "/Library/footer.lbi" -->
+    <footer>
+        <address>
+        Copyright         &copy;  All Rights Reserved.
+        </address>
+    </footer>
+    <!-- #EndLibraryItem --> </section>
+<!-- _________________________________codeEditor_______________________________________ -->
+<script src="../js/codeMirror.js"></script>
+<script type="text/javascript" src="../js/code_fn.js"></script>
+<!-- __________________________________________________________________________________ -->
+</body>
+</html>

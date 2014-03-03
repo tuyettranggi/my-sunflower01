@@ -35,7 +35,7 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd><a href="'+i+'html5/html5-canvas-line-color.html" title="Định màu đường line">.strokeStyle <span class="note_s">(Line Color)</span></a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-line-caps.html" title="Định kiểu mũ đường line">.lineCap</a></dd>\
 				<dt>Curves - Đường cong</dt>\
-				<dd><a href="'+i+'html5/html5-canvas-arcs.html" title="Đường cung tròn">.arc()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-arcs.html" title="Đường cung tròn">.arc() - Vẽ cung tròn</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-quadratic-curves.html" title="Đường cong với 1 điểm kiểm soát">.quadraticCurveTo()</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-bezier-curves.html" title="Đường cong với 2 điểm kiểm soát">.bezierCurveTo()</a></dd>\
 				<dt>Paths - Đường dẫn path</dt>\
@@ -44,6 +44,13 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd><a href="'+i+'html5/html5-canvas-rounded-corners.html" title="Tạo gốc bo tròn">.arcTo()</a></dd>\
 				<dt>Shaps - Hình dạng tùy chỉnh</dt>\
 				<dd><a href="'+i+'html5/html5-canvas-custom-shapes.html" title="Tạo hình dạng tùy chỉnh">Custom Shape</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-rectangles.html" title="Tạo hình chữ nhật">.rect()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-circles.html" title="Vẽ hình tròn">.arc() - Vẽ Hình tròn</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-semicircles.html" title="Vẽ hình bán nguyệt">.arc() - Vẽ Hình bán nguyệt</a></dd>\
+				<dt>Fill Styles - Định dạng kiểu</dt>\
+				<dd><a href="'+i+'html5/html5-canvas-shape-fill.html" title="Chỉ định màu cho hình shap">.fillStyle<br>.fill()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-linear-gradients.html" title="Màu chuyển sắc tuyến tính cho hình shap">createLinearGradient()<br>.addColorStop()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-radial-gradients.html" title="Màu chuyển sắc hướng tâm cho hình shap">createRadialGradient()<br>.addColorStop()</a></dd>\
 			</dl>\
 		</li>\
 		<li>+<a href="'+i+'html5/index.html">Học html5</a></li>\
