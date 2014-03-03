@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Tạo mẫu partern | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="Tạo mẫu partern,Canvas Pattern,createPattern(),Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Để tạo mẫu hình pattern, sử dụng createPattern() tạo pattern. đặt thuộc tính fillStyle cho pattern. Sau đó dùng fill() để áp dụng hiệu ứng. createPattern() cẩn có 1 hình ảnh, và tùy chọn repeat lặp lại hình. Có thể chọn : repeat, repeat-x, repeat-y, hoặc no-repeat. Nếu không được chỉ định, repeat option mặc định là repeat." />
+<link  href="../css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/html5_script.js"></script>
+<!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
+<link rel="stylesheet" href="../css/codemirror.css">
+</head>
+<body class="rank2">
+<section id="wrapper">
+    <header>
+        <script type="text/javascript" src="../js/header.js"></script>
+    </header>
+    <!-- main start -->
+    <section id="main" class="clearfix">
+        <!-- content start -->
+        <article id="content">
+            <gcse:searchresults></gcse:searchresults>
+            <h2>Tạo mẫu partern</h2>
+            <h3>HTML5 Canvas Pattern Tutorial</h3>
+            <section>
+                <p>Để tạo mẫu hình pattern, sử dụng <strong class="text_red">createPattern()</strong> tạo pattern. đặt thuộc tính <em>fillStyle</em> cho pattern. Sau đó dùng <em>fill() </em>để áp dụng hiệu ứng. <strong>createPattern()</strong> cẩn có 1 hình ảnh, và<em> tùy chọn repeat </em>lặp lại hình. Có thể chọn : repeat, repeat-x, repeat-y, hoặc no-repeat. Nếu không được chỉ định, repeat option mặc định là repeat.</p>
+				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-patterns-tutorial/" target="_blank">more</a></p>
+				
+				<p>Cấu trúc: <span class="text_blue00">____________(</span> <span class="text_purple">controlX1, controlY1</span>,<span class="text_blue01"> controlX2, controlY2</span>, <span class="text_pink">endX, endY</span> <span class="text_blue">)</span>.</p>
+<ul class="list_text01">
+					<li><strong>.moveTo</strong>(<span class="text_purple">x0,y0</span>) : x0,y0 tọa độ <strong>điểm bắt đầu</strong>. </li>
+					<li><strong>.____________(</strong><span class="text_purple">x1, y1</span>, <span class="text_blue01">x2, y2</span>,<span class="text_pink"> x3, y3</span><strong>);</strong><br>
+<span class="text_purple">x1, y1</span>: Tọa độ điểm kiểm soát 1.<br>
+<span class="text_blue01">x2, y2</span>: Tọa độ điểm kiểm soát 2.<br>
+<span class="text_pink"> x3, y3</span>: Tọa độ điểm kết thúc.</li>
+				</ul>
+                <!-- codeEditor START -->
+                <div class="frame_code">
+                    <iframe class="out" id="preview" scrolling="no"></iframe>
+                </div>
+                <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
+                <div class="str_syntax">
+                    <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var imageObj = new Image();
+      imageObj.onload = function() {
+        var pattern = context.createPattern(imageObj, 'repeat');
+
+        context.rect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = pattern;
+        context.fill();
+      };
+      imageObj.src = 'http://www.html5canvastutorials.com/demos/assets/wood-pattern.png';
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+                </div>
+                <!-- codeEditor END -->
+            </section>
+        </article>
+        <!-- content end -->
+        <!-- navi start -->
+        <aside>
+            <script type="text/javascript" src="../js/sidebar.js"></script>
+        </aside>
+        <!-- navi end -->
+    </section>
+    <!-- main end -->
+    <!-- #BeginLibraryItem "/Library/footer.lbi" -->
+    <footer>
+        <address>
+        Copyright         &copy;  All Rights Reserved.
+        </address>
+    </footer>
+    <!-- #EndLibraryItem --> </section>
+<!-- _________________________________codeEditor_______________________________________ -->
+<script src="../js/codeMirror.js"></script>
+<script type="text/javascript" src="../js/code_fn.js"></script>
+<!-- __________________________________________________________________________________ -->
+</body>
+</html>

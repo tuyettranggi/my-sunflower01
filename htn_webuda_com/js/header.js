@@ -35,7 +35,6 @@ $('header').html('<div class="hSection">\
 
 includeBottomJs(i+"js/logo.js");
 includeTopJs(i+"js/se.js");
-
 var $h1 = $('title').text();
 $h1 = $h1.substr(0,$h1.indexOf('|'));
 $('h1').text($h1);
