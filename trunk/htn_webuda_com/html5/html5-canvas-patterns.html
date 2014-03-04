@@ -12,8 +12,10 @@
 <link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/html5_script.js"></script>
+
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
 <link rel="stylesheet" type="text/css" href="../css/codemirror.css" />
+
 </head>
 <body class="rank2">
 <section id="wrapper" class="html5">
@@ -31,50 +33,15 @@
                 <p>Để tạo mẫu hình pattern, sử dụng <strong class="text_red">createPattern()</strong> tạo pattern. đặt thuộc tính <em>fillStyle</em> cho pattern. Sau đó dùng <em>fill() </em>để áp dụng hiệu ứng. <strong>createPattern()</strong> cẩn có 1 hình ảnh, và<em> tùy chọn repeat </em>lặp lại hình. Có thể chọn : repeat, repeat-x, repeat-y, hoặc no-repeat. Nếu không được chỉ định, repeat option mặc định là repeat.</p>
 				<p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-patterns-tutorial/" target="_blank">more</a></p>
 				
-				<p>Cấu trúc: <span class="text_blue00">____________(</span> <span class="text_purple">controlX1, controlY1</span>,<span class="text_blue01"> controlX2, controlY2</span>, <span class="text_pink">endX, endY</span> <span class="text_blue">)</span>.</p>
+				<p>Cấu trúc: <span class="text_blue00">createPattern(</span><span class="text_purple">img</span>,<span class="text_blue01"> repeatOption</span><span class="text_blue">)</span>.</p>
 <ul class="list_text01">
-					<li><strong>.moveTo</strong>(<span class="text_purple">x0,y0</span>) : x0,y0 tọa độ <strong>điểm bắt đầu</strong>. </li>
-					<li><strong>.____________(</strong><span class="text_purple">x1, y1</span>, <span class="text_blue01">x2, y2</span>,<span class="text_pink"> x3, y3</span><strong>);</strong><br>
+					<li><strong>.createPattern( </strong><span class="text_purple">imageObj, "repeat|repeat-x|repeat-y|no-repeat"</span> <strong>);</strong><br>
 <span class="text_purple">x1, y1</span>: Tọa độ điểm kiểm soát 1.<br>
 <span class="text_blue01">x2, y2</span>: Tọa độ điểm kiểm soát 2.<br>
 <span class="text_pink"> x3, y3</span>: Tọa độ điểm kết thúc.</li>
 				</ul>
-                <!-- codeEditor START -->
-                <div class="frame_code">
-                    <iframe class="out" id="preview" scrolling="no"></iframe>
-                </div>
-                <p class="title01">Khung edit HTML : <span class="note01">(có thể sửa và test trực tiếp)</span></p>
-                <div class="str_syntax">
-                    <textarea style="display: none;" id="code" name="code">&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style&gt;
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;canvas id="myCanvas" width="578" height="200"&gt;Trình duyệt của bạn không hổ trợ thẻ canvas<br>(Your browser does not support the canvas element).&lt;/canvas&gt;
-    &lt;script&gt;
-      var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-
-      var imageObj = new Image();
-      imageObj.onload = function() {
-        var pattern = context.createPattern(imageObj, 'repeat');
-
-        context.rect(0, 0, canvas.width, canvas.height);
-        context.fillStyle = pattern;
-        context.fill();
-      };
-      imageObj.src = 'http://www.html5canvastutorials.com/demos/assets/wood-pattern.png';
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</textarea>
-                </div>
-                <!-- codeEditor END -->
+                <iframe src="popup/html5-canvas-patterns1.html" frameborder="0" width="740" height="500" id="arcs1"></iframe>
+				<iframe src="popup/html5-canvas-patterns2.html" frameborder="0" width="740" height="500" id="arcs2"></iframe>
             </section>
         </article>
         <!-- content end -->
@@ -92,9 +59,6 @@
         </address>
     </footer>
     <!-- #EndLibraryItem --> </section>
-<!-- _________________________________codeEditor_______________________________________ -->
-<script src="../js/codeMirror.js"></script>
-<script type="text/javascript" src="../js/code_fn.js"></script>
-<!-- __________________________________________________________________________________ -->
+<script type="text/javascript" src="../js/iframe_fn.js"></script>
 </body>
 </html>

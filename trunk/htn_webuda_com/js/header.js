@@ -26,9 +26,9 @@ $('header').html('<div class="hSection">\
 </nav>\
 </div>\
 <section class="headerInner clearfix">\
-<canvas id="logo">\
+<a href="http://hoc-tieng-nhat.webuda.com/"><canvas id="logo">\
 <!--<script type="text/javascript" src="'+i+'"js/logo.js"></script>-->\
-</canvas>\
+</canvas></a>\
 <!--<script type="text/javascript" src="'+i+'js/se.js"></script>-->\
 <gcse:searchbox></gcse:searchbox>\
 </section>');

@@ -157,9 +157,9 @@ iframe.out {
 
 .CodeMirror { width: 710px; }
 .CodeMirror-scroll {
-	width: 700px!important;	
+	width: 710px!important;	
 }
-#main {width: 700px; margin: 20px auto;}
+#main {width: 710px; margin: 20px auto;}
 
 .note01 {
 	color: #999;
