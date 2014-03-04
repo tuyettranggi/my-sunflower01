@@ -479,13 +479,6 @@ table.gsc-search-box td.gsc-input {
 	padding: 0 0 15px 0;
 }
 
-.html5 h2 {
-	color: #333;
-	font-size: 35px;
-	line-height: 0.7;
-	padding: 0 0 10px 0;
-}
-
 #content h4 {
 	font-size: 20px;
 	clear: both;
@@ -624,10 +617,15 @@ sup.s03 {margin-right: -23px; left: -16px; }
 	margin-bottom: 20px;
 	font-size: 90%;
 }
-.structure *:last-child {
+.structure > *:first-child {
+	padding-top: 0;
+	margin-top: 0;
+}
+.structure > *:last-child {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
 .str_syntax {
 	padding-bottom: 20px;
 	font-size: 90%;

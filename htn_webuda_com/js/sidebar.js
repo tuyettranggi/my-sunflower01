@@ -49,8 +49,8 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd><a href="'+i+'html5/html5-canvas-semicircles.html" title="Vẽ hình bán nguyệt">.arc() - Vẽ Hình bán nguyệt</a></dd>\
 				<dt>Fill Styles - Định dạng kiểu</dt>\
 				<dd><a href="'+i+'html5/html5-canvas-shape-fill.html" title="Chỉ định màu cho hình shap">.fillStyle<br>.fill()</a></dd>\
-				<dd><a href="'+i+'html5/html5-canvas-linear-gradients.html" title="Màu chuyển sắc tuyến tính cho hình shap">createLinearGradient()<br>.addColorStop()</a></dd>\
-				<dd><a href="'+i+'html5/html5-canvas-radial-gradients.html" title="Màu chuyển sắc hướng tâm cho hình shap">createRadialGradient()<br>.addColorStop()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-linear-gradients.html" title="Màu chuyển sắc tuyến tính cho hình shap">.createLinearGradient()<br>.addColorStop()</a></dd>\
+				<dd><a href="'+i+'html5/html5-canvas-radial-gradients.html" title="Màu chuyển sắc hướng tâm cho hình shap">.createRadialGradient()<br>.addColorStop()</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-patterns-tutorial.html" title="Tạo mẫu Pattern image trên canvas">.createPattern()</a></dd>\
 			</dl>\
 		</li>\
