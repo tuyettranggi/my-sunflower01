@@ -4,19 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>xxxxxxxx | Canvas | Học html5 và css3 tiếng việt</title>
-<meta name="keywords" content="_______________,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
-<meta name="description" content="__________________________________________________" />
+<title>Canvas - lineTo vẽ đường thẳng | Canvas | Học html5 và css3 tiếng việt</title>
+<meta name="keywords" content="đường thẳng,canvas lineTo,lineTo,Canvas,html5,css3,học html5 css3,html5 tiếng Việt,thẻ canvas,học html5 cơ bản" />
+<meta name="description" content="Đầu tiên, Sử dụng beginPath() Khai báo bắt đầu vẽ 1 đường line mới. Kế tiếp sử dụng method moveTo() Định tọa độ cho vị trí đầu của điểm context, sau đó sử dụng method lineTo() để vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới. Cuối cùng để làm hiển thị đường line ta dùng method stroke(), nếu không quy định màu sắc, thì mặc định màu đường line là màu đen." />
 <link  href="../css/styles.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../favicon.png" />
 <link rel="icon" type="image/png" href="http://hoc-tieng-nhat.webuda.com/favicon.png" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/html5_script.js"></script>
 <!--[if lte IE 8]><script src="../js/ie.js" type="text/javascript"></script><![endif]-->
-<link rel="stylesheet" href="../css/codemirror.css">
+<link rel="stylesheet" type="text/css" href="../css/codemirror.css" />
 </head>
 <body class="rank2">
-<section id="wrapper">
+<section id="wrapper" class="html5">
     <header>
         <script type="text/javascript" src="../js/header.js"></script>
     </header>
@@ -25,28 +25,26 @@
         <!-- content start -->
         <article id="content">
             <gcse:searchresults></gcse:searchresults>
-            <h2>Hướng dẫn HTML5 Canvas Line</h2>
+            <h2>Vẽ đường thẳng line trong canvas</h2>
             <h3>HTML5 Canvas Line Tutorial</h3>
             <h4>vẽ đường line sử dụng <span class="text_red">lineTo(x,y)</span></h4>
             <section>
-                <p>Để vẽ một đường sử dụng HTML5 Canvas, chúng ta có thể sử dụng methods <em>beginPath()</em>, <em>moveTo()</em>, <em>lineTo()</em>, <em>stroke()</em></p>
-                <ol class="list_step">
-				<li><strong>Khai báo</strong> bắt đầu vẽ 1 đường line mới: <em>beginPath()</em>.</li>
-				<li class="s2"><strong>Định tọa độ cho vị trí đầu</strong> của điểm context sử dụng method <em>moveTo()</em>.</li>
-				<li class="s3"><strong>Vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới</strong> sử dụng method <em>lineTo()</em></li>
-				<li class="s4">
-				  Cuối cùng<strong>,</strong> để <strong>làm hiển thị đường line</strong> ta dùng method <em>stroke()</em>				</li>
-				</ol>
-				<p class="note_s">(Nếu không quy định màu sắc, thì mặc định màu đường line là màu đen.)</p>
+                <p>Để vẽ một đường line sử dụng HTML5 Canvas, chúng ta có thể sử dụng methods <em>beginPath()</em>, <em>moveTo()</em>, <em>lineTo()</em>, <em>stroke()</em></p>
+                <p><strong>Đầu tiên</strong>, Sử dụng <em>beginPath()</em> Khai báo bắt đầu vẽ 1 đường line mới. Kế tiếp sử dụng method <em>moveTo()</em> Định tọa độ cho vị trí đầu của điểm context, sau đó sử dụng method <em>lineTo()</em> để vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới. Cuối cùng để làm hiển thị đường line ta dùng method <em>stroke()</em>, nếu không quy định màu sắc, thì mặc định màu đường line là màu đen.</p>
+                <div class="structure">
+                    <ol class="list_step">
+                        <li><strong>Khai báo</strong> bắt đầu vẽ 1 đường line mới: <em>beginPath()</em>.</li>
+                        <li class="s2"><strong>Định tọa độ cho vị trí đầu</strong> của điểm context sử dụng method <em>moveTo(x0,y0)</em>.</li>
+                        <li class="s3"><strong>Vẽ 1 đường thẳng từ vị trí bắt đầu tới vị trí mới</strong> sử dụng method <em>lineTo(x1,y1)</em></li>
+                        <li class="s4"> Cuối cùng<strong>,</strong> để <strong>làm hiển thị đường line</strong> ta dùng method <em>stroke()</em> </li>
+                    </ol>
+                </div>
+                <p class="note_s">(Nếu không quy định màu sắc, thì mặc định màu đường line là màu đen.)</p>
                 <p class="detail"><a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-paths/" target="_blank">more</a></p>
             </section>
             <section>
                 <p>Ví dụ 1: <span class="note_s">(vẽ đường line từ vị trí 0,0 đến vị trí cuối của gốc dưới bên phải )</span></p>
-                
-				
-				
-				
-				<!-- codeEditor START -->
+                <!-- codeEditor START -->
                 <div class="frame_code">
                     <iframe class="out" id="preview" scrolling="no"></iframe>
                 </div>
@@ -64,7 +62,7 @@ body {
 &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id="ex1" width="360" height="180"&gt;&lt;/canvas&gt;
+&lt;canvas id="ex1" width="360" height="180"&gt;Trình duyệt của bạn không hổ trợ thẻ canvas<br>(Your browser does not support the canvas element).&lt;/canvas&gt;
 
 &lt;script type="text/javascript"&gt;
 	var line1 = document.getElementById('ex1').getContext('2d');
@@ -78,7 +76,6 @@ body {
 &lt;/html&gt;</textarea>
                 </div>
                 <!-- codeEditor END -->
-				
             </section>
         </article>
         <!-- content end -->
