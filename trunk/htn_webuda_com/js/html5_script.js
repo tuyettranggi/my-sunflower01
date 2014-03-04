@@ -15,6 +15,7 @@
 					tag.css('height',tag.contents().height() + 20 + "px");
 					tag.css('width',tag.contents().width() + 20 + "px");
 				},2000);
+				clearTimeout(t2);
 			});
 		}
 	});
