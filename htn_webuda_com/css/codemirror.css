@@ -153,23 +153,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 .CodeMirror-activeline-background {background: #e8f2ff;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .CodeMirror-gutters {
 	position: ; left: 0; top: 0;
 	display: none;
@@ -281,4 +264,3 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 .iframe .CodeMirror-scroll > div {
 	overflow-y: visible!important;
 }
-#iframe { display: block; width:100%; height:100%; }
