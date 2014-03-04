@@ -260,7 +260,3 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 
 
 /* cai nay cho ie7 */
-
-.iframe .CodeMirror-scroll > div {
-	overflow-y: visible!important;
-}
