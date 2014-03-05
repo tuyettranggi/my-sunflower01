@@ -35,7 +35,7 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/chung_finish.html" title="Chung - finish">終</a></td>\
 		  <td><a href="'+i+'kanji/xuan_spring.html" title="Xuân - spring">春</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/hinh_shape.html" title="HÌNH - shape">形</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
