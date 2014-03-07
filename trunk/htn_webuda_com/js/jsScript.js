@@ -36,8 +36,8 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/chung_finish.html" title="Chung - finish">終</a></td>\
 		  <td><a href="'+i+'kanji/xuan_spring.html" title="Xuân - spring">春</a></td>\
 		  <td><a href="'+i+'kanji/hinh_shape.html" title="HÌNH - shape">形</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/pham_goods.html" title="PHẨM - GOODS">品</a></td>\
+		  <td><a href="'+i+'kanji/thuyet_explain.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
@@ -47,11 +47,11 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
         </tr>\
       </table>');
-	$('.tbl_Kanji td').click(function(){
+	/*$('.tbl_Kanji td').click(function(){
 		var ths = $(this);
 		var lk = ths.find('a').attr('href');
 		location.href = lk;
-	});
+	});*/
 });
 
 // active cho table link kanji
@@ -70,9 +70,11 @@ var t = setTimeout(function(){
 								/*th = th.substr(th.lastIndexOf("/")+1);*/
 								if(th2==path2){
 									$(this).addClass('atv');
+									$(this).removeAttr('href');
 								}
 								else if(th==path){
 									$(this).addClass('atv');
+									$(this).removeAttr('href');
 								}
 							});
 					   },100);
