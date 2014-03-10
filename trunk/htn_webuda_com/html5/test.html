@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html>
-
-<body>
-
-<p>Image to use:</p>
-<img src="http://hoc-tieng-nhat.webuda.com/download/img/canvas-patterns1_img.jpg" id="lamp" width="32" height="32">
-<p>Canvas:</p>
-
-<button onclick="draw('repeat')">Repeat</button> 
-<button onclick="draw('repeat-x')">Repeat-x</button> 
-<button onclick="draw('repeat-y')">Repeat-y</button> 
-<button onclick="draw('no-repeat')">No-repeat</button>     
-
-<canvas id="myCanvas" width="300" height="350" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-
-<script>
-function draw(direction)
-{
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.clearRect(0,0,c.width,c.height); 
-var img=document.getElementById("lamp")
-var pat=ctx.createPattern(img,direction);
-ctx.rect(0,0,250,500);
-ctx.fillStyle=pat;
-ctx.fill();
-}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<link  href="../css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	sotrang = 2;
+	
+	
+	sohang = 24 * sotrang;
+	for(var i=0; i<sohang; i++) {
+		$('#main2').append('<table>');
+	}
+	$('table').append('<tr>');
+	$('table').append('<tr>');
+	
+	for(var i=0; i<44; i++) {
+		$('table tr').append('<td>');
+	}
+});
 </script>
-
+<style type="text/css">
+#main2 {
+	width: 650px;
+	margin: 0;
+}
+table {
+	width: 100%;
+	margin-bottom: 8px;
+}
+table td {
+	border-color: #e5e3e3;
+	height: 15px;
+	padding: 0!important;
+	width: 1px;
+}
+table td:nth-child(3n+0) {
+	border-bottom: none!important;
+	border-top: none!important;
+	width: 0;
+}
+table td:nth-child(3n+1) {
+	/*border-right: 1px solid #999;*/
+}
+</style>
+</head>
+<body class="rank2">
+<div id="main2">
+</div>
 </body>
 </html>

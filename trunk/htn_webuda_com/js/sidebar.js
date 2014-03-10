@@ -52,6 +52,8 @@ $('aside').html('<h3>Học Tiếng Nhật</h3>\
 				<dd><a href="'+i+'html5/html5-canvas-linear-gradients.html" title="Màu chuyển sắc tuyến tính cho hình shap">.createLinearGradient()<br>.addColorStop()</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-radial-gradients.html" title="Màu chuyển sắc hướng tâm cho hình shap">.createRadialGradient()<br>.addColorStop()</a></dd>\
 				<dd><a href="'+i+'html5/html5-canvas-patterns.html" title="Tạo mẫu Pattern image trên canvas">.createPattern()</a></dd>\
+				<dt>Images - Hình ảnh</dt>\
+				<dd><a href="'+i+'html5/html5-canvas-images.html" title="Sử dụng hình ảnh trên canvas">.drawImage()</a></dd>\
 			</dl>\
 		</li>\
 		<li>+<a href="'+i+'html5/index.html">Học html5</a></li>\
