@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<link  href="../css/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	sotrang = 3;
+	
+	
+	sohang = 24 * sotrang;
+	for(var i=0; i<sohang; i++) {
+		$('#main1').append('<table>');
+	}
+	$('#main1 table').append('<tr>');
+	$('#main1 table').append('<tr>');
+	
+	for(var i=0; i<44; i++) {
+		$('#main1 table tr').append('<td>');
+	}
+	
+	
+	var tr2 = 57; var td2 = 22;
+	
+	for(var trang = 0; trang < sotrang; trang ++){
+		$('#main2').append('<table></table>');	
+		
+	}
+	
+		var j = 0;
+		
+		
+		for(var i=0; i<tr2; i++) {
+			$('#main2 table').append('<tr>');
+		}
+		
+		var n = 0;
+		var trang = 0;
+		while(trang < sotrang){
+			for(var i=0; i<td2; i++) {
+						$('#main2 table:eq('+trang+') tr:even').append('<td>');
+			}
+			$('#main2 table:eq('+trang+') tr:odd').append('<td colspan="'+td2+'" class="trOdd">');
+			trang ++;
+		}
+	
+	
+});
+</script>
+<style type="text/css">
+
+table {
+	width: 100%;
+}
+table td {
+	border-color: #DBDBDB;
+}
+#main2,
+#main1 {
+	width: 650px;
+	margin: 0;
+}
+#main1 table {
+	margin-bottom: 8px;
+}
+#main1 table td {
+	height: 15px;
+	padding: 0!important;
+	width: 1px;
+}
+#main1 table td:nth-child(3n+0) {
+	border-bottom: none!important;
+	border-top: none!important;
+	width: 0;
+}
+#main1 table td:nth-child(3n+1) {
+	/*border-right: 1px solid #999;*/
+}
+
+
+#main2 .tableStyle { background:pink; }
+#main2 table {
+	margin-bottom: 8px;
+}
+#main2 table td {
+	padding: 0;
+	height: 26px;
+}
+#main2 .trOdd {
+	height: 6px;
+}
+</style>
+</head>
+<body class="rank2">
+
+
+<!--<div id="main1"> </div>-->
+<div id="main2">
+
+</div>
+</body>
+</html>
