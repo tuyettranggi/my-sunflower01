@@ -13,3 +13,6 @@ $(document).keydown(function(e) {
 $('.reload').click(function() {
     location.reload(true);
 });
+
+
+$(".thumbList img[src*='spacer.gif']").closest("li").css("display","none");
