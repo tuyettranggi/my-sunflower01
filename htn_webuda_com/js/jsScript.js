@@ -37,10 +37,10 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/xuan_spring.html" title="Xuân - spring">春</a></td>\
 		  <td><a href="'+i+'kanji/hinh_shape.html" title="HÌNH - shape">形</a></td>\
 		  <td><a href="'+i+'kanji/pham_goods.html" title="PHẨM - GOODS">品</a></td>\
-		  <td><a href="'+i+'kanji/thuyet_explain.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/thuyet_explain.html" title="THUYẾT - Explain">説</a></td>\
+		  <td><a href="'+i+'kanji/luc_power.html" title="LỰC - Power">カ</a></td>\
+		  <td><a href="'+i+'kanji/tam_heart.html" title="TÂM - Heart">心</a></td>\
+		  <td><a href="'+i+'kanji/thong_commute.html" title="THÔNG - Commute">通</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\

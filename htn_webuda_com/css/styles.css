@@ -564,6 +564,7 @@ iframe.out {
 }
 
 .note_s {color: #999!important; font-size: 12px;}
+sup.s035,
 sup.s03,
 sup.s02,
 sup.s01 {
@@ -575,13 +576,15 @@ sup.s01 {
 	margin-right: -7px;
 }
 
-sup.s02 {margin-right: -15px; left: -16px;}
+sup.s02 {margin-right: -13px; left: -16px;}
 sup.s03 {margin-right: -23px; left: -16px; }
+sup.s035 {margin-right: -18px; left: -19px; letter-spacing: -1px; }
 
 .bold { font-weight: bold;}
 .text_blue { color: #0000FF;}
 .text_blue00 { color: #0000FF; font-weight: bold; }
 .text_blue01 { color: #005e8a;}
+.text_blue01s { color: #005e8a; font-size: 90%;}
 .text_blue02 { color: #0000FF; }
 ._text { color: #666; font-style: italic;}
 .text_red00 {color: #ff0000;}
