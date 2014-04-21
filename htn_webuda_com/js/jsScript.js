@@ -24,7 +24,7 @@ $('.breadcrumb').after('<table summary="Kanji Link" class="tbl_Kanji">\
 		  <td><a href="'+i+'kanji/xuyen_river.html" title="Xuyên - river">川</a></td>\
 		  <td><a href="'+i+'kanji/dien_ricefield.html" title="Điền - rice fild">田</a></td>\
 		  <td><a href="'+i+'kanji/nhat_one.html" title="Nhất - one">一</a></td>\
-		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
+		  <td><a href="'+i+'kanji/nhi_two.html" title="Nhị - two">二</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\
 		  <td><a href="'+i+'kanji/xxxxxxxxxxx.html" title="xxxxxxxxxxx">xxx</a></td>\

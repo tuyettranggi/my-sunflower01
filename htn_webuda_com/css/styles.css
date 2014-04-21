@@ -805,6 +805,7 @@ img.center,
 .tbl_Kanji td a {
 	display: block;
 	padding: 5px;
+	text-decoration: none;
 }
 .tbl_Kanji td a.atv {
 	background: #eee;
