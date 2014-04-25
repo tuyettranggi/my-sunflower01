@@ -920,6 +920,23 @@ ol.list_step li.s13 {background-image: url(../images/icon_step/icon_13.gif);}
 ol.list_step li.s14 {background-image: url(../images/icon_step/icon_14.gif);}
 ol.list_step li.s15 {background-image: url(../images/icon_step/icon_15.gif);}
 
+.list_block li {
+	border: 1px dashed #ccc;
+	float: left;
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 48%;
+}
+.list_block li.r {
+	float: right;
+}
+
+.list_block li img {
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+}
+
 /* add
 ------------------------------------------------------------------------*/
 section { padding-bottom: 25px; }
@@ -983,6 +1000,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+.list_block,
 .hSection nav#gnav,
 .breadcrumb,
 .prev_next,
@@ -995,6 +1013,7 @@ nav#gnav ul {
 	display: block;
 }
 
+.list_block:after,
 .hSection nav#gnav:after,
 .breadcrumb:after,
 .prev_next:after,
