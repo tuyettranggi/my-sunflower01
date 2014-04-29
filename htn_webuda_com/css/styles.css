@@ -679,6 +679,33 @@ canvas#ex1 {
 	background: url(../images/icon_prev.png) no-repeat 0 50%;
 }
 
+.ranSec {}
+.ranShow {
+	background: #CCCCCC;
+	float: left;
+	font-size: 800%;
+	text-align: center;
+	height: 200px;
+	width: 350px;
+	margin: 0 auto 10px;
+	padding: 50px 0 0 0;
+}
+.ranTxt {
+	line-height: 1em;
+}
+
+.ranBtn {
+	clear: both;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.ranImg {
+	float: right;
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+
 
 /*-----------------------------------------------------------------box */
 
@@ -1043,3 +1070,4 @@ max-width: 100%;
 	min-height: 300px;
 	margin-bottom: 50px;
 }*/
+
