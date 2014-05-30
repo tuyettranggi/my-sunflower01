@@ -1025,6 +1025,21 @@ ol.list_step li.s15 {background-image: url(../images/icon_step/icon_15.gif);}
 	margin: 0 auto;
 }
 
+.list_fb {
+	padding-bottom: 10px;
+}
+.list_fb li {
+	float: left;
+	padding: 5px 0 10px;
+}
+.list_fb li.r {
+	float: right;
+}
+.list_fb li .inner {
+	border: 1px dashed #ccc;
+	padding: 5px;
+}
+
 /* add
 ------------------------------------------------------------------------*/
 section { padding-bottom: 25px; }
@@ -1088,6 +1103,7 @@ section:last-child { padding-bottom: 0;}
 /* clearfix
 ------------------------------------------------------------------------*/
 
+.list_fb,
 .list_block,
 .hSection nav#gnav,
 .breadcrumb,
@@ -1101,6 +1117,7 @@ nav#gnav ul {
 	display: block;
 }
 
+.list_fb:after,
 .list_block:after,
 .hSection nav#gnav:after,
 .breadcrumb:after,
