@@ -592,6 +592,7 @@ sup.s055 {margin-right: -33px; left: -34px; letter-spacing: -1px; }
 sup.s06 {margin-right: -32px; left: -35px; letter-spacing: -1px; }
 sup.s07 {margin-right: -37px; left: -39px; letter-spacing: -1px; }
 .co_gray01 sup { color: #ccc;}
+.co_gray02 sup { color: #999;}
 
 .bold { font-weight: bold;}
 .text_blue { color: #0000FF;}
@@ -1075,6 +1076,9 @@ section:last-child { padding-bottom: 0;}
 .pb20 { padding-bottom: 20px!important; }
 .pb25 { padding-bottom: 25px!important; }
 .pb30 { padding-bottom: 30px!important; }
+
+.pl50 { padding-left: 50px!important;}
+
 .pt0 { padding-top: 0!important; }
 
 .w10 { width: 10%; }
@@ -1098,6 +1102,8 @@ section:last-child { padding-bottom: 0;}
 	font-style: italic;
 }
 .co_gray01 { color: #999; }
+.co_gray02 { color: #666; }
+
 
 
 /* clearfix
